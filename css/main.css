@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, a, p {
 	font-family: 'Lato', sans-serif;
 }
 
+
 p {
 	font-size: 1.2em;
 	line-height: 1.6em;
@@ -31,6 +32,7 @@ h4 {
 	position: relative;
 	padding: 0;
 	z-index: 9999;
+	transition: 0.2s ease-all;
 }
 
 /* navbar wrapper */
@@ -54,7 +56,7 @@ h4 {
 	/*background: #222;*/
 }
 
-/* navbar - primary link wrapper */
+/* navbar - wrapper for all links */
 .ypg_nav_links {
 	float: left;
 	margin-left: 24px;
@@ -62,61 +64,34 @@ h4 {
 	transition: 2s ease-all;
 }
 
-/* navbar - primary nav item */
-.ypg_nav_links a {
+/* individual primary nav links */
+.ypg_nav_links a{
 	float: left;
-	padding: 0 18px 0 18px;
+	padding: 0 16px 0 16px;
 	line-height: 90px;
 	text-align: center;
-	transition: 2s ease-all;
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
+	background: #ccc;
+	font-weight: bold;
+	font-weight: 700;
 }
 
-/* navbar - primary nav item hover */
+/* primary nav links hover */
 .ypg_nav_links a:hover {
-	background: #666;
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
-}
-
-.ypg_nav_links a > .nav_link_hover {
-	height: 0px;
-	left: -18px;
-	position: relative;
-	bottom: 0;
-	background: #fff;
-	-webkit-transition: all 0.16s ease-out;
-	-moz-transition: all 0.16s ease-out;
-	-o-transition: all 0.16s ease-out;
-	transition: all 0.16s ease-out;
-}
-
-.ypg_nav_links a:hover > .nav_link_hover {
-	height: 4px;
-
-	-webkit-transition: all 0.16s ease-out;
-	-moz-transition: all 0.16s ease-out;
-	-o-transition: all 0.16s ease-out;
-	transition: all 0.16s ease-out;
+	background: #222;
 }
 
 /* navbar - phone number wrapper */
 .ypg_nav_phone {
 	float: right;
 	line-height: 90px;
-	font-size: 1.55em;
+	font-size: 1.7em;
 }
 
 /* navbar - phone number link item */
 .ypg_nav_phone a {
 	float: right;
 	width: 100%;
-	padding: 0 0 0 18px;
+	padding: 0 16px 0 16px;
 	font-weight: bold;
 	font-weight: 700;
 }
@@ -125,6 +100,95 @@ h4 {
 .ypg_nav_phone a:hover {
 	background: #666;
 }
+
+/* hamburger button */
+.hamburger_btn {
+	position: absolute;
+	height: 45px;
+	width: 45px;
+	background: #222;
+	margin-top: 10px;
+	display: none;
+	right: 10px;
+}
+
+/* mobile navigation wrapper */
+#ypg_nav_mobile {
+	height: 500px;
+	width: 100%;
+	background: #222;
+	clear: both;
+	position: absolute;
+	top: 65px;
+	left: 0;
+	display: none;
+	z-index: 9999;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+	/* hide navbar phone number */
+	.ypg_nav_phone {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* if mobile nav is deployed and screen is resized
+	   larger, then hide mobile nav and display desktop nav
+	*/
+	#ypg_nav_mobile {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	/* hide desktop link wrapper */
+	.ypg_nav_links {
+		display: none;
+	}
+
+  	/* display hamburger button */
+	.hamburger_btn {
+		display: block;
+	}
+
+  	/* adjust height of navbar */
+	.ypg_nav {
+		height: 65px;
+	}
+
+	/* resize ypg logo for smaller navbar */
+	.ypg_nav_logo img {
+		position: relative;
+		width: 75%;
+		margin-top: -2px;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	/* resize ypg logo for smallest viewport */
+	.ypg_nav_logo img {
+		position: relative;
+		width: 70%;
+		margin-top: 1px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* hero image wrapper */
 .hero_image_wrap {
@@ -205,7 +269,6 @@ h4 {
 
 	background: #ccc;
 }
-
 
 
 
