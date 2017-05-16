@@ -136,10 +136,15 @@ h4 {
 
 @media only screen and (min-width: 992px) {
 	/* if mobile nav is deployed and screen is resized
-	   larger, then hide mobile nav and display desktop nav
-	*/
+	   larger, then hide mobile nav and display desktop nav	*/
 	#ypg_nav_mobile {
 		display: none !important;
+	}
+
+	/* if mobile nav is deployed and screen is resized
+	   larger, then revert bg to normal opacity	*/
+	#opaqueNav {
+		background: rgba(255,255,255,0.65) !important;
 	}
 }
 
