@@ -18,7 +18,7 @@
 	<div class="ypg_wrap">
 		<!-- ypg logo -->
 		<div class="ypg_nav_logo">
-			<a href="#"><img src="images/ypg_nameplate.png"></a>
+			<a href="#"><img height="85" width="294" src="images/ypg_nameplate.png"></a>
 		</div>
 
 		<button class="hamburger_btn" onclick="toggleHamburger()"></button>
@@ -81,12 +81,16 @@ function toggleHamburger() {
     var opaqueNav = document.getElementById('opaqueNav');
 
     // if mobile nav is display, hide it on button press
-    if (mobileNav.style.display === 'block') {
+    if (mobileNav.style.height === '100px') {
     	// hide mobile navigation
-        mobileNav.style.display = 'none';
+        //mobileNav.style.display = 'none';
+        mobileNav.style.height = '0px';
         // if mobile nav is not active, revert back to 65% opacity
         opaqueNav.style.background  = 'rgba(255,255,255,0.65)'
         // css transition on state change
+        mobileNav.style.WebkitTransition = 'ease-out 0.24s';
+        mobileNav.style.MozTransition = 'ease-out 0.24s';
+        mobileNav.style.transition = 'ease-out 0.24s';
         opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
         opaqueNav.style.MozTransition = 'ease-out 0.24s';
         opaqueNav.style.transition = 'ease-out 0.24s';
@@ -94,13 +98,18 @@ function toggleHamburger() {
     // else if mobile nav is hidden, display it
     } else {
     	// display mobile navigation
-        mobileNav.style.display = 'block';
+        //mobileNav.style.display = 'block';
+        mobileNav.style.height = '100px';
         // if mobile nav is active, make navbar opaque
         opaqueNav.style.background  = 'rgba(255,255,255,1)'
         // css transition on state change
+        mobileNav.style.WebkitTransition = 'ease-in 0.2s';
+        mobileNav.style.MozTransition = 'ease-in 0.2s';
+        mobileNav.style.transition = 'ease-in 0.2s';
         opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
         opaqueNav.style.MozTransition = 'ease-in 0.2s';
         opaqueNav.style.transition = 'ease-in 0.2s';
+
     }
 } // end of toggleHamburger function
 
