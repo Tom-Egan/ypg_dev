@@ -57,10 +57,7 @@ h4 {
 }
 
 .ypg_nav_logo img {
-	-webkit-transition: all 0.2s ease-out;
-		-moz-transition: all 0.2s ease-out;
-		-o-transition: all 0.2s ease-out;
-		transition: all 0.2s ease-out;
+	left: 0;
 }
 
 
@@ -109,7 +106,7 @@ h4 {
 }
 
 /* hamburger button */
-.hamburger_btn {
+#hamburger {
 	position: fixed;
 	height: 45px;
 	width: 45px;
@@ -124,7 +121,7 @@ h4 {
 #ypg_nav_mobile {
 	width: 0;
 	min-height: 100vh;
-	background: #222;
+	background: rgba(0,0,0,0.9);
 	clear: both;
 	position: fixed;
 	top: 0;
@@ -153,6 +150,11 @@ h4 {
 	#opaqueNav {
 		background: rgba(255,255,255,0.65) !important;
 	}
+
+	#ypgLogo {
+		opacity: 1 !important;
+		left: 0 !important;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -162,7 +164,7 @@ h4 {
 	}
 
   	/* display hamburger button */
-	.hamburger_btn {
+	#hamburger {
 		display: block;
 	}
 
@@ -183,7 +185,7 @@ h4 {
 
 
 @media only screen and (max-width: 480px) {
-	/* resize ypg logo for smallest viewport */
+	/* resize ypg logo for smallest viewport
 	.ypg_nav_logo img {
 		position: relative;
 		width: 70%;
@@ -191,6 +193,7 @@ h4 {
 		margin-top: 1px;
 
 	}
+	 */
 
 
 }

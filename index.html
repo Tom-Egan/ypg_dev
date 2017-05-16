@@ -18,10 +18,10 @@
 	<div class="ypg_wrap">
 		<!-- ypg logo -->
 		<div class="ypg_nav_logo">
-			<a href="#"><img height="85" width="294" src="images/ypg_nameplate.png"></a>
+			<a href="#"><img id="ypgLogo" height="85" width="294" src="images/ypg_nameplate.png"></a>
 		</div>
 
-		<button class="hamburger_btn" onclick="toggleHamburger()"></button>
+		<button id="hamburger" onclick="toggleHamburger()"></button>
 		<div id="ypg_nav_mobile"></div>
 
 		<!-- ypg desktop links -->
@@ -77,38 +77,54 @@
 function toggleHamburger() {
     // mobile navigation menu wrapper
     var mobileNav = document.getElementById('ypg_nav_mobile');
+    var hamburger = document.getElementById('hamburger');
     // main navbar bg, used to toggle opacitity on state changes
-    //var opaqueNav = document.getElementById('opaqueNav');
+    var opaqueNav = document.getElementById('opaqueNav');
+    var ypgLogo = document.getElementById('ypgLogo');
 
     // if mobile nav is display, hide it on button press
     if (mobileNav.style.width === '100%') {
     	// hide mobile navigation
         //mobileNav.style.display = 'none';
         mobileNav.style.width = '0';
+        // convert hamburger button back to absolute
+        hamburger.style.position = 'absolute';
+        ypgLogo.style.opacity = '1';
+        ypgLogo.style.left = '0';
         // if mobile nav is not active, revert back to 65% opacity
-        //opaqueNav.style.background  = 'rgba(255,255,255,0.65)'
+        opaqueNav.style.background  = 'rgba(255,255,255,0.65)';
         // css transition on state change
         mobileNav.style.WebkitTransition = 'ease-out 0.24s';
         mobileNav.style.MozTransition = 'ease-out 0.24s';
         mobileNav.style.transition = 'ease-out 0.24s';
-        //opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
-        //opaqueNav.style.MozTransition = 'ease-out 0.24s';
-        //opaqueNav.style.transition = 'ease-out 0.24s';
+        opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
+        opaqueNav.style.MozTransition = 'ease-out 0.24s';
+        opaqueNav.style.transition = 'ease-out 0.24s';
+        ypgLogo.style.WebkitTransition = 'ease-out 0.24s';
+        ypgLogo.style.MozTransition = 'ease-out 0.24s';
+        ypgLogo.style.transition = 'ease-out 0.24s';
 
     // else if mobile nav is hidden, display it
     } else {
     	// display mobile navigation
         //mobileNav.style.display = 'block';
         mobileNav.style.width = '100%';
+        // convert hamburger button to fixed
+        hamburger.style.position = 'fixed';
         // if mobile nav is active, make navbar opaque
-        //opaqueNav.style.background  = 'rgba(255,255,255,1)'
+        opaqueNav.style.background  = 'rgba(255,255,255,0)'
+        ypgLogo.style.opacity = '0';
+        ypgLogo.style.left = '-14px';
         // css transition on state change
         mobileNav.style.WebkitTransition = 'ease-out 0.26s';
         mobileNav.style.MozTransition = 'ease-out 0.26s';
         mobileNav.style.transition = 'ease-out 0.26s';
-        //opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
-        //opaqueNav.style.MozTransition = 'ease-in 0.2s';
-        //opaqueNav.style.transition = 'ease-in 0.2s';
+        opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
+        opaqueNav.style.MozTransition = 'ease-in 0.2s';
+        opaqueNav.style.transition = 'ease-in 0.2s';
+        ypgLogo.style.WebkitTransition = 'ease-in 0.2s';
+        ypgLogo.style.MozTransition = 'ease-in 0.2s';
+        ypgLogo.style.transition = 'ease-in 0.2s';
     }
 } // end of toggleHamburger function
 
