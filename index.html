@@ -13,7 +13,7 @@
 <body>
 
 <!-- full width wrapper -->
-<div class="ypg_nav">
+<div class="ypg_nav" id="opaqueNav">
 	<!-- max-width wrapper -->
 	<div class="ypg_wrap">
 		<!-- ypg logo -->
@@ -21,14 +21,17 @@
 			<a href="#"><img src="images/ypg_nameplate.png"></a>
 		</div>
 
+		<button class="hamburger_btn" onclick="toggleHamburger()"></button>
+		<div id="ypg_nav_mobile"></div>
+
 		<!-- ypg desktop links -->
 		<div class="ypg_nav_links">
-			<a href="#">Home<div class="nav_link_hover"></div></a>
-			<a href="#">About<div class="nav_link_hover"></div></a>
-			<a href="#">Services<div class="nav_link_hover"></div></a>
-			<a href="#">Portfolio<div class="nav_link_hover"></div></a>
-			<a href="#">Careers<div class="nav_link_hover"></div></a>
-			<a href="#">Contact<div class="nav_link_hover"></div></a>
+			<a href="#">Home</a> 
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Careers</a>
+			<a href="#">Contact</a>
 		</div>
 
 		<!-- ypg desktop phone number -->
@@ -36,7 +39,6 @@
 			<a href="#">(262) 333-333</a>
 		</div>
 	</div>
-	
 </div>
 
 <!-- hero image -->
@@ -52,8 +54,6 @@
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 </div>
 
@@ -69,6 +69,37 @@
 </div>
 
 <div class="test"></div>
+
+
+
+<script type="text/javascript">
+function toggleHamburger() {
+    var mobileNav = document.getElementById('ypg_nav_mobile');
+    var opaqueNav = document.getElementById('opaqueNav');
+    if (mobileNav.style.display === 'block') {
+    	// hide mobile navigation
+        mobileNav.style.display = 'none';
+        // if mobile nav is not active, revert back to 65% opacity
+        opaqueNav.style.background  = 'rgba(255,255,255,0.65)'
+        // css transition on state change
+        opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
+        opaqueNav.style.MozTransition = 'ease-out 0.24s';
+        opaqueNav.style.transition = 'ease-out 0.24s';
+
+
+    } else {
+    	// display mobile navigation
+        mobileNav.style.display = 'block';
+        // if mobile nav is active, make navbar opaque
+        opaqueNav.style.background  = 'rgba(255,255,255,1)'
+        // css transition on state change
+        opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
+        opaqueNav.style.MozTransition = 'ease-in 0.2s';
+        opaqueNav.style.transition = 'ease-in 0.2s';
+    }
+}
+
+</script>
 
 </body>
 </html>
