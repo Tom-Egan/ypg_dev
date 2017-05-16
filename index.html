@@ -73,9 +73,14 @@
 
 
 <script type="text/javascript">
+
 function toggleHamburger() {
+    // mobile navigation menu wrapper
     var mobileNav = document.getElementById('ypg_nav_mobile');
+    // main navbar bg, used to toggle opacitity on state changes
     var opaqueNav = document.getElementById('opaqueNav');
+
+    // if mobile nav is display, hide it on button press
     if (mobileNav.style.display === 'block') {
     	// hide mobile navigation
         mobileNav.style.display = 'none';
@@ -86,7 +91,7 @@ function toggleHamburger() {
         opaqueNav.style.MozTransition = 'ease-out 0.24s';
         opaqueNav.style.transition = 'ease-out 0.24s';
 
-
+    // else if mobile nav is hidden, display it
     } else {
     	// display mobile navigation
         mobileNav.style.display = 'block';
@@ -97,7 +102,7 @@ function toggleHamburger() {
         opaqueNav.style.MozTransition = 'ease-in 0.2s';
         opaqueNav.style.transition = 'ease-in 0.2s';
     }
-}
+} // end of toggleHamburger function
 
 </script>
 
