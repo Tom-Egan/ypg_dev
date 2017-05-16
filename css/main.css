@@ -60,7 +60,6 @@ h4 {
 	left: 0;
 }
 
-
 /* navbar - wrapper for all links */
 .ypg_nav_links {
 	float: left;
@@ -129,49 +128,37 @@ h4 {
 	z-index: 9998;
 }
 
-
-
+/* viewport decreases past 1030px */
 @media only screen and (max-width: 1030px) {
-	/* hide navbar phone number */
-	.ypg_nav_phone {
-		display: none;
-	}
+	/* hide navbar phone number once it overlaps with nav links */
+	.ypg_nav_phone {display: none;}
 }
 
+/* viewport increases past 992px */
+/* resets if mobile nav is deployed and viewport is resized larger */
 @media only screen and (min-width: 992px) {
-	/* if mobile nav is deployed and screen is resized
-	   larger, then hide mobile nav and display desktop nav	*/
-	#ypg_nav_mobile {
-		width: 0 !important;
-	}
 
-	/* if mobile nav is deployed and screen is resized
-	   larger, then revert bg to normal opacity	*/
-	#opaqueNav {
-		background: rgba(255,255,255,0.65) !important;
-	}
+	/* hide mobile nav and display desktop nav	*/
+	#ypg_nav_mobile {width: 0 !important;}
 
-	#ypgLogo {
-		opacity: 1 !important;
-		left: 0 !important;
-	}
+	/* Revert main navbar bg to normal opacity	*/
+	#opaqueNav {background: rgba(255,255,255,0.65) !important;}
+
+	/* logo reset if mobile nav is deployed and screen is resized larger */
+	#ypgLogo {opacity: 1 !important;left: 0 !important;}
 }
 
+/* viewport decreases past 992px*/
 @media only screen and (max-width: 992px) {
+
 	/* hide desktop link wrapper */
-	.ypg_nav_links {
-		display: none;
-	}
+	.ypg_nav_links {display: none;}
 
   	/* display hamburger button */
-	#hamburger {
-		display: block;
-	}
-
+	#hamburger {display: block;}
+	
   	/* adjust height of navbar */
-	.ypg_nav {
-		height: 65px;
-	}
+	.ypg_nav {height: 65px;}
 
 	/* resize ypg logo for smaller navbar */
 	.ypg_nav_logo img {
