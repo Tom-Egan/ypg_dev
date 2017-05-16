@@ -56,6 +56,10 @@ h4 {
 	/*background: #222;*/
 }
 
+.ypg_nav_logo img {
+	left: 0;
+}
+
 /* navbar - wrapper for all links */
 .ypg_nav_links {
 	float: left;
@@ -70,7 +74,6 @@ h4 {
 	padding: 0 16px 0 16px;
 	line-height: 90px;
 	text-align: center;
-	background: #ccc;
 	font-weight: bold;
 	font-weight: 700;
 }
@@ -102,79 +105,82 @@ h4 {
 }
 
 /* hamburger button */
-.hamburger_btn {
-	position: absolute;
+#hamburger {
+	position: fixed;
 	height: 45px;
 	width: 45px;
 	background: #222;
 	margin-top: 10px;
 	display: none;
 	right: 10px;
+	z-index: 9999;
 }
 
 /* mobile navigation wrapper */
 #ypg_nav_mobile {
-	height: 500px;
-	width: 100%;
-	background: #222;
+	width: 0;
+	min-height: 100vh;
+	background: rgba(0,0,0,0.9);
 	clear: both;
-	position: absolute;
-	top: 65px;
-	left: 0;
-	display: none;
-	z-index: 9999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9998;
 }
 
-
-
-@media only screen and (max-width: 1080px) {
-	/* hide navbar phone number */
-	.ypg_nav_phone {
-		display: none;
-	}
+/* viewport decreases past 1030px */
+@media only screen and (max-width: 1030px) {
+	/* hide navbar phone number once it overlaps with nav links */
+	.ypg_nav_phone {display: none;}
 }
 
+/* viewport increases past 992px */
+/* resets if mobile nav is deployed and viewport is resized larger */
 @media only screen and (min-width: 992px) {
-	/* if mobile nav is deployed and screen is resized
-	   larger, then hide mobile nav and display desktop nav
-	*/
-	#ypg_nav_mobile {
-		display: none !important;
-	}
+
+	/* hide mobile nav and display desktop nav	*/
+	#ypg_nav_mobile {width: 0 !important;}
+
+	/* Revert main navbar bg to normal opacity	*/
+	#opaqueNav {background: rgba(255,255,255,0.65) !important;}
+
+	/* logo reset if mobile nav is deployed and screen is resized larger */
+	#ypgLogo {opacity: 1 !important;left: 0 !important;}
 }
 
+/* viewport decreases past 992px*/
 @media only screen and (max-width: 992px) {
+
 	/* hide desktop link wrapper */
-	.ypg_nav_links {
-		display: none;
-	}
+	.ypg_nav_links {display: none;}
 
   	/* display hamburger button */
-	.hamburger_btn {
-		display: block;
-	}
-
+	#hamburger {display: block;}
+	
   	/* adjust height of navbar */
-	.ypg_nav {
-		height: 65px;
-	}
+	.ypg_nav {height: 65px;}
 
 	/* resize ypg logo for smaller navbar */
 	.ypg_nav_logo img {
 		position: relative;
 		width: 75%;
+		height: 75%;
 		margin-top: -2px;
+
 	}
 }
 
 
 @media only screen and (max-width: 480px) {
-	/* resize ypg logo for smallest viewport */
+	/* resize ypg logo for smallest viewport
 	.ypg_nav_logo img {
 		position: relative;
 		width: 70%;
+		height: 70%;
 		margin-top: 1px;
+
 	}
+	 */
 
 
 }
