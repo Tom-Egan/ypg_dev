@@ -24,6 +24,12 @@ h4 {
 	font-size: 1.3em;
 }
 
+a:hover,
+a:focus {
+	outline: none;
+	text-decoration: none !important;
+}
+
 /* navbar full width bg */
 .ypg_nav {
 	width: 100%;
@@ -106,32 +112,162 @@ h4 {
 
 /* hamburger button */
 #hamburger {
-	position: fixed;
+	position: absolute;
 	height: 45px;
 	width: 45px;
-	background: #222;
+	background: none;
 	margin-top: 10px;
 	display: none;
 	right: 10px;
 	z-index: 9999;
+	border: none;
+	padding: 8px;
+}
+
+button:focus {
+	outline: none;
+}
+
+#ham_line1,
+#ham_line2,
+#ham_line3 {
+	position: relative;
+	height: 3px;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 /* mobile navigation wrapper */
 #ypg_nav_mobile {
 	width: 0;
 	min-height: 100vh;
-	background: rgba(0,0,0,0.9);
+	background: rgba(92, 128, 78, 1);
+	/*background: rgba(31, 22, 8, 0.9);*/
 	clear: both;
 	position: fixed;
 	top: 0;
 	right: 0;
+	padding-top: 65px;
 	z-index: 9998;
 }
 
-/* viewport decreases past 1030px */
-@media only screen and (max-width: 1030px) {
+#ypg_nav_mobile h3 {
+	position: absolute;
+	top: -6px;
+	padding-left: 12px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: rgba(255,255,255,0.25);
+}
+
+
+.mobile_link_wrap {
+	position: relative;
+	width: 100%;
+	height: 11vh;
+	min-height: 30px;
+	
+	line-height: 11vh;
+	padding: 0 12px 0 12px;
+	text-align: center;
+	/*border-top: 1px solid rgba(255,255,255,0.1);*/
+}
+
+.mobile_link_wrap a {
+	color: #fff;
+	font-weight: bold;
+	font-weight: 700;
+	background: rgba(255,255,255,0.1);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	font-size: 1.2em;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.mobile_link_wrap a:hover {
+	background:rgba(0,0,0,0.1);
+	color: rgba(255,255,255,1);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.mobile_link_wrap a:focus{
+	background:rgba(255,255,255,0.4);
+	color: rgba(92, 128, 78, 1);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.mobile_phone {
+	position: absolute;
+	background:rgba(255,255,255,0.3);
+	bottom: 106px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+}
+
+.mobile_phone a {
+	font-weight: light;
+	font-weight: 300;
+	color: #fff;
+	background:rgba(255,255,255,0.3);
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	padding: 20px;
+	min-height: 90px;
+	width: 280px;
+	border-radius: 8px;
+	text-decoration: none;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.mobile_phone a:hover {
+	background:rgba(255,255,255,0.4);
+	color: rgba(92, 128, 78, 1);
+}
+
+.mobile_phone a:focus {
+	background:rgba(255,255,255,0.6);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+	color: rgba(92, 128, 78, 1);
+}
+
+.mobile_phone_btn {
+	font-weight: bold;
+	font-weight: 700;
+	font-size: 1.6em;
+}
+
+@media only screen and (max-width: 1100px) {
 	/* hide navbar phone number once it overlaps with nav links */
-	.ypg_nav_phone {display: none;}
+	.ypg_nav_phone {font-size: 1.3em;}
 }
 
 /* viewport increases past 992px */
@@ -142,7 +278,7 @@ h4 {
 	#ypg_nav_mobile {width: 0 !important;}
 
 	/* Revert main navbar bg to normal opacity	*/
-	#opaqueNav {background: rgba(255,255,255,0.65) !important;}
+	#opaqueNav {background: rgba(255,255,255,0.8) !important;}
 
 	/* logo reset if mobile nav is deployed and screen is resized larger */
 	#ypgLogo {opacity: 1 !important;left: 0 !important;}
@@ -156,9 +292,11 @@ h4 {
 
   	/* display hamburger button */
 	#hamburger {display: block;}
-	
+
   	/* adjust height of navbar */
 	.ypg_nav {height: 65px;}
+
+	.ypg_nav_phone {display: none;}
 
 	/* resize ypg logo for smaller navbar */
 	.ypg_nav_logo img {
@@ -168,22 +306,22 @@ h4 {
 		margin-top: -2px;
 
 	}
+
 }
 
+
+@media only screen and (max-width: 768px) {
+	.hero_image_text h2 {
+		font-size: 1em;
+	}
+}
 
 @media only screen and (max-width: 480px) {
-	/* resize ypg logo for smallest viewport
-	.ypg_nav_logo img {
-		position: relative;
-		width: 70%;
-		height: 70%;
-		margin-top: 1px;
-
+	.hero_image_text h2 {
+		width: 75%;
 	}
-	 */
-
-
 }
+
 
 
 
@@ -209,8 +347,10 @@ h4 {
 	height: 100%;
 	width: 100%;
 	margin-top: -90px;
-	background: url("../images/ypg_main2.3.jpg") no-repeat center center fixed;
-	background-position: fixed; 
+	background: url("../images/ypg_main2.3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -227,7 +367,7 @@ h4 {
 
 /* hero image main text */
 .hero_image > .ypg_wrap > .hero_image_text h2 {
-	line-height: 0.05em;
+	line-height: 0.9em;
 	font-weight: light;
 	font-weight: 300;
 }

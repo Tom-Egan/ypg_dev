@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- CSS: Main -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,8 +24,21 @@
 			<a href="#"><img id="ypgLogo" height="85" width="294" src="images/ypg_nameplate.png"></a>
 		</div>
 
-		<button id="hamburger" onclick="toggleHamburger()"></button>
-		<div id="ypg_nav_mobile"></div>
+		<button id="hamburger" onclick="toggleHamburger()">
+			<div id="ham_line1"></div>
+			<div id="ham_line2"></div>
+			<div id="ham_line3"></div>
+		</button>
+		<div id="ypg_nav_mobile">
+			<h3>Menu</h3>
+			<div class="mobile_link_wrap"><a href="#">Home</a></div>
+			<div class="mobile_link_wrap"><a href="#">About</a></div>
+			<div class="mobile_link_wrap"><a href="#">Services</a></div>
+			<div class="mobile_link_wrap"><a href="#">Portfolio</a></div>
+			<div class="mobile_link_wrap"><a href="#">Careers</a></div>
+			<div class="mobile_link_wrap"><a href="#">Contact</a></div>
+			<div id="mobile_phone_btn" class="mobile_phone"><a href="#">Call Us Today<br><span class="mobile_phone_btn">(262) 333-333</span></a></div>
+		</div>
 
 		<!-- ypg desktop links -->
 		<div class="ypg_nav_links">
@@ -46,11 +62,10 @@
 	<div class="hero_image">
 		<div class="ypg_wrap">
 			<div class="hero_image_text">
-				<h2>Get your property</h2>
-				<h2>ready for <span class="bold">Summer!</span></h2>
+				<h2>Get your property <br> ready for <span class="bold">Summer!</span></h2>
 
 				<div class="cta_button">
-					<a href="#"> See What YPG Can Do</a>
+					<a href="#">See What YPG Can Do</a>
 				</div>
 			</div>
 		</div>
@@ -72,61 +87,6 @@
 
 
 
-<script type="text/javascript">
-
-function toggleHamburger() {
-    // mobile navigation menu wrapper
-    var mobileNav = document.getElementById('ypg_nav_mobile');
-    var hamburger = document.getElementById('hamburger');
-    // main navbar bg, used to toggle opacitity on state changes
-    var opaqueNav = document.getElementById('opaqueNav');
-    var ypgLogo = document.getElementById('ypgLogo');
-
-    // if mobile nav is display, hide it on button press
-    if (mobileNav.style.width === '100%') {
-    	// hide mobile navigation
-        mobileNav.style.width = '0';
-        // convert hamburger button back to absolute
-        hamburger.style.position = 'absolute';
-        ypgLogo.style.opacity = '1';
-        ypgLogo.style.left = '0';
-        // if mobile nav is not active, revert back to 65% opacity
-        opaqueNav.style.background  = 'rgba(255,255,255,0.65)';
-        // css transition on state change
-        mobileNav.style.WebkitTransition = 'ease-out 0.24s';
-        mobileNav.style.MozTransition = 'ease-out 0.24s';
-        mobileNav.style.transition = 'ease-out 0.24s';
-        opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
-        opaqueNav.style.MozTransition = 'ease-out 0.24s';
-        opaqueNav.style.transition = 'ease-out 0.24s';
-        ypgLogo.style.WebkitTransition = 'ease-out 0.24s';
-        ypgLogo.style.MozTransition = 'ease-out 0.24s';
-        ypgLogo.style.transition = 'ease-out 0.24s';
-
-    // else if mobile nav is hidden, display it
-    } else {
-    	// display mobile navigation
-        mobileNav.style.width = '100%';
-        // convert hamburger button to fixed
-        hamburger.style.position = 'fixed';
-        // if mobile nav is active, make navbar opaque
-        opaqueNav.style.background  = 'rgba(255,255,255,0)'
-        ypgLogo.style.opacity = '0';
-        ypgLogo.style.left = '-14px';
-        // css transition on state change
-        mobileNav.style.WebkitTransition = 'ease-out 0.26s';
-        mobileNav.style.MozTransition = 'ease-out 0.26s';
-        mobileNav.style.transition = 'ease-out 0.26s';
-        opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
-        opaqueNav.style.MozTransition = 'ease-in 0.2s';
-        opaqueNav.style.transition = 'ease-in 0.2s';
-        ypgLogo.style.WebkitTransition = 'ease-in 0.2s';
-        ypgLogo.style.MozTransition = 'ease-in 0.2s';
-        ypgLogo.style.transition = 'ease-in 0.2s';
-    }
-} // end of toggleHamburger function
-
-</script>
-
+<script  src="js/nav_toggle.js"> </script>
 </body>
 </html>
