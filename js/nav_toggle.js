@@ -104,12 +104,8 @@ function toggleService() {
     // service dropdown container
     var serviceDrop = document.getElementById('service_drop');
     // service dropdown container with tiles
-    //var serviceDropItems = document.getElementById('service_drop_items');
     var serviceDropItems = document.getElementsByClassName('service_drop_tile');
-
     var serviceLinks = document.getElementsByClassName('service_links');
-    var serviceTiles = document.getElementsByClassName('service_tiles');
-
     var dropArrow = document.getElementById('drop_arrow');
     var index;
 
@@ -132,9 +128,6 @@ function toggleService() {
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '0';
-            serviceDropItems[index].style.display = 'hidden';
-            //serviceDropItems[index].style.paddingTop = '0';
-            //serviceDropItems[index].style.opacity = '0';
             serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.MozTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.transition = 'ease-in 0.21s';
@@ -144,16 +137,12 @@ function toggleService() {
             // serviceLinks[index].style.display = 'hidden';
             serviceLinks[index].style.visibility = 'hidden';
             serviceLinks[index].style.paddingTop = '0';
+            serviceLinks[index].style.opacity = '0';
             serviceLinks[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceLinks[index].style.MozTransition = 'ease-in 0.21s';
             serviceLinks[index].style.transition = 'ease-in 0.21s';
 
         }
-
-        // for (index = 0; index < serviceTiles.length; index++) {
-        //     serviceTiles[index].style.opacity = '0';
-        // }
-
 
 
     // else if service dropdown is hidden, display it
@@ -173,9 +162,6 @@ function toggleService() {
 
          for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '130px';
-            serviceDropItems[index].style.display = 'block';
-            //serviceDropItems[index].style.paddingTop = '70px';
-            //serviceDropItems[index].style.opacity = '1';
             serviceDropItems[index].style.WebkitTransition = 'ease-out 0.28s';
             serviceDropItems[index].style.MozTransition = 'ease-out 0.28s';
             serviceDropItems[index].style.transition = 'ease-out 0.28s';
@@ -184,15 +170,12 @@ function toggleService() {
         for (index = 0; index < serviceLinks.length; index++) {
             // serviceLinks[index].style.display = 'block';
             serviceLinks[index].style.visibility = 'visible';
+            serviceLinks[index].style.opacity = '1';
             serviceLinks[index].style.paddingTop = '80px';
             serviceLinks[index].style.WebkitTransition = 'ease-out 0.28s';
             serviceLinks[index].style.MozTransition = 'ease-out 0.28s';
             serviceLinks[index].style.transition = 'ease-out 0.28s';
 
         }
-
-        // for (index = 0; index < serviceTiles.length; index++) {
-        //     serviceTiles[index].style.opacity = '1';
-        // }
     }
 }

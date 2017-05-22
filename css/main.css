@@ -380,66 +380,14 @@ button:focus {
 
 
 }
-/*
-.service_drop_trigger:focus + .service_drop_wrapper {
-	height: 320px;
-	background: #fff;
-	top: 90px;
-	padding: 0 8px 0 8px;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-}
-
-.service_drop_trigger:focus + .service_drop_wrapper > .service_drop_border {
-	height: 6px;
-	width: 100%;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-}
-*/
 
 .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 {
 	padding: 2px;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
+}
 
-}
-/*
-.service_drop_trigger + .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 > .service_drop_tile  {
-	height: 130px;
-	opacity: 1;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-	
-}
-*/
-/*
-.service_drop_trigger:focus + .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 > .service_drop_tile {
-	opacity: 1;
-	background: #ccc;
-
-	-webkit-transition: all 0.34s ease-out;
-	-moz-transition: all 0.34s ease-out;
-	-o-transition: all 0.34s ease-out;
-	transition: all 0.34s ease-out;
-}
-*/
-
-.service_drop_tile {
-	height: 0;
-}
 
 .service_drop_tile_wrap {
 	padding-top: 24px;
-
 	width: 85%;
 	max-width: 1600px;
 	position: relative;
@@ -450,8 +398,8 @@ button:focus {
 	transition: all 0.24s ease-out;
 }
 
-.service_tiles {
-
+.service_drop_tile {
+	height: 0;
 }
 
 .service_drop_tile a {
