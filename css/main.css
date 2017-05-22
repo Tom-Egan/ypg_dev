@@ -450,8 +450,12 @@ button:focus {
 	transition: all 0.24s ease-out;
 }
 
-.service_drop_tile a {
+.service_tiles {
 
+}
+
+.service_drop_tile a {
+	visibility: hidden;
 	height: 100%;
 	width: 100%;
 	background: #999;
