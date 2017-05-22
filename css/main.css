@@ -54,6 +54,10 @@ a:focus {
 	text-decoration: none !important;
 }
 
+*:focus {
+	outline: none;
+}
+
 /* navbar full width bg */
 .ypg_nav {
 	width: 100%;
@@ -113,11 +117,12 @@ a:focus {
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
 	transition: all 0.16s ease-out;
+	z-index: 9999;
 }
 
 /* primary nav links hover */
 .ypg_nav_links a:hover {
-	background: rgba(255,255,255,0.4);
+	background: rgba(255,255,255,0.4) !important;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -126,6 +131,11 @@ a:focus {
 	color: #2e7d32;
 }
 
+.ypg_nav_links a:focus {
+	color: #2e7d32;
+}
+
+/*
 .ypg_nav_links a:focus,
 .ypg_nav_links a:active {
 	background: rgba(255,255,255,0.65);
@@ -136,6 +146,7 @@ a:focus {
 	transition: all 0.16s ease-out;
 	border-bottom: 6px solid #43a047;
 }
+*/
 
 .ypg_nav_links a:link,
 .ypg_nav_linsk a:visited {
@@ -329,6 +340,10 @@ button:focus {
 	font-size: 1.6em;
 }
 
+/*.service_drop_trigger:focus {
+	color: #2e7d32;
+}*/
+
 .service_drop_trigger + .service_drop_wrapper > .service_drop_border {
 	width: 40%;
 	height: 0px;
@@ -336,10 +351,10 @@ button:focus {
 	position: absolute;
 	top: 0px;
 	left: 0;
-	-webkit-transition: all 0.16s ease-out;
-	-moz-transition: all 0.16s ease-out;
-	-o-transition: all 0.16s ease-out;
-	transition: all 0.16s ease-out;
+	-webkit-transition: all 0.24s ease-out;
+	-moz-transition: all 0.24s ease-out;
+	-o-transition: all 0.24s ease-out;
+	transition: all 0.24s ease-out;
 }
 
 .service_drop_trigger span {
@@ -361,10 +376,11 @@ button:focus {
 	-moz-transition: all 0.24s ease-out;
 	-o-transition: all 0.24s ease-out;
 	transition: all 0.24s ease-out;
+	z-index: 9998;
 
 
 }
-
+/*
 .service_drop_trigger:focus + .service_drop_wrapper {
 	height: 320px;
 	background: #fff;
@@ -384,26 +400,28 @@ button:focus {
 	-o-transition: all 0.24s ease-out;
 	transition: all 0.24s ease-out;
 }
+*/
 
 .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 {
-	padding: 4px;
+	padding: 2px;
 	-webkit-transition: all 0.24s ease-out;
 	-moz-transition: all 0.24s ease-out;
 	-o-transition: all 0.24s ease-out;
 	transition: all 0.24s ease-out;
 
 }
-
+/*
 .service_drop_trigger + .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 > .service_drop_tile  {
 	height: 130px;
-	opacity: 0;
-	-webkit-transition: all 0.16s ease-out;
-	-moz-transition: all 0.16s ease-out;
-	-o-transition: all 0.16s ease-out;
-	transition: all 0.16s ease-out;
+	opacity: 1;
+	-webkit-transition: all 0.24s ease-out;
+	-moz-transition: all 0.24s ease-out;
+	-o-transition: all 0.24s ease-out;
+	transition: all 0.24s ease-out;
 	
 }
-
+*/
+/*
 .service_drop_trigger:focus + .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 > .service_drop_tile {
 	opacity: 1;
 	background: #ccc;
@@ -412,6 +430,11 @@ button:focus {
 	-moz-transition: all 0.34s ease-out;
 	-o-transition: all 0.34s ease-out;
 	transition: all 0.34s ease-out;
+}
+*/
+
+.service_drop_tile {
+	height: 0;
 }
 
 .service_drop_tile_wrap {

@@ -96,3 +96,68 @@ function toggleHamburger() {
         ypgLogo.style.transition = 'ease-in 0.24s';
     }
 } // end of toggleHamburger function
+
+function toggleService() {
+    
+    // service nav item
+    var serviceTrigger = document.getElementById('serviceTrigger');
+    // service dropdown container
+    var serviceDrop = document.getElementById('service_drop');
+    // service dropdown container with tiles
+    //var serviceDropItems = document.getElementById('service_drop_items');
+    var serviceDropItems = document.getElementsByClassName('service_drop_tile');
+
+    var dropArrow = document.getElementById('drop_arrow');
+    var index;
+
+    // if service dropdown is displayed, hide it on button press
+    if (serviceDrop.style.height === '320px') {
+        serviceDrop.style.height = '0';
+        serviceTrigger.style.color = '#5d4037 !important';
+
+        dropArrow.style.transform = 'rotate(0deg)';
+
+        dropArrow.style.WebkitTransition = 'ease-in 0.24s';
+        dropArrow.style.MozTransition = 'ease-in 0.24s';
+        dropArrow.style.transition = 'ease-in 0.24s';
+        serviceDrop.style.WebkitTransition = 'ease-in 0.24s';
+        serviceDrop.style.MozTransition = 'ease-in 0.24s';
+        serviceDrop.style.transition = 'ease-in 0.24s';
+
+        // fix
+        serviceTrigger.style.background = 'rgba(255,255,255,0)';
+
+        for (index = 0; index < serviceDropItems.length; index++) {
+            serviceDropItems[index].style.height = '0';
+            //serviceDropItems[index].style.opacity = '0';
+            serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
+            serviceDropItems[index].style.MozTransition = 'ease-in 0.21s';
+            serviceDropItems[index].style.transition = 'ease-in 0.21s';
+        }
+
+
+
+    // else if service dropdown is hidden, display it
+    } else {
+        serviceDrop.style.height = '320px';
+        serviceTrigger.style.background = 'rgba(255,255,255,0.65)';
+        serviceTrigger.style.color = '#2e7d32 !important';
+
+        dropArrow.style.transform = 'rotate(180deg)';
+
+        dropArrow.style.WebkitTransition = 'ease-in 0.24s';
+        dropArrow.style.MozTransition = 'ease-in 0.24s';
+        dropArrow.style.transition = 'ease-in 0.24s';
+        serviceDrop.style.WebkitTransition = 'ease-in 0.24s';
+        serviceDrop.style.MozTransition = 'ease-in 0.24s';
+        serviceDrop.style.transition = 'ease-in 0.24s';
+
+         for (index = 0; index < serviceDropItems.length; index++) {
+            serviceDropItems[index].style.height = '130px';
+            //serviceDropItems[index].style.opacity = '1';
+            serviceDropItems[index].style.WebkitTransition = 'ease-in 0.24s';
+            serviceDropItems[index].style.MozTransition = 'ease-in 0.24s';
+            serviceDropItems[index].style.transition = 'ease-in 0.24s';
+        }
+    }
+}
