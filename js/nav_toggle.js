@@ -107,6 +107,8 @@ function toggleService() {
     //var serviceDropItems = document.getElementById('service_drop_items');
     var serviceDropItems = document.getElementsByClassName('service_drop_tile');
 
+    var serviceLinks = document.getElementsByClassName('service_links');
+
     var dropArrow = document.getElementById('drop_arrow');
     var index;
 
@@ -117,9 +119,9 @@ function toggleService() {
 
         dropArrow.style.transform = 'rotate(0deg)';
 
-        dropArrow.style.WebkitTransition = 'ease-in 0.24s';
-        dropArrow.style.MozTransition = 'ease-in 0.24s';
-        dropArrow.style.transition = 'ease-in 0.24s';
+        dropArrow.style.WebkitTransition = 'ease-in-out 0.24s';
+        dropArrow.style.MozTransition = 'ease-in-out 0.24s';
+        dropArrow.style.transition = 'ease-in-out 0.24s';
         serviceDrop.style.WebkitTransition = 'ease-in 0.24s';
         serviceDrop.style.MozTransition = 'ease-in 0.24s';
         serviceDrop.style.transition = 'ease-in 0.24s';
@@ -129,10 +131,16 @@ function toggleService() {
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '0';
+            //serviceDropItems[index].style.paddingTop = '0';
             //serviceDropItems[index].style.opacity = '0';
             serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.MozTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.transition = 'ease-in 0.21s';
+        }
+
+        for (index = 0; index < serviceLinks.length; index++) {
+            serviceLinks[index].style.display = 'hidden';
+            serviceLinks[index].style.paddingTop = '0';
         }
 
 
@@ -145,19 +153,25 @@ function toggleService() {
 
         dropArrow.style.transform = 'rotate(180deg)';
 
-        dropArrow.style.WebkitTransition = 'ease-in 0.24s';
-        dropArrow.style.MozTransition = 'ease-in 0.24s';
-        dropArrow.style.transition = 'ease-in 0.24s';
-        serviceDrop.style.WebkitTransition = 'ease-in 0.24s';
-        serviceDrop.style.MozTransition = 'ease-in 0.24s';
-        serviceDrop.style.transition = 'ease-in 0.24s';
+        dropArrow.style.WebkitTransition = 'ease-in-out 0.24s';
+        dropArrow.style.MozTransition = 'ease-in-out 0.24s';
+        dropArrow.style.transition = 'ease-in-out 0.24s';
+        serviceDrop.style.WebkitTransition = 'ease-out 0.24s';
+        serviceDrop.style.MozTransition = 'ease-out 0.24s';
+        serviceDrop.style.transition = 'ease-out 0.24s';
 
          for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '130px';
+            //serviceDropItems[index].style.paddingTop = '70px';
             //serviceDropItems[index].style.opacity = '1';
-            serviceDropItems[index].style.WebkitTransition = 'ease-in 0.24s';
-            serviceDropItems[index].style.MozTransition = 'ease-in 0.24s';
-            serviceDropItems[index].style.transition = 'ease-in 0.24s';
+            serviceDropItems[index].style.WebkitTransition = 'ease-out 0.28s';
+            serviceDropItems[index].style.MozTransition = 'ease-out 0.28s';
+            serviceDropItems[index].style.transition = 'ease-out 0.28s';
+        }
+
+        for (index = 0; index < serviceLinks.length; index++) {
+            serviceLinks[index].style.display = 'block';
+            serviceLinks[index].style.paddingTop = '80px';
         }
     }
 }

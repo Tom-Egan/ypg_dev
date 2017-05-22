@@ -441,7 +441,6 @@ button:focus {
 	padding-top: 24px;
 
 	width: 85%;
-	height: auto;
 	max-width: 1600px;
 	position: relative;
 	margin: 0 auto !important;
@@ -452,12 +451,13 @@ button:focus {
 }
 
 .service_drop_tile a {
-	position: relative;
+
 	height: 100%;
 	width: 100%;
-	background: #222;
-}
-
+	background: #999;
+	line-height: 1em;
+	text-align: left;
+} 
 .service_drop_tile a:hover {
 	border-bottom: none;
 }
