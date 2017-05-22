@@ -3,7 +3,7 @@ function toggleHamburger() {
     var mobileNav = document.getElementById('ypg_nav_mobile');
     var hamburger = document.getElementById('hamburger');
     // main navbar bg, used to toggle opacitity on state changes
-    var opaqueNav = document.getElementById('opaqueNav');
+    //var opaqueNav = document.getElementById('opaqueNav');
     var ypgLogo = document.getElementById('ypgLogo');
 
     var ham_line1 = document.getElementById('ham_line1');
@@ -23,24 +23,20 @@ function toggleHamburger() {
 
         ham_line1.style.transform = 'rotate(0deg)';
         ham_line1.style.marginTop = '0';
-        ham_line1.style.background = 'rgba(0,0,0,0.7)';
+        ham_line1.style.background = '#388e3c';
         ham_line3.style.marginTop = '0';
         ham_line2.style.opacity = '1';
         ham_line2.style.width = '100%';
         ham_line3.style.transform = 'rotate(0deg)';
-        ham_line3.style.background = 'rgba(0,0,0,0.7)';
+        ham_line3.style.background = '#388e3c';
 
         mobile_phone.style.opacity = '0';
 
         // if mobile nav is not active, revert back to 65% opacity
-        opaqueNav.style.background  = 'rgba(255,255,255,0.65)';
         // css transition on state change
         mobileNav.style.WebkitTransition = 'ease-out 0.28s';
         mobileNav.style.MozTransition = 'ease-out 0.28s';
         mobileNav.style.transition = 'ease-out 0.28s';
-        opaqueNav.style.WebkitTransition = 'ease-out 0.24s';
-        opaqueNav.style.MozTransition = 'ease-out 0.24s';
-        opaqueNav.style.transition = 'ease-out 0.24s';
         ham_line1.style.WebkitTransition = 'ease-out 0.24s';
         ham_line1.style.MozTransition = 'ease-out 0.24s';
         ham_line1.style.transition = 'ease-out 0.24s';
@@ -64,18 +60,17 @@ function toggleHamburger() {
         // convert hamburger button to fixed
         hamburger.style.position = 'fixed';
         // if mobile nav is active, make navbar opaque
-        opaqueNav.style.background  = 'rgba(255,255,255,0)'
         ypgLogo.style.opacity = '0';
         ypgLogo.style.left = '-14px';
 
         ham_line1.style.transform = 'rotate(-45deg)';
-        ham_line1.style.background = 'rgba(255,255,255,1)';
+        ham_line1.style.background = '#fdd835';
         ham_line1.style.marginTop = '4px';
         ham_line2.style.opacity = '0';
         ham_line2.style.width = '0%';
         ham_line3.style.transform = 'rotate(45deg)';
         ham_line3.style.marginTop = '-14px';
-        ham_line3.style.background = 'rgba(255,255,255,1)';
+        ham_line3.style.background = '#fdd835';
 
         mobile_phone.style.opacity = '1.0';
 
@@ -96,9 +91,6 @@ function toggleHamburger() {
         mobile_phone.style.WebkitTransition = 'ease-out 0.4s';
         mobile_phone.style.MozTransition = 'ease-out 0.4s';
         mobile_phone.style.transition = 'ease-out 0.4s';
-        opaqueNav.style.WebkitTransition = 'ease-in 0.2s';
-        opaqueNav.style.MozTransition = 'ease-in 0.2s';
-        opaqueNav.style.transition = 'ease-in 0.2s';
         ypgLogo.style.WebkitTransition = 'ease-in 0.24s';
         ypgLogo.style.MozTransition = 'ease-in 0.24s';
         ypgLogo.style.transition = 'ease-in 0.24s';
