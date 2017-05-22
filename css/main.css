@@ -74,6 +74,7 @@ a:focus {
 	top: 0;
 	z-index: 9999;
 	transition: 0.2s ease-all;
+	border-bottom: 1px solid rgba(0,0,0,0.14);
 }
 
 /* navbar wrapper */
@@ -383,6 +384,7 @@ button:focus {
 	-o-transition: all 0.24s ease-out;
 	transition: all 0.24s ease-out;
 	z-index: 9998;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 {
@@ -410,13 +412,16 @@ button:focus {
 	visibility: hidden;
 	height: 100%;
 	width: 100%;
-	background: #999;
+	background: #8d6e63;
 	line-height: 1em;
 	font-size: 1.2em;
 	text-align: left;
+	color: #d7ccc8;
 } 
 .service_drop_tile a:hover {
 	border-bottom: none;
+	background: #6d4c41 !important;
+	color: #fff;
 }
 
 @media only screen and (max-width: 1100px) {

@@ -116,9 +116,9 @@ function toggleService() {
 
         dropArrow.style.transform = 'rotate(0deg)';
 
-        dropArrow.style.WebkitTransition = 'ease-in-out 0.24s';
-        dropArrow.style.MozTransition = 'ease-in-out 0.24s';
-        dropArrow.style.transition = 'ease-in-out 0.24s';
+        dropArrow.style.WebkitTransition = 'ease-in-out 0.34s';
+        dropArrow.style.MozTransition = 'ease-in-out 0.34s';
+        dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDrop.style.WebkitTransition = 'ease-in 0.24s';
         serviceDrop.style.MozTransition = 'ease-in 0.24s';
         serviceDrop.style.transition = 'ease-in 0.24s';
@@ -141,21 +141,20 @@ function toggleService() {
             serviceLinks[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceLinks[index].style.MozTransition = 'ease-in 0.21s';
             serviceLinks[index].style.transition = 'ease-in 0.21s';
-
         }
 
 
     // else if service dropdown is hidden, display it
     } else {
         serviceDrop.style.height = '320px';
-        serviceTrigger.style.background = 'rgba(255,255,255,0.65)';
+        serviceTrigger.style.background = 'rgba(255,255,255,1)';
         serviceTrigger.style.color = '#2e7d32 !important';
 
         dropArrow.style.transform = 'rotate(180deg)';
 
-        dropArrow.style.WebkitTransition = 'ease-in-out 0.24s';
-        dropArrow.style.MozTransition = 'ease-in-out 0.24s';
-        dropArrow.style.transition = 'ease-in-out 0.24s';
+        dropArrow.style.WebkitTransition = 'ease-in-out 0.34s';
+        dropArrow.style.MozTransition = 'ease-in-out 0.34s';
+        dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDrop.style.WebkitTransition = 'ease-out 0.24s';
         serviceDrop.style.MozTransition = 'ease-out 0.24s';
         serviceDrop.style.transition = 'ease-out 0.24s';
