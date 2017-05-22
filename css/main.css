@@ -27,6 +27,12 @@ html, body {
 	margin: 0;
 }
 
+* {
+	-webkit-box-sizing: border-box; /* Safari, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 h1, h2, h3, h4, h5, a, p {
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
@@ -72,7 +78,7 @@ a:focus {
 
 /* navbar wrapper */
 .ypg_wrap {
-	min-width: 85%;
+	width: 100%;
 	max-width: 1600px;
 	height: 100%;
 	position: relative;
@@ -357,28 +363,26 @@ button:focus {
 	transition: all 0.24s ease-out;
 }
 
+/* dropdown arrow */
 .service_drop_trigger span {
 	position: absolute;
 	top: 20px;
 	margin-left: -10px;
-
 }
 
-.service_drop_trigger + .service_drop_wrapper {
+.service_drop_wrapper {
 	height: 0;
 	width: 100%;
 	position: fixed;
 	top: 90px;
 	left: 0;
-	padding: 0 8px 0 8px;
+	padding: 0 16px 0 16px;
 	background: #fff;
 	-webkit-transition: all 0.24s ease-out;
 	-moz-transition: all 0.24s ease-out;
 	-o-transition: all 0.24s ease-out;
 	transition: all 0.24s ease-out;
 	z-index: 9998;
-
-
 }
 
 .service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 {
@@ -388,7 +392,7 @@ button:focus {
 
 .service_drop_tile_wrap {
 	padding-top: 24px;
-	width: 85%;
+	width: 100%;
 	max-width: 1600px;
 	position: relative;
 	margin: 0 auto !important;
@@ -408,6 +412,7 @@ button:focus {
 	width: 100%;
 	background: #999;
 	line-height: 1em;
+	font-size: 1.2em;
 	text-align: left;
 } 
 .service_drop_tile a:hover {
