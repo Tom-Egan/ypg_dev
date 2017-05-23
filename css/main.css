@@ -256,10 +256,10 @@ button:focus {
 
 #ypg_nav_mobile h3 {
 	position: absolute;
-	top: -6px;
+	top: 2px;
 	padding-left: 12px;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: rgba(255,255,255,0.25);
 }
 
@@ -632,25 +632,26 @@ button:focus {
 /* mobile nav - 2nd level services - back button wrapper */
 .back_btn_wrap {
 	position: relative;
-	background: #ccc;
 	width: 100%;
 	height: 65px;
 	margin-top: -65px;
+	background: #1b5e20;
 }
 
 .back_btn_wrap a {
 	position: absolute;
 	height: 100%;
 	width: 60%;
-	background: #999;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	line-height: 65px;
 	padding-left: 26px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-weight: 700;
+	color: #fff;
 }
 
+/* back button arrow png */
 #back_arrow {
 	position: absolute;
 	transform: rotate(90deg);
@@ -658,6 +659,7 @@ button:focus {
 	top: 23px;
 }
 
+/* wrapper for all mobile service nav tiles */
 .mobile_service_tile_wrap {
 	position: fixed;
 	height: calc(100vh - 65px);
@@ -665,20 +667,24 @@ button:focus {
 	padding: 0;
 }
 
-.test-tile {
+/* individual mobile service tiles */
+.mobile_service_tile {
 	height: calc(100% / 6);
-	background: #888;
+	background: #1b5e20;
 	padding: 0 !important;
 
 
 }
 
-.test-tile a {
+/* individual mobile service tile hit area*/
+.mobile_service_tile a {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	padding: 12px;
-	background: #444;
+
+	font-size: 1.1em;
+	line-height: 1em;
 
 	/* flex box fix to verticall align text*/
 	display: -webkit-box;
@@ -694,6 +700,7 @@ button:focus {
 	align-items: center;
 }
 
-.test-tile a:focus {
+/* on tap */
+.mobile_service_tile a:focus {
 	background: #222;
 }

@@ -117,16 +117,13 @@ function toggleService() {
 
         dropArrow.style.transform = 'rotate(0deg)';
         dropArrow.style.WebkitTransition = 'ease-in-out 0.34s';
-        dropArrow.style.MozTransition = 'ease-in-out 0.34s';
         dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDropWrap.style.WebkitTransition = 'ease-in 0.24s';
-        serviceDropWrap.style.MozTransition = 'ease-in 0.24s';
         serviceDropWrap.style.transition = 'ease-in 0.24s';
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '0';
             serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
-            serviceDropItems[index].style.MozTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.transition = 'ease-in 0.21s';
         }
 
@@ -135,7 +132,6 @@ function toggleService() {
             serviceLinks[index].style.paddingTop = '0';
             serviceLinks[index].style.color = 'rgba(255,255,255,0)';
             serviceLinks[index].style.WebkitTransition = 'ease-in 0.21s';
-            serviceLinks[index].style.MozTransition = 'ease-in 0.21s';
             serviceLinks[index].style.transition = 'ease-in 0.21s';
         }
 
@@ -149,16 +145,13 @@ function toggleService() {
         dropArrow.style.transform = 'rotate(180deg)';
 
         dropArrow.style.WebkitTransition = 'ease-in-out 0.34s';
-        dropArrow.style.MozTransition = 'ease-in-out 0.34s';
         dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDropWrap.style.WebkitTransition = 'ease-out 0.24s';
-        serviceDropWrap.style.MozTransition = 'ease-out 0.24s';
         serviceDropWrap.style.transition = 'ease-out 0.24s';
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '160px';
             serviceDropItems[index].style.WebkitTransition = 'ease-out 0.28s';
-            serviceDropItems[index].style.MozTransition = 'ease-out 0.28s';
             serviceDropItems[index].style.transition = 'ease-out 0.28s';
         }
 
@@ -168,7 +161,6 @@ function toggleService() {
             serviceLinks[index].style.color = 'rgba(255,255,255,1)';
             serviceLinks[index].style.paddingTop = '100px';
             serviceLinks[index].style.WebkitTransition = 'ease-out 0.28s';
-            serviceLinks[index].style.MozTransition = 'ease-out 0.28s';
             serviceLinks[index].style.transition = 'ease-out 0.28s';
 
         }
@@ -183,18 +175,20 @@ function toggleMobileService() {
     if (mobileServiceWrap.style.width === '100%') {
         // hide mobile navigation
         mobileServiceWrap.style.width = '0';
-
+        backBtn.style.opacity = '0';
+        backBtn.style.WebkitTransition = 'ease-out 0.28s';
+        backBtn.style.transition = 'ease-out 0.28s';
         mobileServiceWrap.style.WebkitTransition = 'ease-out 0.28s';
-        mobileServiceWrap.style.MozTransition = 'ease-out 0.28s';
         mobileServiceWrap.style.transition = 'ease-out 0.28s';
 
     // else if mobile nav is hidden, display it
     } else {
         // display mobile navigation
         mobileServiceWrap.style.width = '100%';
-
+        backBtn.style.opacity = '1';
+        backBtn.style.WebkitTransition = 'ease-out 0.28s';
+        backBtn.style.transition = 'ease-out 0.28s';
         mobileServiceWrap.style.WebkitTransition = 'ease-out 0.28s';
-        mobileServiceWrap.style.MozTransition = 'ease-out 0.28s';
         mobileServiceWrap.style.transition = 'ease-out 0.28s';
     }
 }
