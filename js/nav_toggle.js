@@ -125,17 +125,15 @@ function toggleService() {
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '0';
-            serviceDropItems[index].style.background = '#000';
             serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.MozTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.transition = 'ease-in 0.21s';
         }
 
         for (index = 0; index < serviceLinks.length; index++) {
-            // serviceLinks[index].style.display = 'hidden';
             serviceLinks[index].style.visibility = 'hidden';
             serviceLinks[index].style.paddingTop = '0';
-            serviceLinks[index].style.opacity = '0';
+            serviceLinks[index].style.color = 'rgba(255,255,255,0)';
             serviceLinks[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceLinks[index].style.MozTransition = 'ease-in 0.21s';
             serviceLinks[index].style.transition = 'ease-in 0.21s';
@@ -165,9 +163,9 @@ function toggleService() {
         }
 
         for (index = 0; index < serviceLinks.length; index++) {
-            // serviceLinks[index].style.display = 'block';
             serviceLinks[index].style.visibility = 'visible';
             serviceLinks[index].style.opacity = '1';
+            serviceLinks[index].style.color = 'rgba(255,255,255,1)';
             serviceLinks[index].style.paddingTop = '100px';
             serviceLinks[index].style.WebkitTransition = 'ease-out 0.28s';
             serviceLinks[index].style.MozTransition = 'ease-out 0.28s';
@@ -180,6 +178,8 @@ function toggleService() {
 
 // deploys 2nd level service menu on mobile
 function toggleMobileService() {
+    var backBtn = document.getElementById('back_btn');
+
     if (mobileServiceWrap.style.width === '100%') {
         // hide mobile navigation
         mobileServiceWrap.style.width = '0';

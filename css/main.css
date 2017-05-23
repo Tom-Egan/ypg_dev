@@ -410,7 +410,7 @@ button:focus {
 
 /* viewport decreases past 992px*/
 @media only screen and (max-width: 992px) {
-
+	#drop_arrow {display: none !important;}
 	/* hide desktop link wrapper */
 	.ypg_nav_links {display: none;}
 	#service_dropdown {display: none;}
@@ -609,7 +609,6 @@ button:focus {
 .service_drop_tile {
 	position: relative;
 	height: 0;
-	background: #ccc;
 }
 
 .service_drop_tile a {
@@ -623,8 +622,78 @@ button:focus {
 	font-weight: bold;
 	font-weight: 700;
 	padding: 12px;
+	color: rgba(255,255,255,0);
 }
 
 .service_drop_tile a:hover {
 	background: #ccc;
+}
+
+/* mobile nav - 2nd level services - back button wrapper */
+.back_btn_wrap {
+	position: relative;
+	background: #ccc;
+	width: 100%;
+	height: 65px;
+	margin-top: -65px;
+}
+
+.back_btn_wrap a {
+	position: absolute;
+	height: 100%;
+	width: 60%;
+	background: #999;
+	font-size: 1.6em;
+	line-height: 65px;
+	padding-left: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-weight: 700;
+}
+
+#back_arrow {
+	position: absolute;
+	transform: rotate(90deg);
+	left: 4px;
+	top: 23px;
+}
+
+.mobile_service_tile_wrap {
+	position: fixed;
+	height: calc(100vh - 65px);
+	width: 100%;
+	padding: 0;
+}
+
+.test-tile {
+	height: calc(100% / 6);
+	background: #888;
+	padding: 0 !important;
+
+
+}
+
+.test-tile a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 12px;
+	background: #444;
+
+	/* flex box fix to verticall align text*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+
+.test-tile a:focus {
+	background: #222;
 }
