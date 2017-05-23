@@ -66,18 +66,31 @@ a:focus {
 
 /* navbar full width bg */
 .ypg_nav {
-	width: 100%;
-	height: 90px;
+	position: relative;
+	width: 85%;
+	max-width: 1600px;
+	height: 80px;
 	background: rgba(255, 255, 255, 0.8);
-	position: fixed;
+	padding: 0 16px 0 16px;
+	margin: 0 auto;
+	top: 16px;
+	z-index: 9999;
+
+	/*width: 65%;
+	max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 90px;
+	background: rgba(255, 255, 255, 0);
+	position: relative;
 	padding: 0;
 	top: 0;
 	z-index: 9999;
 	transition: 0.2s ease-all;
-	border-bottom: 1px solid rgba(0,0,0,0.14);
+	border-bottom: 1px solid rgba(0,0,0,0.14);*/
 }
 
-/* navbar wrapper */
+/* navbar wrapper 
 .ypg_wrap {
 	width: 100%;
 	max-width: 1600px;
@@ -85,7 +98,7 @@ a:focus {
 	position: relative;
 	margin: 0 auto;
 	padding: 0 15px 0 15px;
-}
+}*/
 
 /* navbar - logo */
 .ypg_nav_logo a {
@@ -105,7 +118,7 @@ a:focus {
 /* navbar - wrapper for all links */
 .ypg_nav_links {
 	float: left;
-	margin-left: 24px;
+	margin-left: 20px;
 	margin-right: 0;
 	transition: 2s ease-all;
 }
@@ -114,12 +127,13 @@ a:focus {
 .ypg_nav_links a{
 	float: left;
 	padding: 0 16px 0 16px;
-	line-height: 90px;
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	font-weight: bold;
 	font-weight: 700;
 	color: #5d4037;
-	border-bottom: 0px solid #43a047;
+	/*border-bottom: 0px solid #43a047;*/
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -129,31 +143,38 @@ a:focus {
 
 /* primary nav links hover */
 .ypg_nav_links a:hover {
+	
 	background: rgba(255,255,255,0.4) !important;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
 	transition: all 0.16s ease-out;
-	border-bottom: 6px solid #43a047;
+	/*border-bottom: 6px solid #43a047;*/
 	color: #2e7d32;
+}
+
+.service_drop_trigger:hover,
+.service_drop_trigger:focus {
+	color: #2e7d32 !important;
 }
 
 .ypg_nav_links a:focus {
 	color: #2e7d32;
 }
 
-/*
+
 .ypg_nav_links a:focus,
 .ypg_nav_links a:active {
+
 	background: rgba(255,255,255,0.65);
 	color: #2e7d32;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
 	transition: all 0.16s ease-out;
-	border-bottom: 6px solid #43a047;
+	/*border-bottom: 6px solid #43a047;*/
 }
-*/
+
 
 .ypg_nav_links a:link,
 .ypg_nav_linsk a:visited {
@@ -163,14 +184,14 @@ a:focus {
 /* navbar - phone number wrapper */
 .ypg_nav_phone {
 	float: right;
-	height: 90px;
+	height: 80px;
 	font-size: 1.7em;
 }
 
 /* navbar - phone number link item */
 .ypg_nav_phone p {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 16px;
 	font-weight: bold;
 	font-weight: 700;
 	color: #388e3c;
@@ -217,15 +238,28 @@ button:focus {
 	top: 0;
 	right: 0;
 	padding-top: 65px;
-	z-index: 9998;
+
+}
+
+#mobile_service_wrap {
+	width: 0;
+
+	min-height: 100vh;
+	background: rgba(31, 22, 8, 0.7);
+	clear: both;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-top: 65px;
+
 }
 
 #ypg_nav_mobile h3 {
 	position: absolute;
-	top: -6px;
+	top: 2px;
 	padding-left: 12px;
 	text-transform: uppercase;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: rgba(255,255,255,0.25);
 }
 
@@ -347,23 +381,6 @@ button:focus {
 	font-size: 1.6em;
 }
 
-/*.service_drop_trigger:focus {
-	color: #2e7d32;
-}*/
-
-.service_drop_trigger + .service_drop_wrapper > .service_drop_border {
-	width: 40%;
-	height: 0px;
-	background: #43a047; 
-	position: absolute;
-	top: 0px;
-	left: 0;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-}
-
 /* dropdown arrow */
 .service_drop_trigger span {
 	position: absolute;
@@ -371,68 +388,18 @@ button:focus {
 	margin-left: -10px;
 }
 
-.service_drop_wrapper {
-	height: 0;
-	width: 100%;
-	position: fixed;
-	top: 90px;
-	left: 0;
-	padding: 0 16px 0 16px;
-	background: #fff;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-	z-index: 9998;
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.service_drop_wrapper > .service_drop_tile_wrap > .col-md-2 {
-	padding: 2px;
-}
-
-
-.service_drop_tile_wrap {
-	padding-top: 24px;
-	width: 100%;
-	max-width: 1600px;
-	position: relative;
-	margin: 0 auto !important;
-	-webkit-transition: all 0.24s ease-out;
-	-moz-transition: all 0.24s ease-out;
-	-o-transition: all 0.24s ease-out;
-	transition: all 0.24s ease-out;
-}
-
-.service_drop_tile {
-	height: 0;
-}
-
-.service_drop_tile a {
-	visibility: hidden;
-	height: 100%;
-	width: 100%;
-	background: #8d6e63;
-	line-height: 1em;
-	font-size: 1.2em;
-	text-align: left;
-	color: #d7ccc8;
-} 
-.service_drop_tile a:hover {
-	border-bottom: none;
-	background: #6d4c41 !important;
-	color: #fff;
-}
-
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
 	/* hide navbar phone number once it overlaps with nav links */
-	.ypg_nav_phone {font-size: 1.3em;}
-	.ypg_nav_phone p {margin-top: 25px;}
+	.ypg_nav_phone {font-size: 1.2em;}
+	.ypg_nav_phone p {margin-top: 22px;}
+	.ypg_nav {width: 95%;}
+	#service_dropdown {width: 95% !important;}
 }
 
 /* viewport increases past 992px */
 /* resets if mobile nav is deployed and viewport is resized larger */
 @media only screen and (min-width: 992px) {
+
 
 	/* hide mobile nav and display desktop nav	*/
 	#ypg_nav_mobile {width: 0 !important;}
@@ -443,15 +410,16 @@ button:focus {
 
 /* viewport decreases past 992px*/
 @media only screen and (max-width: 992px) {
-
+	#drop_arrow {display: none !important;}
 	/* hide desktop link wrapper */
 	.ypg_nav_links {display: none;}
+	#service_dropdown {display: none;}
 
   	/* display hamburger button */
 	#hamburger {display: block;}
 
   	/* adjust height of navbar */
-	.ypg_nav {height: 65px;}
+	.ypg_nav {height: 65px; top: 0; width: 100%;}
 
 	.ypg_nav_phone {display: none;}
 
@@ -506,16 +474,19 @@ button:focus {
 /* hero image wrapper */
 .hero_image_wrap {
 	width: 100%;
-	height: 75vh;
+	height: 100vh;
 	margin-top: -90px;
+	/*margin-top: -90px;*/
 }
+
+
 
 /* hero image placement */
 .hero_image {
 	position: relative;
 	height: 100%;
 	width: 100%;
-	margin-top: -90px;
+	/*margin-top: -90px;*/
 	background: url("../images/ypg_main2.3.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -584,7 +555,6 @@ button:focus {
 
 .note-from-james {
 
-	background: #ccc;
 }
 
 
@@ -610,4 +580,127 @@ button:focus {
 	position: relative;
 	height: 2000px;
 
+}
+
+
+
+
+
+
+
+
+#service_dropdown {
+	width: 85%;
+	max-width: 1600px;
+	height: 0;
+	position: absolute;
+	top: 96px; /* 80px nav height + 16px top padding */
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 9998;
+}
+
+#service_dropdown > .col-md-2 {
+	padding: 0;
+}
+
+.service_drop_tile {
+	position: relative;
+	height: 0;
+}
+
+.service_drop_tile a {
+	visibility: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #444;
+	line-height: 1em;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-weight: 700;
+	padding: 12px;
+	color: rgba(255,255,255,0);
+}
+
+.service_drop_tile a:hover {
+	background: #ccc;
+}
+
+/* mobile nav - 2nd level services - back button wrapper */
+.back_btn_wrap {
+	position: relative;
+	width: 100%;
+	height: 65px;
+	margin-top: -65px;
+	background: #1b5e20;
+}
+
+.back_btn_wrap a {
+	position: absolute;
+	height: 100%;
+	width: 60%;
+	font-size: 1.3em;
+	line-height: 65px;
+	padding-left: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-weight: 700;
+	color: #fff;
+}
+
+/* back button arrow png */
+#back_arrow {
+	position: absolute;
+	transform: rotate(90deg);
+	left: 4px;
+	top: 23px;
+}
+
+/* wrapper for all mobile service nav tiles */
+.mobile_service_tile_wrap {
+	position: fixed;
+	height: calc(100vh - 65px);
+	width: 100%;
+	padding: 0;
+}
+
+/* individual mobile service tiles */
+.mobile_service_tile {
+	height: calc(100% / 6);
+	background: #1b5e20;
+	padding: 0 !important;
+
+
+}
+
+/* individual mobile service tile hit area*/
+.mobile_service_tile a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 12px;
+
+	font-size: 1.1em;
+	line-height: 1em;
+
+	/* flex box fix to verticall align text*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+
+/* on tap */
+.mobile_service_tile a:focus {
+	background: #222;
 }

@@ -15,118 +15,145 @@
 </head>
 <body>
 
-<!-- full width wrapper -->
+<!-- navigation wrapper -->
 <div class="ypg_nav">
-	<!-- max-width wrapper -->
-	<div class="ypg_wrap">
-		<!-- ypg logo -->
-		<div class="ypg_nav_logo">
-			<a href="#"><img id="ypgLogo" height="85" width="294" src="images/ypg_nameplate.png"></a>
+	<!-- ypg logo -->
+	<div class="ypg_nav_logo">
+		<a href="#"><img id="ypgLogo" height="75" width="259" src="images/ypg_nameplate.png"></a>
+	</div>
+
+	<!-- hamburger button -->
+	<button id="hamburger" onclick="toggleHamburger()">
+		<div id="ham_line1"></div>
+		<div id="ham_line2"></div>
+		<div id="ham_line3"></div>
+	</button>
+
+	<!-- 1st level mobile navigation -->
+	<div id="ypg_nav_mobile">
+		<h3>Menu</h3>
+		<div class="mobile_link_wrap mobile_active"><a href="#">Home</a></div>
+		<div class="mobile_link_wrap"><a href="#">About</a></div>
+		<div class="mobile_link_wrap" id="mobile_service_trigger" onclick="toggleMobileService()"><a href="#">Services</a></div>
+		<div class="mobile_link_wrap"><a href="#">Portfolio</a></div>
+		<div class="mobile_link_wrap"><a href="#">Careers</a></div>
+		<div class="mobile_link_wrap"><a href="#">Contact</a></div>
+		<div id="mobile_phone_btn" class="mobile_phone"><a href="#">Call Us Today<br><span class="mobile_phone_btn">(262) 333-333</span></a></div>
+	</div>
+
+	<!-- 2nd level mobile navigation: services -->
+	<div id="mobile_service_wrap">
+		<div class="back_btn_wrap">
+			<a href="javascript:void(0)" id="back_btn" onclick="toggleMobileService()"><span><img id="back_arrow" src="images/arrow.png" height="20" width="20"></span>Back</a>
 		</div>
 
-		<button id="hamburger" onclick="toggleHamburger()">
-			<div id="ham_line1"></div>
-			<div id="ham_line2"></div>
-			<div id="ham_line3"></div>
-		</button>
-		<div id="ypg_nav_mobile">
-			<h3>Menu</h3>
-			<div class="mobile_link_wrap mobile_active"><a href="#">Home</a></div>
-			<div class="mobile_link_wrap"><a href="#">About</a></div>
-			<div class="mobile_link_wrap"><a href="#">Services</a></div>
-			<div class="mobile_link_wrap"><a href="#">Portfolio</a></div>
-			<div class="mobile_link_wrap"><a href="#">Careers</a></div>
-			<div class="mobile_link_wrap"><a href="#">Contact</a></div>
-			<div id="mobile_phone_btn" class="mobile_phone"><a href="#">Call Us Today<br><span class="mobile_phone_btn">(262) 333-333</span></a></div>
-		</div>
-
-		<!-- ypg desktop links -->
-		<div class="ypg_nav_links">
-			<a href="#">Home</a> 
-			<a href="#">About</a>
-			<a href="javascript:void(0)" id="serviceTrigger" onclick="toggleService()" class="service_drop_trigger">Services<br><span><img id="drop_arrow" src="images/arrow.png" height="20" width="20"></span></a>
-			<div class="service_drop_wrapper" id="service_drop">
-				<div class="service_drop_border"></div>
-
-				<div class="service_drop_tile_wrap">
-
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Landscape</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Lawn & Turf</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Tree Service</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Hardscape</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Concrete</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Landscape Design</a>
-						</div>
-					</div>
-
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Maintenance</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Plant Health Care</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Grading and Drainage</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Mosquito and Tick Control</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Firewood, Logs, and Mulch</a>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="service_drop_tile">
-							<a class="service_links" href="">Snow and Ice Management</a>
-						</div>
-					</div>
-
-				</div>
-
+		<div class="mobile_service_tile_wrap">
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Landscape</a>
 			</div>
-
-			<a href="#">Portfolio</a>
-			<a href="#">Careers</a>
-			<a href="#">Contact</a>
-		</div>
-
-		<!-- ypg desktop phone number -->
-		<div class="ypg_nav_phone">
-			<p>(262) 333-333</p>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Lawn and Turf</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Tree Service</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Hardscape</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Concrete</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Landscape Design</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Maintenance</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Plant Health Care</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Grading and Drainage</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Mosquito and Tick Control</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Firewood, Logs, and Mulch</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Snow and Ice Management</a>
+			</div>
 		</div>
 	</div>
+
+	<!-- desktop nav: links -->
+	<div class="ypg_nav_links">
+		<a href="#">Home</a> 
+		<a href="#">About</a>
+		<a href="javascript:void(0)" id="serviceTrigger" onclick="toggleService()" class="service_drop_trigger">Services<br><span><img id="drop_arrow" src="images/arrow.png" height="20" width="20"></span></a>
+		<a href="#">Portfolio</a>
+		<a href="#">Careers</a>
+		<a href="#">Contact</a>
+	</div>
+
+	<!-- desktop nav: phone number -->
+	<div class="ypg_nav_phone">
+		<p>(262) 333-333</p>
+	</div>
 </div>
+
+<!-- desktop nav: services mega menu -->
+<div class="service_drop_outer" id="service_dropdown">
+	<!-- landscape -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Landscape</a>
+	</div>
+	<!-- lawn and turf -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Lawn and Turf</a>
+	</div>
+	<!-- tree service -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Tree Service</a>
+	</div>
+	<!-- hardscape -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Hardscape</a>
+	</div>
+	<!-- concrete -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Concrete</a>
+	</div>
+	<!-- landscape design -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Landscape Design</a>
+	</div>
+	<!-- maintenance -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Maintenance</a>
+	</div>
+	<!-- plant health care -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Plant Health Care</a>
+	</div>
+	<!-- grading and drainage -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Grading and Drainage</a>
+	</div>
+	<!-- mosquito and tick control -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Mosquito and Tick Control</a>
+	</div>
+	<!-- firewood, logs, and mulch -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Firewood, Logs, and Mulch</a>
+	</div>
+	<!-- snow and ice -->
+	<div class="col-md-2 service_drop_tile">
+		<a class="service_links" href="">Snow and Ice Management</a>
+	</div>
+</div> <!-- end of mega menu -->
 
 <!-- hero image -->
 <div class="hero_image_wrap">
@@ -158,6 +185,7 @@
 
 
 
-<script  src="js/nav_toggle.js"> </script>
+<script async src="js/nav_toggle.js"> </script>
+
 </body>
 </html>
