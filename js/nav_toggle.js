@@ -46,7 +46,7 @@ function toggleHamburger() {
 
         // reset hamburger line rotation
         ham_line1.style.transform = 'rotate(0deg)';
-        ham_line1.style.marginTop = '0';
+        ham_line1.style.marginTop = '3px';
         ham_line1.style.background = '#388e3c';
         ham_line3.style.marginTop = '0';
         ham_line2.style.opacity = '1';
