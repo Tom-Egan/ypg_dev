@@ -17,6 +17,8 @@ var mobileServiceWrap = document.getElementById('mobile_service_wrap');
 
 var mobileNavText = document.getElementsByClassName('mobile_nav_text');
 
+var index;
+
 // deploys mobile nav
 function toggleHamburger() {
     // if mobile nav is display, hide it on hamburger press
@@ -31,6 +33,10 @@ function toggleHamburger() {
 
         // if 2nd level service menu is oepn, toggling Hamburger will close it
         mobileServiceWrap.style.width = '0';
+
+        document.body.style.overflowY = 'auto';
+
+
 
         for (index = 0; index < mobileNavText.length; index++) {
             mobileNavText[index].style.opacity = '0';
@@ -76,6 +82,8 @@ function toggleHamburger() {
         // subtle slide left of yogo when menu is deployed
         ypgLogo.style.opacity = '0';
         ypgLogo.style.left = '-14px';
+
+        document.body.style.overflowY = 'hidden';
 
         for (index = 0; index < mobileNavText.length; index++) {
             mobileNavText[index].style.opacity = '1';
@@ -123,7 +131,6 @@ function toggleService() {
     var serviceDropItems = document.getElementsByClassName('service_drop_tile');
     var serviceLinks = document.getElementsByClassName('service_links');
     var dropArrow = document.getElementById('drop_arrow');
-    var index;
 
     // if service dropdown is displayed, hide it on button press
     if (serviceDropWrap.style.height === '320px') {
