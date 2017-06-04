@@ -131,6 +131,7 @@ function toggleService() {
     var serviceDropItems = document.getElementsByClassName('service_drop_tile');
     var serviceLinks = document.getElementsByClassName('service_links');
     var dropArrow = document.getElementById('drop_arrow');
+    var overlay = document.getElementById('drop_overlay');
 
     // if service dropdown is displayed, hide it on button press
     if (serviceDropWrap.style.height === '320px') {
@@ -143,6 +144,12 @@ function toggleService() {
         dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDropWrap.style.WebkitTransition = 'ease-in 0.24s';
         serviceDropWrap.style.transition = 'ease-in 0.24s';
+
+        overlay.style.background = 'rgba(0,0,0,0)';
+        overlay.style.WebkitTransition = 'ease-in 0.24s';
+        overlay.style.transition = 'ease-in 0.24s';
+        overlay.style.zIndex = '1';
+        
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '0';
@@ -171,6 +178,12 @@ function toggleService() {
         dropArrow.style.transition = 'ease-in-out 0.34s';
         serviceDropWrap.style.WebkitTransition = 'ease-out 0.24s';
         serviceDropWrap.style.transition = 'ease-out 0.24s';
+
+        overlay.style.background = 'rgba(0,0,0,0.6)';
+        overlay.style.WebkitTransition = 'ease-out 0.24s';
+        overlay.style.transition = 'ease-out 0.24s';
+        overlay.style.zIndex = '4';
+        
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '160px';
