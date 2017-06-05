@@ -102,6 +102,14 @@ a:focus {
 	clear: both;
 }
 
+.ypg_wrap > .col-md-12,
+.ypg_wrap > .col-md-6,
+.ypg_wrap > .col-md-4,
+.ypg_wrap > .col-md-3,
+.ypg_wrap > .col-sm-2{
+	padding: 0 12px 0 12px;
+}
+
 /* navbar - logo */
 .ypg_nav_logo a {
 	float: left;
@@ -634,10 +642,10 @@ float: right;
 	padding-left: 12px;
 }
 
-.mobile_phone_btn {
+/*.mobile_phone_btn {
 	font-weight: 700;
 	font-weight: bold;
-}
+}*/
 
 
 /* fullscreen tint when service drop is active */
@@ -795,7 +803,7 @@ ul, li {
 	position: relative;
 	clear: both;
 	width: 100%;
-	padding: 40px 15px 0 15px;
+	padding: 40px 12px 0 12px;
 }
 
 /* smaller service boxes in footer */
@@ -835,14 +843,14 @@ ul, li {
 
 
 .awards_row > .col-sm-2 {
-	padding: 15px;
+	padding: 8px;
 }
 
 /* center-align images */
 .awards_row > .col-sm-2 img {
 	position: relative;
 	margin: 0 auto;
-	opacity: 0.4;
+	opacity: 0.3;
 
 }
 
@@ -855,12 +863,15 @@ ul, li {
 	z-index: 9999;
 	position: relative;
 	background: #301f1c;
+	padding-left: 12px;
+	padding-right: 12px;
 
 }
 
 .footer_bg2 > .ypg_wrap {
 	margin-top: 0;
 	margin-bottom:  0;
+
 }
 
 .footer_bg2 > .ypg_wrap > p {
@@ -884,4 +895,35 @@ ul, li {
 
 .float_right {
 	float: right;
+}
+
+
+/* home service tiles */
+.home_service_tile_wrap {
+	position: relative;
+	padding: 12px;
+	width: 100%;
+	top: 75px;
+	margin-bottom: 150px;
+}
+
+.home_service_tile_wrap > .col-md-3 {
+	padding: 0 !important;
+}
+
+.home_service_tile {
+	height: 200px;
+	background: #ccc;
+}
+
+.home_service_tile a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.home_service_tile a:hover {
+	background: #222;
 }
