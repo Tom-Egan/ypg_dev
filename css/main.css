@@ -1,4 +1,4 @@
-
+/*
 
 Main Colors
 ---
@@ -755,7 +755,7 @@ float: right;
 .footer_bg {
 	position: relative;
 	width: 100%;
-	background: #555;
+	background: #4e342e;
 	margin-top: 200px;
 	clear: both;
 	padding-bottom: 50px;
@@ -795,19 +795,27 @@ ul, li {
 	text-align: right;
 }
 
+/* position adjustment of middle column (services) */
 .ypg_wrap > .col-md-6 {
-
 	margin-top: -30px;
 }
 
 
 
-
+/* height fix to get outside wrapper to contain all elements */
 .rel_fix {
 	position: relative;
 	width: 100%;
 	clear: both;
 
+}
+
+/* margin fix between sections */
+.row_buffer {
+	position: relative;
+	clear: both;
+	width: 100%;
+	padding-top: 80px;
 }
 
 /* smaller service boxes in footer */
@@ -818,6 +826,7 @@ ul, li {
 	border-top: 4px solid #555;
 }
 
+/* footer service link */
 .footer_grid_box a {
 	position: absolute;
 	height: 100%;
@@ -827,10 +836,19 @@ ul, li {
 	text-align: center;
 }
 
+/* footer service link hover */
 .footer_grid_box a:hover {
 	background: #222;
 }
 
+/* service grid, right side elements */
 .right_border {
 	border-right: 4px solid #555;
+}
+
+/* center-align images */
+.awards_row > .col-md-2 img {
+	position: relative;
+	margin: 0 auto;
+
 }
