@@ -368,6 +368,12 @@ button:focus {
 		margin-left: -30px !important;
 	}
 
+	.awards_row > .col-sm-2 {
+		width: 50%;
+		float: left;
+		padding: 20px;
+	}
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -477,42 +483,9 @@ button:focus {
 }
 
 
-
 .note-from-james {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.test {
-	position: relative;
-	height: 2000px;
-
-}
-
-
-
-
-
-
-
 
 #service_dropdown {
 	width: 85%;
@@ -755,7 +728,7 @@ float: right;
 .footer_bg {
 	position: relative;
 	width: 100%;
-	background: #4e342e;
+	background: #3E2723;
 	margin-top: 200px;
 	clear: both;
 	padding-bottom: 50px;
@@ -767,9 +740,11 @@ ul, li {
 }
 
 /* footer titles */
-.footer_side_box h4 {
+.footer_side_box h4,
+.awards_row > .col-md-12 > h4 {
 	padding-bottom: 10px;
-	border-bottom: 1px solid #999;
+	color: #ccc;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 /* footer links container */
@@ -815,15 +790,15 @@ ul, li {
 	position: relative;
 	clear: both;
 	width: 100%;
-	padding-top: 80px;
+	padding: 40px 15px 0 15px;
 }
 
 /* smaller service boxes in footer */
 .footer_grid_box {
 	height: 68px;
 	background: #ccc;
-	border-left: 4px solid #555;
-	border-top: 4px solid #555;
+	border-left: 4px solid #3E2723;
+	border-top: 4px solid #3E2723;
 }
 
 /* footer service link */
@@ -833,7 +808,8 @@ ul, li {
 	width: 100%;
 	left: 0;
 	line-height: 62px;
-	text-align: center;
+	padding-left: 10px;
+	
 }
 
 /* footer service link hover */
@@ -843,12 +819,22 @@ ul, li {
 
 /* service grid, right side elements */
 .right_border {
-	border-right: 4px solid #555;
+	border-right: 4px solid #3E2723;
+}
+
+
+.awards_row > .col-sm-2 {
+	padding: 15px;
 }
 
 /* center-align images */
-.awards_row > .col-md-2 img {
+.awards_row > .col-sm-2 img {
 	position: relative;
 	margin: 0 auto;
+	opacity: 0.4;
 
+}
+
+.wlca {
+	padding-top: 35px;
 }
