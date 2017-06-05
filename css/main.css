@@ -96,9 +96,10 @@ a:focus {
 	max-width: 1600px;
 	height: 100%;
 	position: relative;
-	margin: 0 auto;
+	margin: 50px auto;
 	padding: 0 15px 0 15px;
 	z-index: 2;
+	clear: both;
 }
 
 /* navbar - logo */
@@ -363,6 +364,10 @@ button:focus {
 
 	}
 
+	.james_sig {
+		margin-left: -30px !important;
+	}
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -471,9 +476,7 @@ button:focus {
 	transition: all 0.16s ease-out;
 }
 
-.content_wrap {
-	margin: 50px 0 50px 0;
-}
+
 
 .note-from-james {
 
@@ -674,6 +677,19 @@ float: right;
 	z-index: 1;
 }
 
+.james_bold {
+	font-weight: bold;
+	font-weight: 700;
+	font-size: 1.7em;
+	margin-bottom: 8px;
+}
+
+.james_sig {
+	margin-left: -40px;
+	margin-top: -30px;
+	margin-bottom: -15px;
+}
+
 
 /* desktop service dropdown tiles */
 /* background images */
@@ -725,10 +741,96 @@ float: right;
 	-o-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
-.desk_design_tile
+/*.desk_design_tile
 .desk_maintenance_tile
 .desk_plant_tile
 .desk_grading_tile
 .desk_mosquito_tile
 .desk_firewood_tile
-.desk_snow_tile
+.desk_snow_tile*/
+
+
+/* footer */
+
+.footer_bg {
+	position: relative;
+	width: 100%;
+	background: #555;
+	margin-top: 200px;
+	clear: both;
+	padding-bottom: 50px;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* footer titles */
+.footer_side_box h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #999;
+}
+
+/* footer links container */
+.footer_side_box ul{
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+/* footer links height adjustment */
+.footer_side_box ul li {
+	height: 40px;
+}
+
+/* footer links */
+.footer_side_box ul li a {
+	padding: 8px 0 8px 0;
+}
+
+
+/* right side footer box */
+.right_align {
+	text-align: right;
+}
+
+.ypg_wrap > .col-md-6 {
+
+	margin-top: -30px;
+}
+
+
+
+
+.rel_fix {
+	position: relative;
+	width: 100%;
+	clear: both;
+
+}
+
+/* smaller service boxes in footer */
+.footer_grid_box {
+	height: 68px;
+	background: #ccc;
+	border-left: 4px solid #555;
+	border-top: 4px solid #555;
+}
+
+.footer_grid_box a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	line-height: 62px;
+	text-align: center;
+}
+
+.footer_grid_box a:hover {
+	background: #222;
+}
+
+.right_border {
+	border-right: 4px solid #555;
+}
