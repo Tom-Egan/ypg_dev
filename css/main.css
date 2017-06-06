@@ -504,6 +504,7 @@ button:focus {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	color: #5D4037;
 	line-height: 70px;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -819,15 +820,46 @@ float: right;
 /* 'start your project' 50% width background*/
 .home_start_cta {
 	margin-top: 100px;
-	background: #999;
+	background: url("../images/blur.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding: 0 !important;
+	border-right: 5px solid #fff;
+
 }
 
 /* 'join ypg' 50% width background*/
 .home_hire_cta {
 	margin-top: 100px;
-	background: #ccc;
+	background: url("../images/ypg_crew2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding: 0 !important;
+	border-left: 5px solid #fff;
+
+}
+
+.white_tint {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(46,125,50,0.8);
+
+}
+
+.green_tint {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(216,67,21,0.8);
 }
 
 /* call-to-action text */
@@ -835,14 +867,17 @@ float: right;
 .home_hire_cta > .split_right > h3 {
 	text-align: center;
 	padding-bottom: 20px;
+	color: #fff;
+	font-size: 2.4em;
 }
 
 .home_start_cta > .split_left > p,
 .home_hire_cta > .split_right > p {
-	width: 68%;
+	width: 50%;
 	padding-bottom: 60px;
 	text-align: center;
 	margin: 0 auto;
+	color: #fff;
 }
 
 /* call-to-action button fixes */
@@ -853,6 +888,7 @@ float: right;
 	font-weight: bold;
 	font-weight: 700;
 	z-index: 3;
+
 }
 
 
@@ -861,7 +897,7 @@ float: right;
 	position: relative;
 	clear: both;
 	width: 100%;
-	max-width: 800px;
+
 }
 
 /* content wrapper for 'start your project' */
