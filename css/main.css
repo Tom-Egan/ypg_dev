@@ -765,195 +765,6 @@ float: right;
 	color: #4E342E;
 }
 
-/* footer */
-
-.footer_top_border {
-	position: relative;
-	height: 120px;
-	width: 100%;
-	background: url(../images/grass2.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	clear: both;
-
-	margin-bottom: -50px;
-
-}
-
-.footer_bg {
-	position: relative;
-	width: 100%;
-	background: #3E2723;
-
-	clear: both;
-	padding-bottom: 20px;
-}
-
-ul, li {
-	margin: 0;
-	padding: 0;
-}
-
-/* footer titles */
-.footer_side_box h4,
-.awards_row > .col-md-12 > h4 {
-	padding-bottom: 10px;
-	color: #A1887F;
-	border-bottom: 1px dashed rgba(255,255,255,0.1);
-}
-
-/* footer links container */
-.footer_side_box ul{
-	list-style: none;
-	list-style-type: none;
-	padding: 0;
-}
-
-/* footer links height adjustment */
-.footer_side_box ul li {
-	height: 40px;
-}
-
-/* footer links */
-.footer_side_box ul li a {
-	padding: 8px 0 8px 0;
-	color: #ccc;
-}
-
-.footer_side_box ul li a:hover {
-	color: #fff;
-}
-
-
-/* right side footer box */
-.right_align {
-	text-align: right;
-}
-
-/* position adjustment of middle column (services) */
-.ypg_wrap > .col-md-6 {
-	margin-top: -30px;
-}
-
-
-
-/* height fix to get outside wrapper to contain all elements */
-.rel_fix {
-	position: relative;
-	width: 100%;
-	clear: both;
-
-}
-
-/* margin fix between sections */
-.row_buffer {
-	position: relative;
-	clear: both;
-	width: 100%;
-	padding: 40px 12px 0 12px;
-}
-
-/* smaller service boxes in footer */
-.footer_grid_box {
-	height: 68px;
-	background: #4E342E;
-	border-left: 4px solid #3E2723;
-	border-top: 4px solid #3E2723;
-}
-
-/* footer service link */
-.footer_grid_box a {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	-moz-align-items: center;
-	align-items: center;
-	padding-left: 10px;
-	color: #BCAAA4;
-	font-weight: bold;
-	font-weight: 700;
-	transition: 0.16s ease-in;
-	
-}
-
-/* footer service link hover */
-.footer_grid_box a:hover {
-	background: #5D4037;
-	color: #fff;
-	transition: 0.16s ease-out;
-}
-
-/* service grid, right side elements */
-.right_border {
-	border-right: 4px solid #3E2723;
-}
-
-
-.awards_row > .col-sm-2 {
-	padding: 8px;
-}
-
-/* center-align images */
-.awards_row > .col-sm-2 img {
-	position: relative;
-	margin: 0 auto;
-	opacity: 0.3;
-
-}
-
-.wlca {
-	padding-top: 35px;
-}
-
-.footer_bg2 {
-	width: 100%;
-	z-index: 9999;
-	position: relative;
-	background: #301f1c;
-	padding-left: 12px;
-	padding-right: 12px;
-
-}
-
-.footer_bg2 > .ypg_wrap {
-	margin-top: 0;
-	margin-bottom:  0;
-
-}
-
-.footer_bg2 > .ypg_wrap > p {
-	font-size: 1em;
-	padding-top: 50px;
-	color: #8D6E63;
-}
-
-.footer_bg2 > .ypg_wrap > p > a {
-	color: #ccc;
-}
-
-.footer_bg2 > .ypg_wrap > p > a:hover {
-	color: #fff;
-}
-
-
-.float_left {
-	float: left;
-}
-
-.float_right {
-	float: right;
-}
-
 
 /* home service tiles */
 .home_service_tile_wrap {
@@ -985,6 +796,10 @@ ul, li {
 	background: #222;
 }
 
+
+
+
+/* design. build. maintain. */
 .home_section_break {
 	position: relative;
 	height: 360px;
@@ -998,71 +813,8 @@ ul, li {
 	font-size: 4em;
 }
 
-.ypg_wrap > .testimonial_wrap {
-	
-}
 
-.testimonial_wrap {
-	width: 65%;
-	height: 200px;
-	background: #222;
-	margin: 0 auto;
-	position: relative;
-}
-
-.testimonial_card {
-	position: absolute;
-	width: 100%;
-	height: 200px;
-	background: #666;
-	padding-top: 30px;
-}
-
-#test1 {
-	display: block;
-}
-
-#test2{
-	display: none;
-	z-index: 3;
-
-}
-
-#test3 {
-	display: none;
-	z-index: 4;
-}
-
-/*.contact_bg {
-
-	border-right: 1px dashed #ccc
-}
-.contact_bg2 {
-	border-left: 1px dashed #ccc
-}
-
-
-.home_cta_wrap {
-	padding: 30px 40px 120px 40px !important;
-	margin-top: 100px !important;
-	margin-bottom: -50px;
-
-}
-
-.home_cta_wrap > h3,
-.home_cta_wrap > p {
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-.home_cta_wrap > .cta_button {
-	margin: 0 auto;
-	font-size: 2.5em;
-	font-weight: bold;
-	font-weight: 700;
-}*/
-
-
+/* bottom call-to-actions */
 
 /* 'start your project' 50% width background*/
 .home_start_cta {
@@ -1125,6 +877,228 @@ ul, li {
 	min-height: 490px;
 	padding: 40px 40px 120px 40px;
 }
+
+
+/* footer */
+
+/*.footer_top_border {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	background: url(../images/grass2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	clear: both;
+
+	margin-bottom: -50px;
+
+}*/
+
+.footer_bg {
+	position: relative;
+	width: 100%;
+	background: #3E2723;
+	clear: both;
+	padding: 0 0 10px 0;
+}
+
+/* fixes 50px bottom margin */
+.footer_bg > .ypg_wrap {
+	margin: 0 auto;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/* footer titles */
+.footer_side_box h4,
+.awards_row > .col-md-12 > h4 {
+	padding-bottom: 10px;
+	color: #A1887F;
+	border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+
+/* footer links container */
+.footer_side_box ul{
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+}
+
+/* footer links height adjustment */
+.footer_side_box ul li {
+	height: 40px;
+}
+
+/* footer - 'company' and 'contact' links */
+.footer_side_box ul li a {
+	padding: 8px 0 8px 0;
+	color: #ccc;
+}
+
+/* footer - 'company' and 'contact' links */
+.footer_side_box ul li a:hover {
+	color: #fff;
+}
+
+/* right side footer box */
+.right_align {
+	text-align: right;
+}
+
+/* position adjustment of middle column (services) */
+.ypg_wrap > .col-md-6 {
+	margin-top: -30px;
+}
+
+/* height fix to get outside wrapper to contain all elements */
+.rel_fix {
+	position: relative;
+	width: 100%;
+	clear: both;
+}
+
+/* margin fix between sections */
+.row_buffer {
+	position: relative;
+	clear: both;
+	width: 100%;
+	padding: 40px 12px 0 12px;
+}
+
+/* smaller service boxes in footer */
+.footer_grid_box {
+	height: 68px;
+	background: #4E342E;
+	border-left: 4px solid #3E2723;
+	border-top: 4px solid #3E2723;
+}
+
+/* footer service link */
+.footer_grid_box a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+	padding-left: 10px;
+	color: #BCAAA4;
+	font-weight: bold;
+	font-weight: 700;
+	transition: 0.16s ease-in;
+}
+
+/* footer service link hover */
+.footer_grid_box a:hover {
+	background: #5D4037;
+	color: #fff;
+	transition: 0.16s ease-out;
+}
+
+/* service grid, right side elements */
+.right_border {
+	border-right: 4px solid #3E2723;
+}
+
+/* wrapper for each award logo*/
+.awards_row > .col-sm-2 {
+	padding: 8px;
+}
+
+/* center-align images */
+.awards_row > .col-sm-2 img {
+	position: relative;
+	margin: 0 auto;
+	opacity: 0.3;
+}
+
+/* footer awards - wcla vertical alignment */
+.wlca {
+	padding-top: 35px;
+}
+
+/* copyright row */
+.copyright {
+	color: #A1887F;
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 50px;
+}
+/* copyright footer copy */
+.copyright p {
+	margin-bottom: 16px;
+}
+/* tom egan copyright link */
+.copyright a {
+	color: #ccc;
+}
+/* tom egan copyright link */
+.copyright a:hover {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ypg_wrap > .testimonial_wrap {
+	
+}
+
+.testimonial_wrap {
+	width: 65%;
+	height: 200px;
+	background: #222;
+	margin: 0 auto;
+	position: relative;
+}
+
+.testimonial_card {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: #666;
+	padding-top: 30px;
+}
+
+#test1 {
+	display: block;
+}
+
+#test2{
+	display: none;
+	z-index: 3;
+
+}
+
+#test3 {
+	display: none;
+	z-index: 4;
+}
+
+
+
+
+
 
 
 
