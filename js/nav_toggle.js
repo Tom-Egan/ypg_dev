@@ -228,3 +228,49 @@ function toggleMobileService() {
         mobileServiceWrap.style.transition = 'ease-out 0.28s';
     }
 }
+
+var test1 = document.getElementById('test1');
+var test2 = document.getElementById('test2');
+var test3 = document.getElementById('test3');
+function showTestimonial1() {
+    if (test1.style.display === 'none' && test2.style.display === 'block' && test3.style.display === 'none' ) {
+        //show test 2
+        test1.style.display = 'block';
+        test2.style.display = 'none';
+        test3.style.display = 'none';
+    } else if (test1.style.display === 'none' && test2.style.display === 'none' && test3.style.display === 'block' ) {
+        //show test 2
+        test1.style.display = 'block';
+        test2.style.display = 'none';
+        test3.style.display = 'none';
+    }
+
+}
+
+function showTestimonial2() {
+    if (test1.style.display === 'block' && test2.style.display === 'none' && test3.style.display === 'none' ) {
+        //show test 2
+        test1.style.display = 'none';
+        test2.style.display = 'block';
+        test3.style.display = 'none';
+    } else if (test1.style.display === 'none' && test2.style.display === 'none' && test3.style.display === 'block' ) {
+        //show test 2
+        test1.style.display = 'none';
+        test2.style.display = 'block';
+        test3.style.display = 'none';
+    }
+}
+
+function showTestimonial3() {
+    if (test1.style.display === 'block' && test2.style.display === 'none' && test3.style.display === 'none' ) {
+        //show test 2
+        test1.style.display = 'none';
+        test2.style.display = 'none';
+        test3.style.display = 'block';
+    } else if (test1.style.display === 'none' && test2.style.display === 'block' && test3.style.display === 'none' ) {
+        //show test 2
+        test1.style.display = 'none';
+        test2.style.display = 'none';
+        test3.style.display = 'block';
+    }
+}

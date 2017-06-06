@@ -48,6 +48,7 @@ p {
 
 h3 {
 	font-size: 2em;
+	color: #2e7d32;
 }
 
 h4 {
@@ -382,11 +383,21 @@ button:focus {
 		padding: 20px;
 	}
 
+	.home_section_break > .ypg_wrap > h2 {
+		font-size: 2em !important;
+		padding-top: 20px !important;
+	}
+
 }
 
 @media only screen and (max-width: 360px) {
 	.hero_image_text h2 {
 		width: 75%;
+	}
+
+	.home_section_break > .ypg_wrap > h2 {
+		font-size: 1.5em !important;
+
 	}
 }
 
@@ -663,6 +674,7 @@ float: right;
 	font-weight: 700;
 	font-size: 1.7em;
 	margin-bottom: 8px;
+	color: #2e7d32;
 }
 
 .james_sig {
@@ -731,13 +743,30 @@ float: right;
 .desk_snow_tile*/
 
 
+.accent_brown {
+	color: #4E342E;
+}
+
 /* footer */
+
+.footer_top_border {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	background: url(../images/grass2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	clear: both;
+
+	margin-bottom: -50px;
+
+}
 
 .footer_bg {
 	position: relative;
 	width: 100%;
 	background: #3E2723;
-	margin-top: 200px;
+
 	clear: both;
 	padding-bottom: 20px;
 }
@@ -903,7 +932,7 @@ ul, li {
 	position: relative;
 	padding: 12px;
 	width: 100%;
-	top: 75px;
+	top: 55px;
 	margin-bottom: 150px;
 }
 
@@ -927,3 +956,139 @@ ul, li {
 .home_service_tile a:hover {
 	background: #222;
 }
+
+.home_section_break {
+	position: relative;
+	height: 360px;
+	width: 100%;
+	background: #222;
+	text-align: center;
+	padding-top: 85px;
+}
+
+.home_section_break > .ypg_wrap > h2 {
+	font-size: 4em;
+}
+
+.ypg_wrap > .testimonial_wrap {
+	
+}
+
+.testimonial_wrap {
+	width: 65%;
+	height: 200px;
+	background: #222;
+	margin: 0 auto;
+	position: relative;
+}
+
+.testimonial_card {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: #666;
+	padding-top: 30px;
+}
+
+#test1 {
+	display: block;
+}
+
+#test2{
+	display: none;
+	z-index: 3;
+
+}
+
+#test3 {
+	display: none;
+	z-index: 4;
+}
+
+/*.contact_bg {
+
+	border-right: 1px dashed #ccc
+}
+.contact_bg2 {
+	border-left: 1px dashed #ccc
+}
+
+
+.home_cta_wrap {
+	padding: 30px 40px 120px 40px !important;
+	margin-top: 100px !important;
+	margin-bottom: -50px;
+
+}
+
+.home_cta_wrap > h3,
+.home_cta_wrap > p {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.home_cta_wrap > .cta_button {
+	margin: 0 auto;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-weight: 700;
+}*/
+
+
+
+/* 'start your project' 50% width background*/
+.home_start_cta {
+	margin-top: 100px;
+	background: #999;
+	padding: 0 !important;
+}
+
+/* 'join ypg' 50% width background*/
+.home_hire_cta {
+	margin-top: 100px;
+	background: #ccc;
+	padding: 0 !important;
+}
+
+/* call-to-action text */
+.home_start_cta > .split_left > h3,
+.home_start_cta > .split_left > p,
+.home_hire_cta > .split_right > h3,
+.home_hire_cta > .split_right > p {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/* call-to-action button fixes */
+.home_start_cta > .split_left > .cta_button,
+.home_hire_cta > .split_right > .cta_button {
+	margin: 0 auto;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-weight: 700;
+	z-index: 3;
+}
+
+
+/* wrapper for both 'start project' and 'join ypg' */
+.split_wrap {
+	position: relative;
+	clear: both;
+	width: 100%;
+	max-width: 800px;
+}
+
+/* content wrapper for 'start your project' */
+.split_left {
+	float: right;
+	padding: 40px 40px 120px 40px;
+}
+
+/* content wrapper for 'join ypg team' */
+.split_right {
+	float: left;
+	padding: 40px 40px 120px 40px;
+}
+
+
+
