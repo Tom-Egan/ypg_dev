@@ -48,6 +48,7 @@ p {
 
 h3 {
 	font-size: 2em;
+	color: #2e7d32;
 }
 
 h4 {
@@ -100,6 +101,14 @@ a:focus {
 	padding: 0 15px 0 15px;
 	z-index: 2;
 	clear: both;
+}
+
+.ypg_wrap > .col-md-12,
+.ypg_wrap > .col-md-6,
+.ypg_wrap > .col-md-4,
+.ypg_wrap > .col-md-3,
+.ypg_wrap > .col-sm-2{
+	padding: 0 12px 0 12px;
 }
 
 /* navbar - logo */
@@ -374,11 +383,38 @@ button:focus {
 		padding: 20px;
 	}
 
+	.home_section_break > .ypg_wrap > h2 {
+		font-size: 2em !important;
+		padding-top: 20px !important;
+	}
+
+	.split_left,
+	.split_right {
+		float: none !important;
+		padding: 40px 40px 40px 40px;
+		min-height: initial !important;
+	}
+
+	.home_hire_cta {
+		margin-top: 0 !important;
+		margin-bottom: -50px;
+	}
+
+	.home_start_cta > .split_left > p,
+.home_hire_cta > .split_right > p {
+	width: 100% !important;
+}
+
 }
 
 @media only screen and (max-width: 360px) {
 	.hero_image_text h2 {
 		width: 75%;
+	}
+
+	.home_section_break > .ypg_wrap > h2 {
+		font-size: 1.5em !important;
+
 	}
 }
 
@@ -405,6 +441,7 @@ button:focus {
 	position: relative;
 	width: 100%;
 	height: 80vh;
+	max-height: 900px;
 	margin-top: -90px;
 
 	/*margin-top: -90px;*/
@@ -467,6 +504,7 @@ button:focus {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	color: #5D4037;
 	line-height: 70px;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -634,10 +672,10 @@ float: right;
 	padding-left: 12px;
 }
 
-.mobile_phone_btn {
+/*.mobile_phone_btn {
 	font-weight: 700;
 	font-weight: bold;
-}
+}*/
 
 
 /* fullscreen tint when service drop is active */
@@ -655,6 +693,7 @@ float: right;
 	font-weight: 700;
 	font-size: 1.7em;
 	margin-bottom: 8px;
+	color: #2e7d32;
 }
 
 .james_sig {
@@ -723,15 +762,185 @@ float: right;
 .desk_snow_tile*/
 
 
+.accent_brown {
+	color: #4E342E;
+}
+
+
+/* home service tiles */
+.home_service_tile_wrap {
+	position: relative;
+	padding: 12px;
+	width: 100%;
+	top: 55px;
+	margin-bottom: 150px;
+}
+
+.home_service_tile_wrap > .col-md-3 {
+	padding: 0 !important;
+}
+
+.home_service_tile {
+	height: 200px;
+	background: #ccc;
+}
+
+.home_service_tile a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.home_service_tile a:hover {
+	background: #222;
+}
+
+
+
+
+/* design. build. maintain. */
+.home_section_break {
+	position: relative;
+	height: 360px;
+	width: 100%;
+	background: #222;
+	text-align: center;
+	padding-top: 85px;
+}
+
+.home_section_break > .ypg_wrap > h2 {
+	font-size: 4em;
+}
+
+
+/* bottom call-to-actions */
+
+/* 'start your project' 50% width background*/
+.home_start_cta {
+	margin-top: 100px;
+	background: url("../images/blur.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0 !important;
+	border-right: 5px solid #fff;
+
+}
+
+/* 'join ypg' 50% width background*/
+.home_hire_cta {
+	margin-top: 100px;
+	background: url("../images/ypg_crew2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 0 !important;
+	border-left: 5px solid #fff;
+
+}
+
+.white_tint {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(46,125,50,0.8);
+
+}
+
+.green_tint {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: rgba(216,67,21,0.8);
+}
+
+/* call-to-action text */
+.home_start_cta > .split_left > h3,
+.home_hire_cta > .split_right > h3 {
+	text-align: center;
+	padding-bottom: 20px;
+	color: #fff;
+	font-size: 2.4em;
+}
+
+.home_start_cta > .split_left > p,
+.home_hire_cta > .split_right > p {
+	width: 50%;
+	padding-bottom: 60px;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+}
+
+/* call-to-action button fixes */
+.home_start_cta > .split_left > .cta_button,
+.home_hire_cta > .split_right > .cta_button {
+	margin: 0 auto;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-weight: 700;
+	z-index: 3;
+
+}
+
+
+/* wrapper for both 'start project' and 'join ypg' */
+.split_wrap {
+	position: relative;
+	clear: both;
+	width: 100%;
+
+}
+
+/* content wrapper for 'start your project' */
+.split_left {
+	float: right;
+	min-height: 490px;
+	padding: 40px 40px 120px 40px;
+}
+
+/* content wrapper for 'join ypg team' */
+.split_right {
+	float: left;
+	min-height: 490px;
+	padding: 40px 40px 120px 40px;
+}
+
+
 /* footer */
+
+/*.footer_top_border {
+	position: relative;
+	height: 120px;
+	width: 100%;
+	background: url(../images/grass2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	clear: both;
+
+	margin-bottom: -50px;
+
+}*/
 
 .footer_bg {
 	position: relative;
 	width: 100%;
 	background: #3E2723;
-	margin-top: 200px;
 	clear: both;
-	padding-bottom: 50px;
+	padding: 0 0 10px 0;
+}
+
+/* fixes 50px bottom margin */
+.footer_bg > .ypg_wrap {
+	margin: 0 auto;
 }
 
 ul, li {
@@ -743,8 +952,8 @@ ul, li {
 .footer_side_box h4,
 .awards_row > .col-md-12 > h4 {
 	padding-bottom: 10px;
-	color: #ccc;
-	border-bottom: 1px solid rgba(255,255,255,0.1);
+	color: #A1887F;
+	border-bottom: 1px dashed rgba(255,255,255,0.1);
 }
 
 /* footer links container */
@@ -759,11 +968,16 @@ ul, li {
 	height: 40px;
 }
 
-/* footer links */
+/* footer - 'company' and 'contact' links */
 .footer_side_box ul li a {
 	padding: 8px 0 8px 0;
+	color: #ccc;
 }
 
+/* footer - 'company' and 'contact' links */
+.footer_side_box ul li a:hover {
+	color: #fff;
+}
 
 /* right side footer box */
 .right_align {
@@ -775,14 +989,11 @@ ul, li {
 	margin-top: -30px;
 }
 
-
-
 /* height fix to get outside wrapper to contain all elements */
 .rel_fix {
 	position: relative;
 	width: 100%;
 	clear: both;
-
 }
 
 /* margin fix between sections */
@@ -790,13 +1001,13 @@ ul, li {
 	position: relative;
 	clear: both;
 	width: 100%;
-	padding: 40px 15px 0 15px;
+	padding: 40px 12px 0 12px;
 }
 
 /* smaller service boxes in footer */
 .footer_grid_box {
 	height: 68px;
-	background: #ccc;
+	background: #4E342E;
 	border-left: 4px solid #3E2723;
 	border-top: 4px solid #3E2723;
 }
@@ -807,14 +1018,29 @@ ul, li {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	line-height: 62px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
 	padding-left: 10px;
-	
+	color: #BCAAA4;
+	font-weight: bold;
+	font-weight: 700;
+	transition: 0.16s ease-in;
 }
 
 /* footer service link hover */
 .footer_grid_box a:hover {
-	background: #222;
+	background: #5D4037;
+	color: #fff;
+	transition: 0.16s ease-out;
 }
 
 /* service grid, right side elements */
@@ -822,19 +1048,93 @@ ul, li {
 	border-right: 4px solid #3E2723;
 }
 
-
+/* wrapper for each award logo*/
 .awards_row > .col-sm-2 {
-	padding: 15px;
+	padding: 8px;
 }
 
 /* center-align images */
 .awards_row > .col-sm-2 img {
 	position: relative;
 	margin: 0 auto;
-	opacity: 0.4;
-
+	opacity: 0.3;
 }
 
+/* footer awards - wcla vertical alignment */
 .wlca {
 	padding-top: 35px;
 }
+
+/* copyright row */
+.copyright {
+	color: #A1887F;
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 50px;
+}
+/* copyright footer copy */
+.copyright p {
+	margin-bottom: 16px;
+}
+/* tom egan copyright link */
+.copyright a {
+	color: #ccc;
+}
+/* tom egan copyright link */
+.copyright a:hover {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ypg_wrap > .testimonial_wrap {
+	
+}
+
+.testimonial_wrap {
+	width: 65%;
+	height: 200px;
+	background: #222;
+	margin: 0 auto;
+	position: relative;
+}
+
+.testimonial_card {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	background: #666;
+	padding-top: 30px;
+}
+
+#test1 {
+	display: block;
+}
+
+#test2{
+	display: none;
+	z-index: 3;
+
+}
+
+#test3 {
+	display: none;
+	z-index: 4;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,3 @@
+To Do
+
+- Validate and fix footer at smaller viewports
