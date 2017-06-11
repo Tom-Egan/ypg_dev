@@ -444,6 +444,12 @@ button:focus {
 		float: left;
 		width: 50%;
 	}
+
+	.james_side, .james_side img{
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 
@@ -567,11 +573,15 @@ button:focus {
 	height: 80vh;
 	max-height: 900px;
 	margin-top: -80px;
-
-
-	/*margin-top: -90px;*/
 }
-
+/* smaller subpage hero image wrapper */
+.subpage_hero_wrap {
+	position: relative;
+	width: 100%;
+	height: 42vh;
+	max-height: 480px;
+	margin-top: -80px;
+}
 
 
 /* hero image placement */
@@ -580,7 +590,6 @@ button:focus {
 	height: 100%;
 	width: 100%;
 	padding: 12px;
-		/*margin-top: -90px;*/
 	background: url("../images/ypg_main2.3.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -590,6 +599,27 @@ button:focus {
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.subpage_hero_image {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 12px;
+}
+
+/* about subpage hero */
+.about_hero {
+	background: url("../images/ypg_main2.3.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 
 /* hero image text placement */
 .hero_image > .ypg_wrap > .hero_image_text{
@@ -608,11 +638,27 @@ button:focus {
 	font-weight: light;
 	font-weight: 300;
 	font-size: 2em;
+}
 
+.subpage_hero_image > .ypg_wrap > .subpage_hero_text {
+	position: relative;
+	height: 100%;
+	top: -70px;
+	padding-top: 200px;
+}
+
+.subpage_hero_image > .ypg_wrap > .subpage_hero_text h1 {
+	position: absolute;
+	line-height: 0.9em;
+	font-weight: light;
+	font-weight: 300;
+	font-size: 3.5em;
+	bottom: 50px;
+	color: #fff;
 }
 
 /* 'Spring', 'Summer', 'Fall', 'Winter' Emphasis text*/
-.hero_image > .ypg_wrap > .hero_image_text h2 > .bold {
+.bold {
 	font-weight: bold;
 	font-weight: 700;
 }
@@ -1066,10 +1112,6 @@ button:focus {
 
 
 
-.accent_brown {
-	color: #4E342E;
-}
-
 
 /* home service tiles */
 .home_service_tile_wrap {
@@ -1356,10 +1398,6 @@ ul, li {
 	margin-top: -30px;
 }
 
-/*.ypg_wrap > .col-md-6 {
-	margin-top: -30px;
-}*/
-
 /* height fix to get outside wrapper to contain all elements */
 .rel_fix {
 	position: relative;
@@ -1463,10 +1501,7 @@ ul, li {
 	position: relative;
 }
 
-.intro_image_bg {
-	margin-top: 60px;
-	z-index: 1;
-}
+
 
 .company_intro {
 	padding-bottom: 80px;
@@ -1512,9 +1547,6 @@ ul, li {
 }
 
 /* home page - testimonials */
-.testimonial_row {
-	padding: 16px;
-}
 
 .accent_orange {
 	font-weight: bold;
@@ -1586,34 +1618,36 @@ ul, li {
 	opacity: 0.2;
 }
 
-/*
-.testimonial_row > .col-sm-2,
-.testimonial_row > .col-sm-3,
-.testimonial_row > .col-sm-4,
-.testimonial_row > .col-sm-5,
-.testimonial_row > .col-sm-6,
-.testimonial_row > .col-sm-7 {
-	border: 2px solid #fff;
-	padding: 50px 40px 5px 40px;
-
+.subpage h4 {
+	color: #2e7d32;
+	font-size: 1.7em;
 }
 
-.testimonial_row > .col-sm-2 p,
-.testimonial_row > .col-sm-3 p,
-.testimonial_row > .col-sm-4 p,
-.testimonial_row > .col-sm-5 p,
-.testimonial_row > .col-sm-6 p,
-.testimonial_row > .col-sm-7 p {
 
+.james_side p {
+	line-height: 1em;
+	margin-bottom: 22px;
 }
 
-.testimonial_row > .col-sm-2:hover,
-.testimonial_row > .col-sm-3:hover,
-.testimonial_row > .col-sm-4:hover,
-.testimonial_row > .col-sm-5:hover,
-.testimonial_row > .col-sm-6:hover,
-.testimonial_row > .col-sm-7:hover {
-	border: 2px solid #ccc;
-	cursor: pointer;
+.caption p {
+	font-size: 0.9em;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
 
-}*/
+.caption a,
+.caption a:visited{
+	color: #2e7d32;
+}
+
+.caption a:hover {
+	color: #43A047;
+}
+
+.caption img {
+	margin-top: 50px;
+}
+
+.line_height p {
+	margin-bottom: 24px;
+}

@@ -6,9 +6,12 @@ To Do
 - images for service tiles (plus gradient/overlay)
 - image for hero
 - update ypg logo colors (brown 1= 6D4C41, brown 2 = BCAAA4, green 1 = #388e3c)
+- service dropdown -> styling/hover
+- refactor code and gut css
+- social media links
+- hover effect for ypg logo (nav)
 
 
 mobile
-
 
 - mobile nav styling
