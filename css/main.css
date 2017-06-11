@@ -354,27 +354,20 @@ button:focus {
 	/* hide desktop link wrapper */
 	.ypg_nav_links {display: none;}
 	#service_dropdown {display: none;}
-
   	/* display hamburger button */
 	#hamburger {display: block;}
-
   	/* adjust height of navbar */
 	.ypg_nav {height: 65px; top: 0; width: 100%;}
-
 	.ypg_nav_phone {display: none;}
-
 	/* resize ypg logo for smaller navbar */
 	.ypg_nav_logo img {
 		position: relative;
 		width: 75%;
 		height: 75%;
 		margin-top: -2px;
-
 	}
 
-	.hero_image > .ypg_wrap > .hero_image_text h2 {
-		font-size: 1.5em !important;
-	}
+	.hero_image > .ypg_wrap > .hero_image_text h2 {font-size: 1.5em !important;}
 
 	.intro_image {
 		float: none;
@@ -382,9 +375,7 @@ button:focus {
 		width: 100% !important;
 	}
 
-	h3 {
-		font-size: 1.8em;
-	}
+	h3 {font-size: 1.8em;}
 
 	.intro_image {
 		width: 100% !important;
@@ -407,17 +398,9 @@ button:focus {
 		margin: 0 auto !important;
 	}
 
-	.home_service_tile > .two_line_tile:hover {
-		padding: 120px 16px 16px 16px !important; 
-	}
-
-	.testimonial_item h3 {
-		font-size: 2em !important;
-	}
-
-	.testimonial_item h4 {
-		font-size: 1em !important;
-	}
+	.home_service_tile > .two_line_tile:hover {padding: 120px 16px 16px 16px !important; }
+	.testimonial_item h3 {font-size: 2em !important;}
+	.testimonial_item h4 {font-size: 1em !important;}
 
 	.testimonial_col > .col-md-12 {
 		margin: 10px !important;
@@ -429,22 +412,54 @@ button:focus {
 		margin: 0 !important;
 	}
 
+	.home_service_tile_wrap {
+		top: -20px !important;
+		margin-bottom: 0 !important;
+	}
+
+	.company_intro {padding-bottom: 0px !important;}
+	.home_section_break {height: 240px !important; padding-top: 40px !important;}
+
+	.footer_bg {
+		padding: 15px 10px 25px 10px !important;
+	}
+
+	.footer_center_service {
+		margin-top: 0 !important;
+	}
+	.footer_grid_box {
+		border-left: none !important;
+	}
+	.right_border {
+		border-right: none !important;
+	}
+	.right_align {
+		text-align: left !important;
+	}
+	.row_buffer {
+		padding: 15px 12px 0 12px !important;
+	}
+
+	.home_service_tile_wrap > .col-md-3 {
+		float: left;
+		width: 50%;
+	}
 }
 
 
 @media only screen and (max-width: 768px) {
-	.hero_image_text h2 {
-		font-size: 1em;
-	}
-
-	.james_sig {
-		margin-left: -30px !important;
-	}
+	.hero_image_text h2 {font-size: 1em;}
+	.james_sig {margin-left: -30px !important;}
 
 	.awards_row > .col-sm-2 {
-		width: 50%;
+		width: 50% !important;
 		float: left;
-		padding: 20px;
+		padding: 0 !important;
+		min-height: 150px !important;
+	}
+
+	.wlca {
+		padding-top: 0px !important;
 	}
 
 	.home_section_break > .ypg_wrap > h2 {
@@ -490,8 +505,15 @@ button:focus {
 
 
 
-}
 
+
+}
+@media only screen and (max-width: 500px) {
+	.home_service_tile_wrap > .col-md-3 {
+		float: none !important;
+		width: 100% !important;
+	}
+}
 @media only screen and (max-width: 360px) {
 
 	.home_section_break > .ypg_wrap > h2 {
@@ -524,6 +546,8 @@ button:focus {
 	.hero_image > .ypg_wrap > .hero_image_text {
 		top: 15% !important;
 	}
+
+	
 }
 
 
@@ -1051,7 +1075,7 @@ button:focus {
 .home_service_tile_wrap {
 	position: relative;
 	width: 100%;
-	top: 55px;
+	top: 25px;
 /*	margin-top: -150px;*/
 	margin-bottom: 100px;
 	/*border: 14px solid #fff;*/
@@ -1229,7 +1253,7 @@ button:focus {
 
 .home_start_cta > .split_left > p,
 .home_hire_cta > .split_right > p {
-	width: 50%;
+	width: 85%;
 	padding-bottom: 60px;
 	text-align: center;
 	margin: 0 auto;
@@ -1259,14 +1283,14 @@ button:focus {
 /* content wrapper for 'start your project' */
 .split_left {
 	float: right;
-	min-height: 490px;
+	min-height: 480px;
 	padding: 40px 40px 120px 40px;
 }
 
 /* content wrapper for 'join ypg team' */
 .split_right {
 	float: left;
-	min-height: 490px;
+	min-height: 480px;
 	padding: 40px 40px 120px 40px;
 }
 
