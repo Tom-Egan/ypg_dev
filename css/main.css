@@ -448,7 +448,7 @@ button:focus {
 	height: 80vh;
 	max-height: 900px;
 	margin-top: -90px;
-	z-index: 4;
+
 
 	/*margin-top: -90px;*/
 }
@@ -534,7 +534,7 @@ button:focus {
 #service_dropdown {
 	width: 85%;
 	max-width: 1600px;
-	height: 320px;
+	height: 80px;
 	position: absolute;
 	top: 16px; /* 80px nav height + 16px top padding */
 	left: 0;
@@ -550,15 +550,15 @@ button:focus {
 
 .service_drop_tile {
 	position: relative;
-	height: 80px;
+	height: 0;
 }
 
 .service_drop_tile a {
 	visibility: hidden;
 	position: absolute;
-	height: 100%;
+	height: 160px;
 	width: 100%;
-	background: rgba(0,0,0,0.3);
+/*	background: rgba(0,0,0,0.3);*/
 	line-height: 1em;
 	font-size: 1.1em;
 	font-weight: bold;
@@ -566,6 +566,11 @@ button:focus {
 	padding: 12px;
 	color: rgba(255,255,255,0);
 	text-align: center;
+}
+
+/* service mega menu, pushes text inside tiles down */
+.service_links {
+	padding-top: 100px !important;
 }
 
 .service_drop_tile a:hover {
@@ -647,19 +652,10 @@ button:focus {
 	align-items: center;
 }
 
-/*.mobile_link_wrap a img {
-float: right;
-	transform: rotate(-90deg);
-	left: 0;
-}*/
-
-
-
 /* on tap */
 .mobile_service_tile a:focus {
 	background: #222;
 }
-
 
 /* 1st level mobile nav, link row */
 .mobile_link_wrap {
@@ -677,12 +673,6 @@ float: right;
 .mobile_link_wrap a {
 	padding-left: 12px;
 }
-
-/*.mobile_phone_btn {
-	font-weight: 700;
-	font-weight: bold;
-}*/
-
 
 /* fullscreen tint when service drop is active */
 #drop_overlay {
@@ -750,7 +740,14 @@ float: right;
 	-o-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
-.desk_concrete_tile {
+.desk_concrete_tile,
+.desk_design_tile,
+.desk_maintenance_tile,
+.desk_plant_tile,
+.desk_grading_tile,
+.desk_mosquito_tile,
+.desk_firewood_tile,
+.desk_snow_tile {
 	background: url(../images/concrete.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -759,13 +756,7 @@ float: right;
 	-o-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
-/*.desk_design_tile
-.desk_maintenance_tile
-.desk_plant_tile
-.desk_grading_tile
-.desk_mosquito_tile
-.desk_firewood_tile
-.desk_snow_tile*/
+
 
 
 .accent_brown {
