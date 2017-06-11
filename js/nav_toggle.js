@@ -144,7 +144,7 @@ function toggleService() {
         serviceDropWrap.style.WebkitTransition = 'ease-in 0.28s';
         serviceDropWrap.style.transition = 'ease-in 0.28s';
 
-        overlay.style.background = 'rgba(0,0,0,0)';
+        // overlay.style.background = 'rgba(0,0,0,0)';
         overlay.style.WebkitTransition = 'ease-in 0.28s';
         overlay.style.transition = 'ease-in 0.28s';
         overlay.style.zIndex = '-1';
@@ -188,7 +188,7 @@ function toggleService() {
         serviceDropWrap.style.WebkitTransition = 'ease-out 0.28s';
         serviceDropWrap.style.transition = 'ease-out 0.28s';
 
-        overlay.style.background = 'rgba(0,0,0,0.6)';
+        // overlay.style.background = 'rgba(0,0,0,0.6)';
         overlay.style.WebkitTransition = 'ease-out 0.28s';
         overlay.style.transition = 'ease-out 0.28s';
         overlay.style.zIndex = '9998';
