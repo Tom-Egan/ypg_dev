@@ -71,11 +71,12 @@ a:focus {
 	width: 85%;
 	max-width: 1600px;
 	height: 81px;
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 1);
 	padding: 0 16px 0 16px;
 	margin: 0 auto;
 	top: 16px;
 	z-index: 9999;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 	/*width: 65%;
 	max-width: 1600px;
@@ -99,7 +100,7 @@ a:focus {
 	position: relative;
 	margin: 50px auto;
 	padding: 0 15px 0 15px;
-	z-index: 2;
+	z-index: 4;
 	clear: both;
 }
 
@@ -302,11 +303,15 @@ button:focus {
 
 }
 
+#serviceTrigger > span {
+	position: relative;
+}
+
 /* dropdown arrow */
 #drop_arrow {
 	position: absolute;
-	top: 20px;
-	left: 0;
+	top: 48px;
+	margin-left: -35px;
 	clear: both;
 }
 
@@ -443,6 +448,7 @@ button:focus {
 	height: 80vh;
 	max-height: 900px;
 	margin-top: -90px;
+	z-index: 4;
 
 	/*margin-top: -90px;*/
 }
@@ -528,9 +534,9 @@ button:focus {
 #service_dropdown {
 	width: 85%;
 	max-width: 1600px;
-	height: 0;
+	height: 320px;
 	position: absolute;
-	top: 96px; /* 80px nav height + 16px top padding */
+	top: 16px; /* 80px nav height + 16px top padding */
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -544,7 +550,7 @@ button:focus {
 
 .service_drop_tile {
 	position: relative;
-	height: 0;
+	height: 80px;
 }
 
 .service_drop_tile a {

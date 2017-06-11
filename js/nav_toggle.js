@@ -16,8 +16,17 @@ var mobileServiceTrigger = document.getElementById('mobile_service_trigger');
 var mobileServiceWrap = document.getElementById('mobile_service_wrap');
 
 var mobileNavText = document.getElementsByClassName('mobile_nav_text');
-
+// click target for closing service mega menu
+var overlay = document.getElementById('drop_overlay');
 var index;
+
+
+// closes service mega menu if clicked outside
+// clicks on overlay
+closeDropOutside = function() {
+    toggleService();
+}
+overlay.addEventListener('click', closeDropOutside);
 
 // deploys mobile nav
 function toggleHamburger() {
@@ -130,12 +139,13 @@ function toggleService() {
     var serviceDropWrap = document.getElementById('service_dropdown');
     var serviceDropItems = document.getElementsByClassName('service_drop_tile');
     var serviceLinks = document.getElementsByClassName('service_links');
-    var dropArrow = document.getElementById('drop_arrow');
-    var overlay = document.getElementById('drop_overlay');
+    var dropArrow = document.getElementById('drop_arrow');    
 
     // if service dropdown is displayed, hide it on button press
     if (serviceDropWrap.style.height === '320px') {
-        serviceDropWrap.style.height = '0';
+        serviceDropWrap.style.height = '80px';
+        serviceDropWrap.style.opacity = '0';
+        serviceDropWrap.style.top = '16px';
         serviceTrigger.style.color = '#5d4037 !important';
         serviceTrigger.style.background = 'rgba(255,255,255,0)';
 
@@ -152,7 +162,8 @@ function toggleService() {
         
 
         for (index = 0; index < serviceDropItems.length; index++) {
-            serviceDropItems[index].style.height = '0';
+            serviceDropItems[index].style.height = '80px';
+            serviceDropItems[index].style.opacity = '0';
             serviceDropItems[index].style.WebkitTransition = 'ease-in 0.21s';
             serviceDropItems[index].style.transition = 'ease-in 0.21s';
         }
@@ -168,8 +179,10 @@ function toggleService() {
     // else if service dropdown is hidden, display it
     } else {
         serviceDropWrap.style.height = '320px';
+        serviceDropWrap.style.top = '96px';
         serviceTrigger.style.background = 'rgba(255,255,255,1)';
         serviceTrigger.style.color = '#2e7d32 !important';
+        serviceDropWrap.style.opacity = '1';
 
 
         dropArrow.style.transform = 'rotate(180deg)';
@@ -182,11 +195,12 @@ function toggleService() {
         overlay.style.background = 'rgba(0,0,0,0.6)';
         overlay.style.WebkitTransition = 'ease-out 0.24s';
         overlay.style.transition = 'ease-out 0.24s';
-        overlay.style.zIndex = '4';
+        overlay.style.zIndex = '5';
         
 
         for (index = 0; index < serviceDropItems.length; index++) {
             serviceDropItems[index].style.height = '160px';
+            serviceDropItems[index].style.opacity = '1';
             serviceDropItems[index].style.WebkitTransition = 'ease-out 0.28s';
             serviceDropItems[index].style.transition = 'ease-out 0.28s';
         }
