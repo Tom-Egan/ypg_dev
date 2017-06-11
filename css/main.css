@@ -1157,7 +1157,7 @@ button:focus {
 
 /* 'start your project' 50% width background*/
 .home_start_cta {
-	margin-top: 100px;
+
 	background: url("../images/blur.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ button:focus {
 
 /* 'join ypg' 50% width background*/
 .home_hire_cta {
-	margin-top: 100px;
+
 	background: url("../images/ypg_crew2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1414,55 +1414,6 @@ ul, li {
 	color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.ypg_wrap > .testimonial_wrap {
-	
-}
-
-.testimonial_wrap {
-	width: 65%;
-	height: 200px;
-	background: #222;
-	margin: 0 auto;
-	position: relative;
-}
-
-.testimonial_card {
-	position: absolute;
-	width: 100%;
-	height: 200px;
-	background: #666;
-	padding-top: 30px;
-}
-
-#test1 {
-	display: block;
-}
-
-#test2{
-	display: none;
-	z-index: 3;
-
-}
-
-#test3 {
-	display: none;
-	z-index: 4;
-}
-
-
-
-
 .white_bg {
 	background: #fff;
 	z-index: 2;
@@ -1523,13 +1474,77 @@ ul, li {
 	padding: 16px;
 }
 
+.accent_orange {
+	font-weight: bold;
+	font-weight: 700;
+	color:#E64A19 ;
+}
+
+.testimonial_item {
+	background: rgba(0,0,0,0.1);
+	padding: 55px 45px 5px 45px !important;
+	margin: 10px;
+}
+
+.testimonial_col {
+	padding: 10px !important;
+}
+
+.testimonial_item h3 {
+	font-size: 4em;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #fff;
+	line-height: 1em;
+}
+
+.testimonial_item h4 {
+	font-weight: normal;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: 10px;
+	padding-bottom: 40px;
+	color: #C8E6C9;
+	line-height: 1em;
+}
+
+.testimonial_title {
+	background: #388e3c;
+}
+
+.testimonial_author_divide {
+	position: relative;
+	height: 3px;
+	width: 60px;
+	background: #E64A19;
+	margin-top: -10px;
+	margin-bottom: 24px;
+}
+
+.select_item {
+	background: #6d4c41;
+	color: #fff;
+}
+
+/*
 .testimonial_row > .col-sm-2,
 .testimonial_row > .col-sm-3,
 .testimonial_row > .col-sm-4,
 .testimonial_row > .col-sm-5,
 .testimonial_row > .col-sm-6,
 .testimonial_row > .col-sm-7 {
-	padding: 20px;
+	border: 2px solid #fff;
+	padding: 50px 40px 5px 40px;
+
+}
+
+.testimonial_row > .col-sm-2 p,
+.testimonial_row > .col-sm-3 p,
+.testimonial_row > .col-sm-4 p,
+.testimonial_row > .col-sm-5 p,
+.testimonial_row > .col-sm-6 p,
+.testimonial_row > .col-sm-7 p {
+
 }
 
 .testimonial_row > .col-sm-2:hover,
@@ -1538,5 +1553,7 @@ ul, li {
 .testimonial_row > .col-sm-5:hover,
 .testimonial_row > .col-sm-6:hover,
 .testimonial_row > .col-sm-7:hover {
-	background: #ccc;
-}
+	border: 2px solid #ccc;
+	cursor: pointer;
+
+}*/
