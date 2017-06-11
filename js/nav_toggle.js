@@ -132,6 +132,7 @@ function toggleService() {
     // if service dropdown is displayed, hide it on button press
     if (serviceDropWrap.style.height === '320px') {
         serviceDropWrap.style.height = '80px';
+        serviceDropWrap.style.boxShadow = '0 3px 6px rgba(0,0,0,0), 0 3px 6px rgba(0,0,0,0)';
         //serviceDropWrap.style.opacity = '0';
         serviceDropWrap.style.top = '16px';
         serviceTrigger.style.color = '#5d4037 !important';
@@ -146,7 +147,7 @@ function toggleService() {
         overlay.style.background = 'rgba(0,0,0,0)';
         overlay.style.WebkitTransition = 'ease-in 0.28s';
         overlay.style.transition = 'ease-in 0.28s';
-        overlay.style.zIndex = '1';
+        overlay.style.zIndex = '-1';
         
 
         for (index = 0; index < serviceDropItems.length; index++) {
@@ -175,6 +176,7 @@ function toggleService() {
     } else {
         serviceDropWrap.style.height = '320px';
         serviceDropWrap.style.top = '96px';
+        serviceDropWrap.style.boxShadow = '0 3px 6px rgba(0,0,0,0.18), 0 3px 6px rgba(0,0,0,0.26)';
         serviceTrigger.style.background = 'rgba(255,255,255,1)';
         serviceTrigger.style.color = '#2e7d32 !important';
         //serviceDropWrap.style.opacity = '1';

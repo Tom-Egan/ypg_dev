@@ -197,16 +197,16 @@ a:focus {
 .ypg_nav_phone {
 	float: right;
 	height: 80px;
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 /* navbar - phone number link item */
 .ypg_nav_phone p {
 	width: 100%;
-	margin-top: 16px;
+	margin-top: 18px;
 	font-weight: bold;
 	font-weight: 700;
-	color: #388e3c;
+	color: #E64A19; /* deep orange 700 */
 }
 
 
@@ -377,11 +377,6 @@ button:focus {
 		font-size: 1em;
 	}
 
-	.cta_button {
-		width: 220px !important;
-
-	}
-
 	.james_sig {
 		margin-left: -30px !important;
 	}
@@ -407,6 +402,11 @@ button:focus {
 	.home_hire_cta {
 		margin-top: 0 !important;
 		margin-bottom: -50px;
+		border-left: none !important;
+	}
+
+	.home_start_cta {
+		border-right: none !important;
 	}
 
 	.home_start_cta > .split_left > p,
@@ -416,11 +416,16 @@ button:focus {
 
 	.hero_image > .ypg_wrap > .hero_image_text h2 {
 		font-size: 1.2em !important;
+		text-align: center !important;
 	}
 
 	.hero_image > .ypg_wrap > .hero_image_text {
 		top: 35% !important;
-		width: 85% !important;
+		width: 100% !important;
+	}
+
+	.cta_button {
+		margin: 0 auto;
 	}
 
 
@@ -428,9 +433,6 @@ button:focus {
 }
 
 @media only screen and (max-width: 360px) {
-	.hero_image_text h2 {
-		width: 75%;
-	}
 
 	.home_section_break > .ypg_wrap > h2 {
 		font-size: 1.5em !important;
@@ -438,12 +440,13 @@ button:focus {
 	}
 
 	.hero_image > .ypg_wrap > .hero_image_text h2 {
-		font-size: 1em !important;
+		font-size: 0.8em !important;
+
 	}
 
 	.hero_image > .ypg_wrap > .hero_image_text {
-		top: 35% !important;
-		width: 100% !important;
+		top: 50% !important;
+
 	}
 }
 
@@ -452,9 +455,9 @@ button:focus {
 		height: 90vh !important;
 	}
 
-	.hero_image > .ypg_wrap > .hero_image_text {
-		top: 30% !important;
-	}
+/*	.hero_image > .ypg_wrap > .hero_image_text {
+		top: 35% !important;
+	}*/
 }
 
 @media only screen and (max-height: 500px) {
@@ -533,11 +536,33 @@ button:focus {
 
 .cta_button {
 	position: relative;
-	width: 300px;
+	width: 275px;
 	height: 75px;
-	border-radius: 8px;
+	border-radius: 75px;
 	background: #fbc02d;
-	border: 2px solid #E8AA0C;
+	border: 1px solid #E8AA0C;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.cta_button:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.cta_button:active {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
 }
 
 .cta_button a {
@@ -548,14 +573,83 @@ button:focus {
 	width: 100%;
 	color: #5D4037;
 	line-height: 70px;
+	font-weight: 700;
+	font-weight: bold;
+	border-radius: 75px;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+
+}
+
+.cta_button a:hover,
+.cta_button a:focus {
+	background: #E8AA0C;
+	color: #fff;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+	
+}
+
+.cta_button a:active,
+.cta_button:active {
+	color: #fff;
+	background: #fbc02d !important;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
 	transition: all 0.16s ease-out;
 }
 
-.cta_button a:hover {
+.cta_button_hover {
+	position: absolute;
+	width: 275px;
+	height: 75px;
+	left: -2px;
+	top: -2px;
+	background: none;
+	border-radius: 75px;
+	border: 8px solid #fbc02d;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+	opacity: 0;
+}
+
+.cta_button:hover > a {
 	background: #E8AA0C;
+	color: #fff;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
+.cta_button:hover > .cta_button_hover {
+	width: 295px;
+	height: 95px;
+	left: -11px;
+	top: -11px;
+	border: 1px solid #fbc02d;
+	opacity: 0.7;
+	border-radius: 95px;
+	-webkit-transition: all 0.21s ease-out;
+	-moz-transition: all 0.21s ease-out;
+	-o-transition: all 0.21s ease-out;
+	transition: all 0.21s ease-out;
+}
+
+.cta_button:active > .cta_button_hover,
+.cta_button:focus > .cta_button_hover  {
+	width: 305px;
+	height: 105px;
+	left: -18px;
+	top: -16px;
+	opacity: 0;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -717,7 +811,7 @@ button:focus {
 	height: 100vh;
 	width: 100%;
 	background: rgba(0,0,0,0);
-	z-index: 1;
+	z-index: -1;
 }
 
 .james_bold {
