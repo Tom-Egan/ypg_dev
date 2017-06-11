@@ -1517,3 +1517,26 @@ ul, li {
     position: absolute;
     right: 7%;
 }
+
+/* home page - testimonials */
+.testimonial_row {
+	padding: 16px;
+}
+
+.testimonial_row > .col-sm-2,
+.testimonial_row > .col-sm-3,
+.testimonial_row > .col-sm-4,
+.testimonial_row > .col-sm-5,
+.testimonial_row > .col-sm-6,
+.testimonial_row > .col-sm-7 {
+	padding: 20px;
+}
+
+.testimonial_row > .col-sm-2:hover,
+.testimonial_row > .col-sm-3:hover,
+.testimonial_row > .col-sm-4:hover,
+.testimonial_row > .col-sm-5:hover,
+.testimonial_row > .col-sm-6:hover,
+.testimonial_row > .col-sm-7:hover {
+	background: #ccc;
+}
