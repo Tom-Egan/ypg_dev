@@ -1847,9 +1847,11 @@ input[type="text"]:focus ~ .field_highlight {
 }
 
 .step_circle {
-	position: relative;
+	position: absolute;
+	left: -60px;
 	height: 50px;
 	width: 50px;
+	top: -24px;
 	background: #fff;
 	border: 2px solid #ccc;
 	border-radius: 50%;
@@ -1861,6 +1863,12 @@ input[type="text"]:focus ~ .field_highlight {
 	font-size: 1.4em;
 }
 
+.step1 {margin-top: -12px;}
+.step4 {margin-top: 12px;}
+.step5 {margin-top: 10px;}
+.step6 {margin-top: 36px;}
+.step7 {margin-top: 26px;}
+
 /*.step_outline {
 	position: absolute;
 	height: 100%;
@@ -1870,11 +1878,12 @@ input[type="text"]:focus ~ .field_highlight {
 	top: 0;
 	border: 6px solid #000;
 }
+
 */
-.step1 {margin-top: 45px;}
+/*.step1 {margin-top: 45px;}
 .step2 {margin-top: 312px;}
 .step3 {margin-top: 245px;}
 .step4 {margin-top: 167px;}
 .step5 {margin-top: 165px;}
 .step6 {margin-top: 235px;}
-.step7 {margin-top: 58px;}
+.step7 {margin-top: 58px;}*/
