@@ -1,3 +1,25 @@
 To Do
 
-- Validate and fix footer at smaller viewports
+- resize footer icons (120 x 120)
+- image for section break (ypg logo + maybe texture/pattern)
+- image for introduction area (has orange button)
+- images for service tiles (plus gradient/overlay)
+- image for hero
+- update ypg logo colors (brown 1= 6D4C41, brown 2 = BCAAA4, green 1 = #388e3c)
+- service dropdown -> styling/hover
+- refactor code and gut css
+- social media links
+- hover effect for ypg logo (nav)
+- links
+- image alt and titles
+- subpage hero images
+- service tile images
+- portfolio tile images
+
+
+mobile
+
+- mobile nav styling
+
+
+steppers move around if you add employers, maybe move inside each col-md-12

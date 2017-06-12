@@ -14,6 +14,27 @@
 
 
 	<title></title>
+
+	<script type="text/javascript">
+		var i = 1;
+
+		function addEmployer() {
+			if (i <= 4) {
+				i++;
+				var div = document.createElement('div');
+				div.innerHTML = '<input type="text" name="employer_' +i+'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
+
+				document.getElementById('newEmployer').appendChild(div);
+			}
+		}
+
+		function removeEmployer(div) {
+			document.getElementById('newEmployer').removeChild(div.parentNode);
+			i--;
+		}
+	</script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -38,11 +59,11 @@
 	<div id="ypg_nav_mobile">
 		<h3>Menu</h3>
 		<div class="mobile_link_wrap mobile_active"><a class="mobile_nav_text" href="index.html">Home</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">About</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="about.html">About</a></div>
 		<div class="mobile_link_wrap" id="mobile_service_trigger" onclick="toggleMobileService()"><a class="mobile_nav_text" href="#">Services</a></div>
 		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="portfolio.html">Portfolio</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Careers</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Contact</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="careers.html">Careers</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="contact.html">Contact</a></div>
 		<div id="mobile_phone_btn" class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Call Now: (262) 470-3829</a></div>
 	</div>
 
@@ -160,255 +181,126 @@
 	</div>
 </div> <!-- end of mega menu -->
 
-<!-- hero image -->
-<div class="hero_image_wrap">
-	<div class="hero_image">
+<!-- subpage hero -->
+<div class="subpage_hero_wrap">
+	<div class="subpage_hero_image about_hero">
 		<div class="ypg_wrap">
-			<div class="hero_image_text">
-				<h2>Get your property <br> ready for <span class="bold">Summer!</span></h2>
-
-				<div class="cta_button">
-					<div class="cta_button_hover"></div>
-					<a href="#">See What YPG Can Do</a>
-				</div>
+			<div class="subpage_hero_text">
+				<h1>Join the <span class="bold">YPG Team</span></h1>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- service grid boxes -->
-<div class="ypg_wrap">
-	<div class="home_service_tile_wrap">
-		<!-- landscape -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Landscape</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- lawn and turf -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Lawn and Turf</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- tree service -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Tree Service</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- hardscape -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Hardscape</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- concrete -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Concrete</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- landscape design -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Landscape Design</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- maintenance -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Maintenance</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- plant health care -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Plant Health Care</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- grading and drainage -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Grading and Drainage</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- mosquito and tick control -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a class="two_line_tile" href="">Mosquito and Tick Control</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- firewood, logs, and mulch -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a class="two_line_tile" href="">Firewood, Logs, and Mulch</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
-		<!-- snow and ice management -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a class="two_line_tile" href="">Snow and Ice Management</a>
-				<div class="tile_hover"><p>Learn More<p></div>
-			</div>
-		</div>
+<div class="ypg_wrap subpage">
+<div class="col-md-5 career_intro">
+<p>
+Thanks for your interest in working at Your Personal Gardener. Please fill out this brief form and you will receive a response shortly. If you have any questions, feel free to give us a call at <span class="bold accent_orange">(262) 470-3829</span>! We look forward to potentially working together in the near future.</p>
 
-		<div class="rel_fix"></div>
-	</div>
+<h4>James Chesebro</h4>
+<span>Owner, Your Personal Gardener, LLC</span>
 </div>
 
+<div class="col-md-1"></div>
 
-<div class="ypg_wrap company_intro">
-	<div class="col-md-7 intro_text">
-		<h3>We Love What We Do</h3>
-
-		<h4 class="serif">To Our Clients, Employees, and Community</h4>
-		<p class="white_bg">Landscaping is more than a “green industry” or “pulling weeds from the garden” type of job. Landscaping is inspiring. Landscaping brings the most out of your outdoor experience while sharing it with family, friends, and neighbors. We strive to help you envision your property in a whole new way. The most enjoyable part of our work is when our vision is transformed into your reality. Seeing you smile for the first time when you come home to see your muddy patch of yard transformed into a unique, eye-catching, and neighbor-asking beauty is the greatest reward.
-		<br><br>
-		Your Personal Gardener is a company of people that share the same enthusiasm and hard work ethic to meet and exceed your expectations. For the last 7 years, our team has channeled our combined experiences and passion to provide detailed, high quality landscape construction, and landscape maintenance services to the residential and commercial communities of Southeast Wisconsin. Together we feel very privileged to be a part of your piece of land.</p>
-
-		<img class="img-responsive james_sig" height="117" width="392" src="images/james-sig.png">
-		<p class="james_bold">James Chesebro</p>
-		<p>Owner, Your Personal Gardener</p>
-	</div>
-
-	<div class="intro_image">
-		<h3 class="serif">Located in Mukwonago, Wisconsin, YPG services both residential and commercial properties across southeastern Wisconsin.</h3>
-		<div class="cta_secondary">
-			<div class="cta_button_hover"></div>
-			<a href="about.html">Learn More</a>
-		</div>
-	</div>
-	<div class="rel_fix"></div>
+<!-- form -->
+<div class="col-md-6">
+<form class="ypg_form">
+<div class="stepper_wrap">
+	<div class="step_line"></div>
+	<div class="step_circle step1">1<div class="step_outline"></div></div>
+	<div class="step_circle step2">2</div>
+	<div class="step_circle step3">3</div>
+	<div class="step_circle step4">4</div>
+	<div class="step_circle step5">5</div>
+	<div class="step_circle step6">6</div>
+	<div class="step_circle step7">7</div>
 </div>
-
-
-
-
-<div class="home_section_break">
-	<div class="section_break_tint"></div>
-	<div class="ypg_wrap">
-		<h2 class="serif">Design. Build. Maintain.</h2>
+	<div class="col-md-12">
+		<p class="required">* denotes required fields.</p>
 	</div>
-</div>
+	<!-- first name -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*First Name</label>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- last name -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Last Name</label>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- phone -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Phone Number</label><br>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- email -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Email Address</label><br>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- work experience -->
+	<div class="col-md-12">
+		<label class="checkLabel">Work Experience</label><br>
+		<input type="checkbox" name="" />Lawn<br>
+		<input type="checkbox" name="" />Landscape<br>
+		<input type="checkbox" name="" />Tree Service<br>
+		<input type="checkbox" name="" />Concrete<br>
+		<input type="checkbox" name="" />Snow Removal<br>
+		<input type="checkbox" name="" />Small Engine Mechanic<br>
+		<input type="checkbox" name="" />Automotive Mechanic<br>
+		<input type="checkbox" name="" />Diesel Mechanic<br>
+	</div>
+	<!-- certifications -->
+	<div class="col-md-12">
+		<label class="checkLabel">Certifications</label><br>
+		<input type="checkbox" name="" />WI Pesticide Applicator License<br>
+		<input type="checkbox" name="" />Certified Arborist<br>
+		<input type="checkbox" name="" />Master Gardener<br>
+		<input type="checkbox" name="" />CDL<br>
+		<input type="checkbox" name="" />Other<br>
+	</div>
+	<!-- previous employers -->
+	<div class="col-md-12">
+		<label>*Previous Employer(s)</label><br>
+		<p id="career_span">Limit: Last five (5) employers.</p>
+		<input type="text" name="employer_1" />
+		<div class="field_highlight employer_highlight"></div>
+		<!-- placeholder space for new input boxes -->
+		<div id="newEmployer"></div>
+		<br>
+		<!-- add additional employers -->
+		<input type="button" onclick="addEmployer()" id="addEmployerBtn" value="Add Employer" />
+	</div>
+	<!-- tell us about yourself -->
+	<div class="col-md-12">
+		<label>*Tell Us About Yourself</label><br>
+		<p id="career_span">Talk about your past work experience, why you are interested in working at YPG, and a little about yourself.</p>
+		<textarea rows="6" class="long_text_field" name=""></textarea>
+	</div>
 
-<div class="ypg_wrap">
-<!-- 	<div class="col-md-12">
-		<h3>Happy Customers</h3>
+	<div class="col-md-12">
+		<div class="g-recaptcha" data-sitekey="6LfYESUUAAAAAA8dUEJls7CvT_vCSxbuUSRrJ8zv"></div>
+	</div>
 
-	</div> -->
-
-
-		<div class="col-sm-6 testimonial_col">
-			<div class="col-md-12 testimonial_item testimonial_title">
-				<h3>Happy Customers</h3>
-				<h4>Listen to what some of our customers have to say.</h4>
-				<img class="smart_quote" height="100" width="100" src="images/quote.svg">
-			</div>
-
-
-       		<div class="col-md-12 testimonial_item">
-       			<p>Many thanks to James and his team. Your crew was such a pleasure to work with. Everyone on your team was very courteous, polite and extremely hard working! We cannot thank you enough for the transformation you have achieved. All of our details were incorporated into your design and we couldn’t be happier with the work! We look forward to your continued maintenance over the years to keep this creation looking its best!</p>
-       			<div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Anthony and Tegan (Mukwonago, WI)</p>
-       		</div>
-
-       		<div class="col-md-12 testimonial_item">
-        		 <p>I couldn't be happier with the work done by YPG.  In fall, I had a tree removed and 2 new trees planted.  The flowering tree was gorgeous this spring.  YPG did all my spring clean up and new landscaping.  Their work was done in a timely manner and the gardeners that came to my house couldn't have been nicer!  I highly recommend Your Personal Gardener for tree removal as well as landscape design. They were a pleasure to work with, and I will use them again.</p>
-        		 <div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Ann Marie Capaccio</p>
-        	</div>
-        	<div class="col-md-12 testimonial_item select_item">
-        		<p>I highly recommend Your Personal Gardener!  Not only a phenomenal company, but they do amazing work and have wonderful workers.  If you are looking for landscaping needs or tree removal projects this is your company!</p>
-        		<div class="testimonial_author_divide accent_yellow_bg"></div>
-            <p class="serif accent_yellow">Melissa Krueger</p>
-        	</div>
-
-        	<div class="col-md-12 testimonial_item">
-        		<p>Many thanks for all your hard work leading up to the wedding. The dinner reception on the lawn turned out beautifully with all the gardens in full bloom and neatly manicured. What a joy to see it all come together! Thanks for the thoughtful gift of flowers. We placed it on the banquet table and it was the perfect touch.</p>
-        		<div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Marcia (Genesee, WI)</p>
-        	</div>
-        	
-        </div>
-
-        <div class="col-sm-6 testimonial_col">
-        <div class="col-md-12 testimonial_item">
-        		<p>Tom and I just want to thank you and your crew for the awesome job that you did to beautify our gardens. We received many compliments on our landscaping from our guests that attended our daughter’s graduation party. It was a beautiful day which allowed our guests to walk around and admire your work. We hope you and your family enjoy the rest of the summer and we look forward to seeing you again!</p>
-        		<div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Tom and Pam (Hartland, WI)</p>
-        	</div>
-
-        	<div class="col-md-12 testimonial_item select_item">
-		 		<p>I was referred to Your Personal Gardener from a neighbor that had them perform a full garden overhaul and renovation. They had also pointed out a tree to my neighbor that was showing signs of disease and had applied treatments to help protect it. In talking with my neighbor I found they have certified Arborists on staff and I have had them come out on two separate occasions for tree pruning and treatments. They are very knowledgeable and look quite impressive in the trees using ropes to climb and the trees looked nice once finished. They’re not the cheapest but I understand value and I was not willing to sacrifice irreplaceable Oak trees for some budget company. I believe you get what you pay for and true professionals are not easy to come by. I'll be using them for many years to come</p>
-		 		<div class="testimonial_author_divide accent_yellow_bg"></div>
-       			<p class="serif accent_yellow">Dan Smithson</p>
-       		</div>
-        	<div class="col-md-12 testimonial_item">
-        		<p>I hired "Your Personal Gardener (YPG)" to re-grade my entire yard, which was in very bad shape. From the start YPG were very professional and got my yard looking awesome again in no time. I would recommend YPG to anyone they did an awesome job and they were very easy to work with. Thanks YPG for the great work</p>
-        		<div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Jacob Buer</p>
-        	</div>
-
-        	
-        	
-
-
-
-
-        	
-
-        	<div class="col-md-12 testimonial_item">
-        		<p>Your Personal Gardener was fantastic to work with.  We had them do fertilizing, core aerating, and slit over seed this fall and now just re hired the crew to come and do tree work at our residence-tree removal and stump grinding. I was really worried because it was a huge tree over hanging the house but the guys came and were so nice, moved quick, and their prices were really reasonable. I will be calling them again! Thank you James and crew!</p>
-        		<div class="testimonial_author_divide"></div>
-            <p class="serif accent_orange">Stephanie Latringa</p>
-        	</div>
-        	
-        </div>
-
-
+	<!-- submit -->
+	<div class="col-md-12">
+		<input type="submit" value="Send" name="">
+	</div>
 
 	<div class="rel_fix"></div>
-
-	
+</form>
 </div>
 
-<!-- cta: start your project -->
-<div class="col-sm-6 home_start_cta">
-<div class="white_tint"></div>
-	<div class="split_wrap split_left">
-		<h3>Start Your Project</h3>
-		<p>No project is too big or too small, contact us today to begin your property transformation.</p>
-		<div class="cta_button">
-			<div class="cta_button_hover"></div>
-			<a href="#">Get a Quote</a>
-		</div>
-	</div>
+<div class="rel_fix"></div>
+
 </div>
 
-<!-- cta: join the ypg team -->
-<div class="col-sm-6 home_hire_cta">
-<div class="green_tint"></div>
-	<div class="split_wrap split_right">
-		<h3>Join the YPG Team</h3>
-		<p>We are always looking for more dedicated and hardworking individuals to be a part of our team.</p>
-		<div class="cta_button">
-			<div class="cta_button_hover"></div>
-			<a href="#">Get Hired</a>
-		</div>
-	</div>
-</div>
+
 
 <!-- footer -->
 <!-- <div class="footer_top_border">
@@ -420,8 +312,8 @@
 			<h4>Company</h4>
 			<ul>
 				<li><a href="about.html">About</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="contact.html">Contact</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 			</ul>
 		</div>
@@ -551,6 +443,8 @@
 
 
 <script async src="js/nav_toggle.js"> </script>
+
+
 
 </body>
 </html>
