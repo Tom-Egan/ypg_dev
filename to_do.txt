@@ -10,8 +10,16 @@ To Do
 - refactor code and gut css
 - social media links
 - hover effect for ypg logo (nav)
+- links
+- image alt and titles
+- subpage hero images
+- service tile images
+- portfolio tile images
 
 
 mobile
 
 - mobile nav styling
+
+
+steppers move around if you add employers, maybe move inside each col-md-12

@@ -14,6 +14,27 @@
 
 
 	<title></title>
+
+	<script type="text/javascript">
+		var i = 1;
+
+		function addEmployer() {
+			if (i <= 4) {
+				i++;
+				var div = document.createElement('div');
+				div.innerHTML = '<input type="text" name="employer_' +i+'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
+
+				document.getElementById('newEmployer').appendChild(div);
+			}
+		}
+
+		function removeEmployer(div) {
+			document.getElementById('newEmployer').removeChild(div.parentNode);
+			i--;
+		}
+	</script>
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -38,11 +59,11 @@
 	<div id="ypg_nav_mobile">
 		<h3>Menu</h3>
 		<div class="mobile_link_wrap mobile_active"><a class="mobile_nav_text" href="index.html">Home</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">About</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="about.html">About</a></div>
 		<div class="mobile_link_wrap" id="mobile_service_trigger" onclick="toggleMobileService()"><a class="mobile_nav_text" href="#">Services</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Portfolio</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Careers</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Contact</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="portfolio.html">Portfolio</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="careers.html">Careers</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="contact.html">Contact</a></div>
 		<div id="mobile_phone_btn" class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Call Now: (262) 470-3829</a></div>
 	</div>
 
@@ -97,9 +118,9 @@
 		<a href="index.html">Home</a> 
 		<a href="about.html">About</a>
 		<a href="javascript:void(0)" id="serviceTrigger" onclick="toggleService()" class="service_drop_trigger">Services<span><img id="drop_arrow" src="images/arrow.png" height="20" width="20"></span></a>
-		<a href="#">Portfolio</a>
-		<a href="#">Careers</a>
-		<a href="#">Contact</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="careers.html">Careers</a>
+		<a href="contact.html">Contact</a>
 	</div>
 
 	<!-- desktop nav: phone number -->
@@ -165,102 +186,121 @@
 	<div class="subpage_hero_image about_hero">
 		<div class="ypg_wrap">
 			<div class="subpage_hero_text">
-				<h1>Completed <span class="bold">Projects</span></h1>
+				<h1>Join the <span class="bold">YPG Team</span></h1>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- service grid boxes -->
-<div class="ypg_wrap">
-	<div class="home_service_tile_wrap">
-		<!-- landscape -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Featured Property</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- lawn and turf -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Landscape</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- tree service -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Lawn and Turf</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- hardscape -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Tree Service</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- concrete -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Hardscape</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- landscape design -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Concrete</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- maintenance -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Landscape Design</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
-		<!-- plant health care -->
-		<div class="col-md-3">
-			<div class="home_service_tile">
-				<a href="">Material Delivery</a>
-				<div class="tile_hover"><p>View<p></div>
-			</div>
-		</div>
+<div class="ypg_wrap subpage">
+<div class="col-md-5 career_intro">
+<p>
+Thanks for your interest in working at Your Personal Gardener. Please fill out this brief form and you will receive a response shortly. If you have any questions, feel free to give us a call at <span class="bold accent_orange">(262) 470-3829</span>! We look forward to potentially working together in the near future.</p>
 
-
-		<div class="rel_fix"></div>
-	</div>
+<h4>James Chesebro</h4>
+<span>Owner, Your Personal Gardener, LLC</span>
 </div>
 
-<!-- cta: start your project -->
-<div class="col-sm-6 home_start_cta">
-<div class="white_tint"></div>
-	<div class="split_wrap split_left">
-		<h3>Start Your Project</h3>
-		<p>No project is too big or too small, contact us today to begin your property transformation.</p>
-		<div class="cta_button">
-			<div class="cta_button_hover"></div>
-			<a href="#">Get a Quote</a>
-		</div>
+<div class="col-md-1"></div>
+
+<!-- form -->
+<div class="col-md-6">
+<form class="ypg_form">
+<div class="stepper_wrap">
+	<div class="step_line"></div>
+	<div class="step_circle step1">1<div class="step_outline"></div></div>
+	<div class="step_circle step2">2</div>
+	<div class="step_circle step3">3</div>
+	<div class="step_circle step4">4</div>
+	<div class="step_circle step5">5</div>
+	<div class="step_circle step6">6</div>
+	<div class="step_circle step7">7</div>
+</div>
+	<div class="col-md-12">
+		<p class="required">* denotes required fields.</p>
 	</div>
+	<!-- first name -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*First Name</label>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- last name -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Last Name</label>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- phone -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Phone Number</label><br>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- email -->
+	<div class="col-md-12">
+		<input type="text" name="" /> <br>
+		<label class="inputLabel">*Email Address</label><br>
+		<div class="field_highlight"></div>
+	</div>
+	<!-- work experience -->
+	<div class="col-md-12">
+		<label class="checkLabel">Work Experience</label><br>
+		<input type="checkbox" name="" />Lawn<br>
+		<input type="checkbox" name="" />Landscape<br>
+		<input type="checkbox" name="" />Tree Service<br>
+		<input type="checkbox" name="" />Concrete<br>
+		<input type="checkbox" name="" />Snow Removal<br>
+		<input type="checkbox" name="" />Small Engine Mechanic<br>
+		<input type="checkbox" name="" />Automotive Mechanic<br>
+		<input type="checkbox" name="" />Diesel Mechanic<br>
+	</div>
+	<!-- certifications -->
+	<div class="col-md-12">
+		<label class="checkLabel">Certifications</label><br>
+		<input type="checkbox" name="" />WI Pesticide Applicator License<br>
+		<input type="checkbox" name="" />Certified Arborist<br>
+		<input type="checkbox" name="" />Master Gardener<br>
+		<input type="checkbox" name="" />CDL<br>
+		<input type="checkbox" name="" />Other<br>
+	</div>
+	<!-- previous employers -->
+	<div class="col-md-12">
+		<label>*Previous Employer(s)</label><br>
+		<p id="career_span">Limit: Last five (5) employers.</p>
+		<input type="text" name="employer_1" />
+		<div class="field_highlight employer_highlight"></div>
+		<!-- placeholder space for new input boxes -->
+		<div id="newEmployer"></div>
+		<br>
+		<!-- add additional employers -->
+		<input type="button" onclick="addEmployer()" id="addEmployerBtn" value="Add Employer" />
+	</div>
+	<!-- tell us about yourself -->
+	<div class="col-md-12">
+		<label>*Tell Us About Yourself</label><br>
+		<p id="career_span">Talk about your past work experience, why you are interested in working at YPG, and a little about yourself.</p>
+		<textarea rows="6" class="long_text_field" name=""></textarea>
+	</div>
+
+	<div class="col-md-12">
+		<div class="g-recaptcha" data-sitekey="6LfYESUUAAAAAA8dUEJls7CvT_vCSxbuUSRrJ8zv"></div>
+	</div>
+
+	<!-- submit -->
+	<div class="col-md-12">
+		<input type="submit" value="Send" name="">
+	</div>
+
+	<div class="rel_fix"></div>
+</form>
 </div>
 
-<!-- cta: join the ypg team -->
-<div class="col-sm-6 home_hire_cta">
-<div class="green_tint"></div>
-	<div class="split_wrap split_right">
-		<h3>Join the YPG Team</h3>
-		<p>We are always looking for more dedicated and hardworking individuals to be a part of our team.</p>
-		<div class="cta_button">
-			<div class="cta_button_hover"></div>
-			<a href="#">Get Hired</a>
-		</div>
-	</div>
+<div class="rel_fix"></div>
+
 </div>
+
+
 
 <!-- footer -->
 <!-- <div class="footer_top_border">
@@ -272,9 +312,9 @@
 			<h4>Company</h4>
 			<ul>
 				<li><a href="about.html">About</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Portfolio</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
 			</ul>
 		</div>
 
@@ -403,6 +443,8 @@
 
 
 <script async src="js/nav_toggle.js"> </script>
+
+
 
 </body>
 </html>
