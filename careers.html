@@ -34,7 +34,7 @@
 		}
 	</script>
 
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
 </head>
 <body>
 
@@ -212,34 +212,31 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 	<div class="col-md-12">
 		<p class="required">* denotes required fields.</p>
 	</div>
-	<!-- first name -->
+	<!-- name -->
 	<div class="col-md-12">
+		
+		<input type="text" name="" /> <br>
 		<div class="step_circle step1">1</div>
-		<input type="text" name="" /> <br>
-		<label class="inputLabel">*First Name</label>
-		<div class="field_highlight"></div>
-	</div>
-	<!-- last name -->
-	<div class="col-md-12">
-		<input type="text" name="" /> <br>
-		<label class="inputLabel">*Last Name</label>
+		<label class="inputLabel">*Name</label>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- phone -->
 	<div class="col-md-12">
 		<input type="text" name="" /> <br>
+		<div class="step_circle step2">2</div>
 		<label class="inputLabel">*Phone Number</label><br>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- email -->
 	<div class="col-md-12">
 		<input type="text" name="" /> <br>
+		<div class="step_circle step3">3</div>
 		<label class="inputLabel">*Email Address</label><br>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- work experience -->
 	<div class="col-md-12">
-		<div class="step_circle step2">2</div>
+		
 		<label class="checkLabel">Work Experience</label><br>
 		<input type="checkbox" name="" />Lawn<br>
 		<input type="checkbox" name="" />Landscape<br>
@@ -249,23 +246,26 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 		<input type="checkbox" name="" />Small Engine Mechanic<br>
 		<input type="checkbox" name="" />Automotive Mechanic<br>
 		<input type="checkbox" name="" />Diesel Mechanic<br>
+		<div class="step_circle step4">4</div>
 	</div>
 	<!-- certifications -->
 	<div class="col-md-12">
-		<div class="step_circle step3">3</div>
+		
 		<label class="checkLabel">Certifications</label><br>
 		<input type="checkbox" name="" />WI Pesticide Applicator License<br>
 		<input type="checkbox" name="" />Certified Arborist<br>
 		<input type="checkbox" name="" />Master Gardener<br>
 		<input type="checkbox" name="" />CDL<br>
 		<input type="checkbox" name="" />Other<br>
+		<div class="step_circle step5">5</div>
 	</div>
 	<!-- previous employers -->
 	<div class="col-md-12">
-		<div class="step_circle step4">4</div>
+		
 		<label>*Previous Employer(s)</label><br>
 		<p id="career_span">Limit: Last five (5) employers.</p>
 		<input type="text" name="employer_1" />
+		<div class="step_circle step6">6</div>
 		<div class="field_highlight employer_highlight"></div>
 		<!-- placeholder space for new input boxes -->
 		<div id="newEmployer"></div>
@@ -275,21 +275,24 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 	</div>
 	<!-- tell us about yourself -->
 	<div class="col-md-12">
-		<div class="step_circle step5">5</div>
+		
 		<label>*Tell Us About Yourself</label><br>
 		<p id="career_span">Talk about your past work experience, why you are interested in working at YPG, and a little about yourself.</p>
 		<textarea rows="6" class="long_text_field" name=""></textarea>
+		<div class="step_circle step7">7</div>
 	</div>
 
 	<div class="col-md-12">
-		<div class="step_circle step6">6</div>
+		
 		<div class="g-recaptcha" data-sitekey="6LfYESUUAAAAAA8dUEJls7CvT_vCSxbuUSRrJ8zv"></div>
+		<div class="step_circle step8">8</div>
 	</div>
 
 	<!-- submit -->
 	<div class="col-md-12">
-		<div class="step_circle step7">7</div>
+		
 		<input type="submit" value="Send" name="">
+		<div class="step_circle step9">9</div>
 	</div>
 
 	<div class="rel_fix"></div>
@@ -443,6 +446,7 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 
 
 <script async src="js/nav_toggle.js"> </script>
+<script async src='https://www.google.com/recaptcha/api.js'></script>
 
 
 

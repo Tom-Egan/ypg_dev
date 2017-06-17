@@ -455,7 +455,7 @@ button:focus {
 	}
 
 	.ypg_form {
-		margin-left: 40px !important;
+		margin-left: 32px !important;
 	}
 
 }
@@ -522,12 +522,17 @@ button:focus {
 .ypg_form > .col-md-12 > input[type="text"],
 #newEmployer > div > input[type="text"],
 input[type="text"]:focus ~ .field_highlight,
-#career_span {
+#career_span{
 	width: 80% !important;
 }
 
 #newEmployer > div > input[type="button"] {
 	left: 81% !important;
+}
+
+textarea {
+	width: 80% !important;
+	max-width: 80% !important;
 }
 
 
@@ -1795,6 +1800,7 @@ input[type="text"]:valid ~ .inputLabel{
 	background: #2e7d32;
 	top: 22px;
 	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 }
 
 .employer_highlight {
@@ -1811,6 +1817,7 @@ input[type="text"]:focus ~ .field_highlight {
 	height: 4px;
 	width: 60%;
 	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 	z-index: 3;
 }
 
@@ -1824,8 +1831,8 @@ input[type="text"]:focus ~ .field_highlight {
 .stepper_wrap {
 	position: absolute;
 	height: 100%;
-	width: 50px;
-	left: -60px;
+	width: 30px;
+	left: -40px;
 	top: -16px;
 }
 
@@ -1848,26 +1855,48 @@ input[type="text"]:focus ~ .field_highlight {
 
 .step_circle {
 	position: absolute;
-	left: -60px;
-	height: 50px;
-	width: 50px;
+	left: -40px;
+	height: 30px;
+	width: 30px;
 	top: -24px;
-	background: #fff;
-	border: 2px solid #ccc;
+	background: #ccc;
+	border: 3px solid #fff;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 46px;
+	line-height: 25px;
 	color: #999; 
-	font-weight: bold;
-	font-weight: 700;
-	font-size: 1.4em;
+	color: #fff;
+	font-size: 0.9em;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 }
 
-.step1 {margin-top: -12px;}
-.step4 {margin-top: 12px;}
-.step5 {margin-top: 10px;}
-.step6 {margin-top: 36px;}
-.step7 {margin-top: 26px;}
+
+input[type="text"]:focus ~ .step_circle,
+input[type="checkbox"]:focus ~ .step_circle,
+textarea:focus ~ .step_circle,
+input[type="submit"]:focus ~ .step_circle {
+	background: #222 !important;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
+
+}
+
+.step1, .step2, .step3{margin-top: -3px;}
+.step4, .step5 {margin-top: 9px;}
+.step6 {margin-top: 21px;}
+.step7 {margin-top: 20px;}
+.step8, .step9 {margin-top: 36px;}
+
+.g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
+
+textarea {
+	max-width: 60%;
+	max-height: 500px;
+}
 
 /*.step_outline {
 	position: absolute;
