@@ -951,6 +951,7 @@ input[type="text"]:focus ~ .field_highlight,
 	padding: 12px;
 	color: rgba(255,255,255,0);
 	text-align: center;
+	background: rgba(56,142,60,0.2);
 }
 
 /* service mega menu, pushes text inside tiles down */
@@ -1079,68 +1080,6 @@ input[type="text"]:focus ~ .field_highlight,
 	margin-bottom: -15px;
 }
 
-
-/* desktop service dropdown tiles */
-/* background images */
-.desk_landscape_tile {
-	background: url(../images/landscape.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_lawn_tile {
-	background: url(../images/lawn.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_tree_tile {
-	background: url(../images/tree.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_hardscape_tile {
-	background: url(../images/hardscape.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-.desk_concrete_tile,
-.desk_design_tile,
-.desk_maintenance_tile,
-.desk_plant_tile,
-.desk_grading_tile,
-.desk_mosquito_tile,
-.desk_firewood_tile,
-.desk_snow_tile {
-	background: url(../images/concrete.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-
-
-
 /* home service tiles */
 .home_service_tile_wrap {
 	position: relative;
@@ -1253,6 +1192,68 @@ input[type="text"]:focus ~ .field_highlight,
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.maintenance_tile {
+	background: url("../images/service_maintenance.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.plant_health_tile {
+	background: url("../images/service_plant_health.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.grading_tile {
+	background: url("../images/service_grading.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mosquito_tile {
+	background: url("../images/service_mosquito.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.firewood_tile {
+	background: url("../images/service_firewood.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.snow_tile {
+	background: url("../images/service_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 
 
 .tile_hover {
