@@ -718,7 +718,7 @@ input[type="text"]:focus ~ .field_highlight,
 }
 
 .cta_secondary:hover {
-	background: #D84315;
+	background: #E8AA0C;
 }
 /* when cursor is in between button and outline */
 .cta_secondary:hover > a {
@@ -786,12 +786,14 @@ input[type="text"]:focus ~ .field_highlight,
 	width: 100%;
 	font-size: 1em;
 	line-height: 53px;
-	color: #E64A19;
+	/*color: #E64A19;*/
+	color: #fbc02d;
 	font-weight: 700;
 	font-weight: bold;
 	border-radius: 75px;
 	background: none;
-	border: 2px solid #E64A19;
+	/*border: 2px solid #E64A19;*/
+	border: 2px solid #fbc02d;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -800,7 +802,8 @@ input[type="text"]:focus ~ .field_highlight,
 /* secondary button link */
 .cta_secondary a:hover,
 .cta_secondary a:focus {
-	background: #D84315;
+	/*background: #D84315;*/
+	background: #E8AA0C;
 	color: #fff;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -823,7 +826,8 @@ input[type="text"]:focus ~ .field_highlight,
 .cta_secondary a:active,
 .cta_secondary:active {
 	color: #fff;
-	background: #FF5722 !important;
+	/*background: #FF5722 !important;*/
+	background: #fbc02d;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -864,7 +868,8 @@ input[type="text"]:focus ~ .field_highlight,
 .cta_secondary > .cta_button_hover {
 	width: 200px;
 	height: 60px;
-	border: 8px solid #E64A19 !important;
+	/*border: 8px solid #E64A19 !important;*/
+	border: 8px solid #fbc02d;
 }
 /* offset outline effect */
 .cta_secondary:hover > .cta_button_hover {
@@ -872,7 +877,8 @@ input[type="text"]:focus ~ .field_highlight,
 	height: 80px;
 	left: -10px !important;
 	top: -10px !important;
-	border: 1px solid #E64A19 !important;
+	/*border: 1px solid #E64A19 !important;*/
+	border: 1px solid #fbc02d;
 	opacity: 0.7;
 	border-radius: 95px;
 	-webkit-transition: all 0.21s ease-out;
@@ -1278,7 +1284,7 @@ input[type="text"]:focus ~ .field_highlight,
 /* 'join ypg' 50% width background*/
 .home_hire_cta {
 
-	background: url("../images/ypg_footer_career.jpg");
+	background: url("../images/ypg_footer_career_v2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -1304,6 +1310,8 @@ input[type="text"]:focus ~ .field_highlight,
 	width: 100%;
 	background: rgba(230, 74, 25, 0.65);
 }
+
+
 
 /* call-to-action text */
 .home_start_cta > .split_left > h3,
@@ -1532,7 +1540,7 @@ ul, li {
 .intro_image {
 	width: 50%;
 	float: left;
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/ypg_home_intro.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
