@@ -945,22 +945,23 @@ input[type="text"]:focus ~ .field_highlight,
 	width: 100%;
 /*	background: rgba(0,0,0,0.3);*/
 	line-height: 1em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: bold;
 	font-weight: 700;
 	padding: 12px;
 	color: rgba(255,255,255,0);
 	text-align: center;
-	background: rgba(56,142,60,0.2);
+	/*background: rgba(56,142,60,0.65);*/
+	background: rgba(12,12,12,0.45);
 }
 
 /* service mega menu, pushes text inside tiles down */
 .service_links {
-	padding-top: 100px !important;
+	padding-top: 70px !important;
 }
 
 .service_drop_tile a:hover {
-	background: rgba(255,255,255,0.4);
+	background: rgba(56,142,60,0.8);
 }
 
 /* mobile nav - 2nd level services - back button wrapper */
