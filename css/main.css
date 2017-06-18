@@ -1159,8 +1159,6 @@ input[type="text"]:focus ~ .field_highlight,
 
 .home_service_tile {
 	height: 200px;
-/*	background: #ccc;*/
-
 	background: url("../images/ypg_crew2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1196,6 +1194,67 @@ input[type="text"]:focus ~ .field_highlight,
 	/*background: rgba(0,0,0,0.8);*/
 }
 
+.landscape_tile {
+	background: url("../images/service_landscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.lawn_tile {
+	background: url("../images/service_lawn.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.tree_tile {
+	background: url("../images/service_tree.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.hardscape_tile {
+	background: url("../images/service_hardscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.concrete_tile {
+	background: url("../images/service_concrete.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landscape_design_tile {
+	background: url("../images/service_landscape_design.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 .tile_hover {
 	height: 100%;
 	width: 100%;
@@ -1218,6 +1277,7 @@ input[type="text"]:focus ~ .field_highlight,
 
 .home_service_tile a:hover + .tile_hover {
 	background: rgba(56,142,60,0.8);
+
 	transition: 0.24s ease-out;
 }
 
