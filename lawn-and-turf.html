@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- CSS: Main -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Lato Light, Reg, Bold -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+
+
+	<title></title>
+</head>
+<body>
+
+<!-- overlay tint when service dropdown is active -->
+<div id="drop_overlay"></div>
+
+<!-- navigation wrapper -->
+<div class="ypg_nav">
+	<!-- ypg logo -->
+	<div class="ypg_nav_logo">
+		<a href="index.html"><img id="ypgLogo" height="75" width="259" src="images/ypg_nameplate.png"></a>
+	</div>
+
+	<!-- hamburger button -->
+	<button id="hamburger" onclick="toggleHamburger()">
+		<div id="ham_line1"></div>
+		<div id="ham_line2"></div>
+		<div id="ham_line3"></div>
+	</button>
+
+	<!-- 1st level mobile navigation -->
+	<div id="ypg_nav_mobile">
+		<h3>Menu</h3>
+		<div class="mobile_link_wrap mobile_active"><a class="mobile_nav_text" href="index.html">Home</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="about.html">About</a></div>
+		<div class="mobile_link_wrap" id="mobile_service_trigger" onclick="toggleMobileService()"><a class="mobile_nav_text" href="#">Services</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="showcase.html">Showcase</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="careers.html">Careers</a></div>
+		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="contact.html">Contact</a></div>
+		<div id="mobile_phone_btn" class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Call Now: (262) 470-3829</a></div>
+	</div>
+
+	<!-- 2nd level mobile navigation: services -->
+	<div id="mobile_service_wrap">
+		<div class="back_btn_wrap">
+			<a href="javascript:void(0)" id="back_btn" onclick="toggleMobileService()"><span><img id="back_arrow" src="images/arrow.png" height="20" width="20"></span>Back</a>
+		</div>
+
+		<div class="mobile_service_tile_wrap">
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Landscape</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Lawn and Turf</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Tree Service</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Hardscape</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Concrete</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Landscape Design</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Maintenance</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Plant Health Care</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Grading and Drainage</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Mosquito and Tick Control</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Firewood, Logs, and Mulch</a>
+			</div>
+			<div class="col-xs-6 mobile_service_tile">
+				<a href="">Snow and Ice Management</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- desktop nav: links -->
+	<div class="ypg_nav_links">
+		<a href="index.html">Home</a> 
+		<a href="about.html">About</a>
+		<a href="javascript:void(0)" id="serviceTrigger" onclick="toggleService()" class="service_drop_trigger">Services<span><img id="drop_arrow" src="images/arrow.png" height="20" width="20"></span></a>
+		<a href="showcase.html">Showcase</a>
+		<a href="careers.html">Careers</a>
+		<a href="contact.html">Contact</a>
+	</div>
+
+	<!-- desktop nav: phone number -->
+	<div class="ypg_nav_phone">
+		<p>(262) 470-3829</p>
+	</div>
+</div>
+
+<!-- desktop nav: services mega menu -->
+<div class="service_drop_outer" id="service_dropdown">
+	<!-- landscape -->
+	<div class="col-md-2 service_drop_tile desk_landscape_tile">
+		<a class="service_links" href="">Landscape</a>
+	</div>
+	<!-- lawn and turf -->
+	<div class="col-md-2 service_drop_tile desk_lawn_tile">
+		<a class="service_links" href="">Lawn and Turf</a>
+	</div>
+	<!-- tree service -->
+	<div class="col-md-2 service_drop_tile desk_tree_tile">
+		<a class="service_links" href="">Tree Service</a>
+	</div>
+	<!-- hardscape -->
+	<div class="col-md-2 service_drop_tile desk_hardscape_tile">
+		<a class="service_links" href="">Hardscape</a>
+	</div>
+	<!-- concrete -->
+	<div class="col-md-2 service_drop_tile desk_concrete_tile">
+		<a class="service_links" href="">Concrete</a>
+	</div>
+	<!-- landscape design -->
+	<div class="col-md-2 service_drop_tile desk_design_tile">
+		<a class="service_links" href="">Landscape Design</a>
+	</div>
+	<!-- maintenance -->
+	<div class="col-md-2 service_drop_tile desk_maintenance_tile">
+		<a class="service_links" href="">Maintenance</a>
+	</div>
+	<!-- plant health care -->
+	<div class="col-md-2 service_drop_tile desk_plant_tile">
+		<a class="service_links" href="">Plant Health Care</a>
+	</div>
+	<!-- grading and drainage -->
+	<div class="col-md-2 service_drop_tile desk_grading_tile">
+		<a class="service_links" href="">Grading and Drainage</a>
+	</div>
+	<!-- mosquito and tick control -->
+	<div class="col-md-2 service_drop_tile desk_mosquito_tile">
+		<a class="service_links" href="">Mosquito and Tick Control</a>
+	</div>
+	<!-- firewood, logs, and mulch -->
+	<div class="col-md-2 service_drop_tile desk_firewood_tile">
+		<a class="service_links" href="">Firewood, Logs, and Mulch</a>
+	</div>
+	<!-- snow and ice -->
+	<div class="col-md-2 service_drop_tile desk_snow_tile">
+		<a class="service_links" href="">Snow and Ice Management</a>
+	</div>
+</div> <!-- end of mega menu -->
+
+<!-- subpage hero -->
+<div class="subpage_hero_wrap">
+	<div class="subpage_hero_image lawn_hero">
+		<div class="ypg_wrap">
+			<div class="subpage_hero_text">
+				<h1><span class="bold">Lawn and Turf</span></h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ypg_wrap subpage">
+	<div class="col-md-5">
+		<p>Your Personal Gardener provides complete lawn care service. We take great pride in making your lawn look its best. We offer full seasonal care for your lawn beginning in spring and continuing through the fall.</p>
+
+		<h4>Lawn Maintenance</h4>
+
+		<p>Every visit includes a complete mowing of all the property, including string trimming around all edges. Removal includes all grass debris on driveways, sidewalks, patios, with a power blower. All lawn debris such as large sticks and branches, cans, papers, trash will be removed.</p>
+
+		<h4>Lawn Fertilizing</h4>
+
+		<p>We offer a complete fertilizing program to work specifically with your individual needs. All fertilizing programs are created individually for each client through a turf management specialist assuring you are getting the best product for your lawn.</p>
+
+		<h4>Weed Control</h4>
+
+		<p>Granular and liquid weed applications are two options available that allow you to complete your lawn care goals.</p>
+
+		<h4>Slit Over-Seeding</h4>
+
+		<p>Slit over-seeding is a common way to economically renew and rejuvenate an older or patchy lawn by providing newly seeded grass. This technique is commonly used in the spring and fall when optimal grass growing conditions are present, thus not requiring personal watering.</p>
+
+		<h4>Core Aeration</h4>
+
+		<p>Core aeration is often used in conjunction with slit over-seeding. The process of core aeration is used to cut through thatch and compacted soil allowing for relief of soil compaction, increase in water drainage, aeration to lawn, reduction in thatch layers, and a recycling of nutrients for you grass.</p>
+
+		<h4>Lawn Installation (Seed)</h4>
+
+		<p>The most economical and common means of grass installation. Through the use of seed installation, individuals on a budget or a large scale area can afford a new lawn. Once we determine your local conditions YPG can help you select plan to give you the lawn you deserve. Through the use of soil top dressing and reseeding or sod installation, areas destroyed through high traffic can be brought back to look great.</p>
+
+		<h4>Lawn Installation (Sod)</h4>
+
+		<p>A way for our customers to enjoy the benefits of a fully established lawn overnight. There are many choices available to choose from with sod. Once we determine your local conditions, YPG can help you select the best type for your property. From clover mixtures to full sun Kentucky blue, we will make sure to install the best product for your landscape! Through the use of soil top dressing and reseeding or sod installation, areas destroyed through high traffic can be brought back to look great.</p>
+
+		<h4>Soil Sampling</h4>
+
+		<p>Results typically take 2-3 weeks to come back and can tell you a great deal of information as to what your lawn and garden needs to look its best. The soil test can also help aid in what plants may be best suitable for your lawn and landscape. Yard and garden soil test results are typically good for 3-5 years.</p>
+
+		<div class="cta_secondary">
+			<div class="cta_button_hover"></div>
+			<a href="showcase/landscape.html">View Showcase</a>
+		</div>
+	</div>
+
+	<div class="col-md-1"></div>
+
+	<div class="col-md-5 subpage_side_images">
+		<img height="453" width="606" class="img-responsive" src="images/lawn_image1.jpg">
+		<img height="453" width="606" class="img-responsive" src="images/lawn_image2.jpg">
+		<img height="453" width="606" class="img-responsive" src="images/lawn_image3.jpg">
+		<img height="341" width="492" class="img-responsive" src="images/lawn_image4.jpg">
+
+	</div>
+
+	<div class="rel_fix"></div>
+</div>
+
+<!-- cta: start your project -->
+<div class="col-sm-6 home_start_cta">
+<div class="white_tint"></div>
+	<div class="split_wrap split_left">
+		<h3>Start Your Project</h3>
+		<p>No project is too big or too small, contact us today to begin your property transformation.</p>
+		<div class="cta_button">
+			<div class="cta_button_hover"></div>
+			<a href="#">Get a Quote</a>
+		</div>
+	</div>
+</div>
+
+<!-- cta: join the ypg team -->
+<div class="col-sm-6 home_hire_cta">
+<div class="green_tint"></div>
+	<div class="split_wrap split_right">
+		<h3>Join the YPG Team</h3>
+		<p>We are always looking for more dedicated and hardworking individuals to be a part of our team.</p>
+		<div class="cta_button">
+			<div class="cta_button_hover"></div>
+			<a href="#">Get Hired</a>
+		</div>
+	</div>
+</div>
+
+<!-- footer -->
+<!-- <div class="footer_top_border">
+</div> -->
+<div class="footer_bg">
+	<div class="ypg_wrap">
+		<!-- company -->
+		<div class="col-md-3 footer_side_box">
+			<h4>Company</h4>
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="showcase.html">Showcase</a></li>
+				<li><a href="careers.html">Careers</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			</ul>
+		</div>
+
+		<!-- services -->
+		<div class="col-md-6 footer_center_service">
+			<!-- row 1 -->
+			<div class="row">
+				<!-- landscape -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="landscape.html">Landscape</a>
+				</div>
+				<!-- lawn and turf -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="lawn-and-turf.html">Lawn and Turf</a>
+				</div>
+				<!-- tree service -->
+				<div class="col-md-4 footer_grid_box right_border">
+					<a href="tree-service.html">Tree Service</a>
+				</div>
+			</div> 
+			<!-- row 2 -->
+			<div class="row">
+				<!-- hardscape -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="hardscape.html">Hardscape</a>
+				</div>
+				<!-- concrete -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="concrete.html">Concrete</a>
+				</div>
+				<!-- landscape design -->
+				<div class="col-md-4 footer_grid_box right_border">
+					<a href="landscape-design.html">Landscape Design</a>
+				</div>
+			</div>
+			<!-- row 3 -->
+			<div class="row">
+				<!-- maintenance -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="maintenance.html">Maintenance</a>
+				</div>
+				<!-- plant health care -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="plant-health-care.html">Plant Health Care</a>
+				</div>
+				<!-- grading and drainage -->
+				<div class="col-md-4 footer_grid_box right_border">
+					<a href="grading-and-drainage.html">Grading and Drainage</a>
+				</div>
+			</div>
+			<!-- row 4 -->
+			<div class="row">
+				<!-- mosquito and tick control -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="mosquito-and-tick-control.html">Mosquito and Tick Control</a>
+				</div>
+				<!-- firewood, logs, and mulch -->
+				<div class="col-md-4 footer_grid_box">
+					<a href="firewood-logs-mulch.html">Firewood, Logs, and Mulch</a>
+				</div>
+				<!-- snow and ice management -->
+				<div class="col-md-4 footer_grid_box right_border">
+					<a href="snow-and-ice-management.html">Snow and Ice Management</a>
+				</div>
+			</div> <!-- end of row 4 -->
+		</div> <!-- end of col-md-6 -->
+
+		<!-- contact -->
+		<div class="col-md-3 footer_side_box right_align">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="#">(262) 470-3829</a></li>
+				<li><a href="#">YourPersonalGardenerLLC@gmail.com</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Google+</a></li>
+			</ul>
+		</div> 
+		<!-- awards and affiliates -->
+		<div class="row_buffer">
+			<div class="row awards_row">
+				<div class="col-md-12">
+					<h4>Awards and Affiliates</h4>
+				</div>
+			<!-- 2017 expertise award -->
+				<div class="col-sm-2"><img title="Expertise.com's Top 25 Best Milwaukee Landscapers for 2017" alt="Expertise.com's Top 25 Best Milwaukee Landscapers for 2017" height="130" width="130" class="img-responsive" src="images/affiliates-awards/award_expertise2017.svg"></div>
+				<!-- 2016 expertise award -->
+				<div class="col-sm-2"><img title="Expertise.com's Top 25 Best Milwaukee Landscapers for 2016" alt="Expertise.com's Top 25 Best Milwaukee Landscapers for 2016" height="130" width="130" class="img-responsive" src="images/affiliates-awards/award_expertise2016.svg"></div>
+				<!-- 2015 gold leaf award -->
+				<div class="col-sm-2"><img title="2015 Gold Leaf Award" alt="2015 Gold Leaf Award" height="150" width="180" class="img-responsive" src="images/affiliates-awards/award_gold_leaf.png"></div>
+				<!-- simply the best 2016 -->
+				<div class="col-sm-2"><img title="2016 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" alt="2016 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" height="130" width="106" class="img-responsive" src="images/affiliates-awards/award_best_2016_130.png"></div>
+				<!-- simply the best 2015 -->
+				<div class="col-sm-2"><img title="2015 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" alt="2015 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" height="130" width="106" class="img-responsive" src="images/affiliates-awards/award_best_2015_130.png"></div>
+				<!-- simply the best 2014 -->
+				<div class="col-sm-2"><img title="2014 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" alt="2014 Mukwonago Area's 'Simply the Best' Landscape and Lawn Maintenance Company" height="130" width="105" class="img-responsive" src="images/affiliates-awards/award_best_2014_130.png"></div>
+			</div>
+
+			<div class="row awards_row">
+				<!-- wisconsin landscape contractor association -->
+				<div class="col-sm-2"><img title="Wisconsin Landscape Contractors Association" alt="Wisconsin Landscape Contractors Association" height="130" width="357" class="img-responsive wlca" src="images/affiliates-awards/afil_wlca_130.png"></div>
+				<!-- mukwonago chamber of commerce -->
+				<div class="col-sm-2"><img title="Mukwonago Area Chamber of Commerce and Tourism Center" alt="Mukwonago Area Chamber of Commerce and Tourism Center" height="130" width="130" class="img-responsive" src="images/affiliates-awards/afil_muk_coc_130.png"></div>
+				<!-- master gardener -->
+				<div class="col-sm-2"><img title="UW-Extension Master Gardener Program" alt="UW-Extension Master Gardener Program" height="130" width="130" class="img-responsive" src="images/affiliates-awards/afil_master_gardener_130.png"></div>
+				<!-- pesticide applicator -->
+				<div class="col-sm-2"><img title="UW-Extension Pesticide Applicator Training Program" alt="UW-Extension Pesticide Applicator Training Program" height="130" width="130" class="img-responsive" src="images/affiliates-awards/afil_pat_130.png"></div>
+				<!-- wisconsin arborist association -->
+				<div class="col-sm-2"><img title="Wisconsin Arborist Association" alt="Wisconsin Arborist Association" height="130" width="130" class="img-responsive" src="images/affiliates-awards/afil_waa_130.png"></div>
+				<!-- isa member -->
+				<div class="col-sm-2"><img title="ISA Member" alt="ISA Member" height="129" width="82" class="img-responsive" src="images/affiliates-awards/afil_isa_130.png"></div>
+			</div>
+		</div> <!-- end of row -->
+
+		<div class="row copyright">
+		<p>&copy;2017 Your Personal Gardener, LLC. All rights reserved.</p>
+		<p>Designed and handbuilt by <a title="The YPG website was designed and built from scratch by Tom Egan, come take a look at some of his other projects." alt="This website was designed and built from scratch by Tom Egan, come take a look at some of his other projects." target="_blank" href="http://tom-egan.com">Tom Egan</a>.</p>
+		</div>
+	</div> <!-- end of ypg_wrap -->
+
+	<!-- relative/clear fix -->
+	<div class="rel_fix"></div>
+
+</div> <!-- end of footer_bg -->
+
+
+
+
+<script async src="js/nav_toggle.js"> </script>
+
+</body>
+</html>

@@ -116,15 +116,35 @@ a:focus {
 .ypg_nav_logo a {
 	float: left;
 	padding: 1px;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+
 }
 
 /* navbar - logo hover */
 .ypg_nav_logo a:hover {
+	opacity: 0.7;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
 	/*background: #222;*/
 }
 
+.ypg_nav_logo a:active {
+	opacity: 0.4;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
 .ypg_nav_logo img {
+	position: relative;
 	left: 0;
+	top: 8px;
 }
 
 /* navbar - wrapper for all links */
@@ -458,6 +478,31 @@ button:focus {
 		margin-left: 32px !important;
 	}
 
+	.careers_hero {
+		background-position: right center !important;
+	}
+
+	.subpage_side_images {
+		display: none !important;
+	}
+
+	.isa_certified {
+		margin-top: 10px !important;
+	}
+
+	.certified2 {
+		margin-top: 55px;
+	}
+
+	.full_image {
+		margin: 25px auto 0 auto!important;
+		width: 100% !important;
+	}
+
+	.subpage_center_img {
+		margin-top: 0 !important;
+	}
+
 }
 
 
@@ -515,6 +560,10 @@ button:focus {
 
 	.cta_button {
 		margin: 0 auto;
+	}
+
+	.careers_hero {
+		background-position: center center !important;
 	}
 
 
@@ -598,15 +647,15 @@ textarea {
 	width: 100%;
 	height: 80vh;
 	max-height: 900px;
-	margin-top: -80px;
+	margin-top: -81px;
 }
 /* smaller subpage hero image wrapper */
 .subpage_hero_wrap {
 	position: relative;
 	width: 100%;
-	height: 42vh;
+	height: 45vh;
 	max-height: 480px;
-	margin-top: -80px;
+	margin-top: -81px;
 }
 
 
@@ -616,7 +665,7 @@ textarea {
 	height: 100%;
 	width: 100%;
 	padding: 12px;
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/ypg_hero_hi_res.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -635,7 +684,7 @@ textarea {
 
 /* about subpage hero */
 .about_hero {
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/subpage_about.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -643,6 +692,201 @@ textarea {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+/* careers hero */
+.careers_hero {
+	background: url("../images/subpage_career.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* contact hero */
+.contact_hero {
+	background: url("../images/subpage_contact.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* landscape hero */
+.landscape_hero {
+	background: url("../images/subpage_landscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* lawn hero */
+.lawn_hero {
+	background: url("../images/subpage_lawn.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* tree hero */
+.tree_hero {
+	background: url("../images/subpage_tree.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* hardscape hero */
+.hardscape_hero {
+	background: url("../images/subpage_hardscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* concrete hero */
+.concrete_hero {
+	background: url("../images/subpage_concrete.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* landscape design hero */
+.landscape_design_hero {
+	background: url("../images/subpage_landscape_design.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* maintenance hero */
+.maintenance_hero {
+	background: url("../images/subpage_maintenance.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* plant health care hero */
+.plant_health_care_hero {
+	background: url("../images/subpage_phc.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* grading and drainage hero */
+.grading_hero {
+	background: url("../images/subpage_grading.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* mosquito and tick control hero */
+.mosquito_hero {
+	background: url("../images/subpage_mosquito.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* firewood, logs, and mulch hero */
+.firewood_hero {
+	background: url("../images/subpage_firewood.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* snow and ice management hero */
+.snow_hero {
+	background: url("../images/subpage_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* portfolio home hero */
+.port_hero {
+	background: url("../images/subpage_port.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.subpage_center_img {
+	margin-top: 100px;
+}
+
+.subpage_center_img > img,
+.full_image {
+	position: relative;
+	margin: 0 auto 12px auto;
+	width: 75%;
+}
+
+.subpage_side_images > img {
+	margin-bottom: 12px;
 }
 
 
@@ -664,6 +908,7 @@ textarea {
 	font-weight: light;
 	font-weight: 300;
 	font-size: 2em;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .subpage_hero_image > .ypg_wrap > .subpage_hero_text {
@@ -681,6 +926,7 @@ textarea {
 	font-size: 3.5em;
 	bottom: 50px;
 	color: #fff;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5), 0 2px 5px rgba(0,0,0,0.4);
 }
 
 /* 'Spring', 'Summer', 'Fall', 'Winter' Emphasis text*/
@@ -723,7 +969,7 @@ textarea {
 }
 
 .cta_secondary:hover {
-	background: #D84315;
+	background: #E8AA0C;
 }
 /* when cursor is in between button and outline */
 .cta_secondary:hover > a {
@@ -791,12 +1037,14 @@ textarea {
 	width: 100%;
 	font-size: 1em;
 	line-height: 53px;
-	color: #E64A19;
+	/*color: #E64A19;*/
+	color: #fbc02d;
 	font-weight: 700;
 	font-weight: bold;
 	border-radius: 75px;
 	background: none;
-	border: 2px solid #E64A19;
+	/*border: 2px solid #E64A19;*/
+	border: 2px solid #fbc02d;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -805,7 +1053,8 @@ textarea {
 /* secondary button link */
 .cta_secondary a:hover,
 .cta_secondary a:focus {
-	background: #D84315;
+	/*background: #D84315;*/
+	background: #E8AA0C;
 	color: #fff;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -828,7 +1077,8 @@ textarea {
 .cta_secondary a:active,
 .cta_secondary:active {
 	color: #fff;
-	background: #FF5722 !important;
+	/*background: #FF5722 !important;*/
+	background: #fbc02d;
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
 	-o-transition: all 0.16s ease-out;
@@ -869,7 +1119,8 @@ textarea {
 .cta_secondary > .cta_button_hover {
 	width: 200px;
 	height: 60px;
-	border: 8px solid #E64A19 !important;
+	/*border: 8px solid #E64A19 !important;*/
+	border: 8px solid #fbc02d;
 }
 /* offset outline effect */
 .cta_secondary:hover > .cta_button_hover {
@@ -877,7 +1128,8 @@ textarea {
 	height: 80px;
 	left: -10px !important;
 	top: -10px !important;
-	border: 1px solid #E64A19 !important;
+	/*border: 1px solid #E64A19 !important;*/
+	border: 1px solid #fbc02d;
 	opacity: 0.7;
 	border-radius: 95px;
 	-webkit-transition: all 0.21s ease-out;
@@ -943,21 +1195,23 @@ textarea {
 	width: 100%;
 /*	background: rgba(0,0,0,0.3);*/
 	line-height: 1em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: bold;
 	font-weight: 700;
 	padding: 12px;
 	color: rgba(255,255,255,0);
 	text-align: center;
+	/*background: rgba(56,142,60,0.65);*/
+	background: rgba(12,12,12,0.45);
 }
 
 /* service mega menu, pushes text inside tiles down */
 .service_links {
-	padding-top: 100px !important;
+	padding-top: 70px !important;
 }
 
 .service_drop_tile a:hover {
-	background: rgba(255,255,255,0.4);
+	background: rgba(56,142,60,0.8);
 }
 
 /* mobile nav - 2nd level services - back button wrapper */
@@ -1077,68 +1331,6 @@ textarea {
 	margin-bottom: -15px;
 }
 
-
-/* desktop service dropdown tiles */
-/* background images */
-.desk_landscape_tile {
-	background: url(../images/landscape.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_lawn_tile {
-	background: url(../images/lawn.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_tree_tile {
-	background: url(../images/tree.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-.desk_hardscape_tile {
-	background: url(../images/hardscape.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-.desk_concrete_tile,
-.desk_design_tile,
-.desk_maintenance_tile,
-.desk_plant_tile,
-.desk_grading_tile,
-.desk_mosquito_tile,
-.desk_firewood_tile,
-.desk_snow_tile {
-	background: url(../images/concrete.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-	background-size: 100% 100%;
-}
-
-
-
-
 /* home service tiles */
 .home_service_tile_wrap {
 	position: relative;
@@ -1157,8 +1349,6 @@ textarea {
 
 .home_service_tile {
 	height: 200px;
-/*	background: #ccc;*/
-
 	background: url("../images/ypg_crew2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1194,6 +1384,149 @@ textarea {
 	/*background: rgba(0,0,0,0.8);*/
 }
 
+.landscape_tile {
+	background: url("../images/service_landscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.lawn_tile {
+	background: url("../images/service_lawn.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.tree_tile {
+	background: url("../images/service_tree.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.hardscape_tile {
+	background: url("../images/service_hardscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.concrete_tile {
+	background: url("../images/service_concrete.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landscape_design_tile {
+	background: url("../images/service_landscape_design.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.maintenance_tile {
+	background: url("../images/service_maintenance.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.plant_health_tile {
+	background: url("../images/service_plant_health.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.grading_tile {
+	background: url("../images/service_grading.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mosquito_tile {
+	background: url("../images/service_mosquito.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.firewood_tile {
+	background: url("../images/service_firewood.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.snow_tile {
+	background: url("../images/service_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.featured_tile {
+	background: url("../images/service_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.material_tile {
+	background: url("../images/material_delivery.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+
 .tile_hover {
 	height: 100%;
 	width: 100%;
@@ -1216,6 +1549,7 @@ textarea {
 
 .home_service_tile a:hover + .tile_hover {
 	background: rgba(56,142,60,0.8);
+
 	transition: 0.24s ease-out;
 }
 
@@ -1237,7 +1571,7 @@ textarea {
 	position: relative;
 	height: 360px;
 	width: 100%;
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/ypg_section_break.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1268,7 +1602,7 @@ textarea {
 /* 'start your project' 50% width background*/
 .home_start_cta {
 
-	background: url("../images/blur.jpg");
+	background: url("../images/ypg_footer_project.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -1283,7 +1617,7 @@ textarea {
 /* 'join ypg' 50% width background*/
 .home_hire_cta {
 
-	background: url("../images/ypg_crew2.jpg");
+	background: url("../images/ypg_footer_career_v2.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -1299,7 +1633,7 @@ textarea {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgba(46,125,50,0.8);
+	background: rgba(46,125,50,0.35);
 
 }
 
@@ -1307,8 +1641,10 @@ textarea {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background: rgba(216,67,21,0.8);
+	background: rgba(230, 74, 25, 0.65);
 }
+
+
 
 /* call-to-action text */
 .home_start_cta > .split_left > h3,
@@ -1537,7 +1873,7 @@ ul, li {
 .intro_image {
 	width: 50%;
 	float: left;
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/ypg_home_intro.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -1940,6 +2276,38 @@ textarea {
 	margin-bottom: 40px;
 }
 
+.isa_certified,
+.mosquito_fix {
+	margin-top: -48px;
+}
+
+.isa_certified > .col-md-12 {
+	padding-left: 0;
+	padding-top: 48px;
+}
+
+.isa_certified > .col-md-12 > img {
+	float: left;
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: -48px;
+	margin-right: 20px;
+}
+
+.isa_certified > .col-md-12 > p {
+
+	line-height: 2.1em;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+
+.subpage > .col-md-5 > ul,
+.phc_info ul {
+	padding-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
 .subpage > .col-md-5 > ul > li,
 .phc_info ul li{
 	font-family: "Lato";
@@ -2019,4 +2387,9 @@ textarea {
 .phc_box {
 	padding: 2px 24px 8px 24px;
 	background: rgba(0,0,0,0.1);
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 9bd044d0a64eed045a43a052c77685d2dad4c858

@@ -21,7 +21,7 @@
 			if (i <= 4) {
 				i++;
 				var div = document.createElement('div');
-				div.innerHTML = '<input type="text" class="newEmployerInput" name="employer_' +i+'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
+				div.innerHTML = '<input type="text" class="newEmployerInput" name="prevEmployer_' + i +'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
 
 				document.getElementById('newEmployer').appendChild(div);
 			}
@@ -33,153 +33,15 @@
 		}
 
 	</script>
-
-	
 </head>
 <body>
 
 <!-- overlay tint when service dropdown is active -->
 <div id="drop_overlay"></div>
+<?php include 'modules/nav.php'; ?>
 
-<!-- navigation wrapper -->
-<div class="ypg_nav">
-	<!-- ypg logo -->
-	<div class="ypg_nav_logo">
-		<a href="index.html"><img id="ypgLogo" height="75" width="259" src="images/ypg_nameplate.png"></a>
-	</div>
-
-	<!-- hamburger button -->
-	<button id="hamburger" onclick="toggleHamburger()">
-		<div id="ham_line1"></div>
-		<div id="ham_line2"></div>
-		<div id="ham_line3"></div>
-	</button>
-
-	<!-- 1st level mobile navigation -->
-	<div id="ypg_nav_mobile">
-		<h3>Menu</h3>
-		<div class="mobile_link_wrap mobile_active"><a class="mobile_nav_text" href="index.html">Home</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="about.html">About</a></div>
-		<div class="mobile_link_wrap" id="mobile_service_trigger" onclick="toggleMobileService()"><a class="mobile_nav_text" href="#">Services</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="portfolio.html">Portfolio</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="careers.html">Careers</a></div>
-		<div class="mobile_link_wrap"><a class="mobile_nav_text" href="contact.html">Contact</a></div>
-		<div id="mobile_phone_btn" class="mobile_link_wrap"><a class="mobile_nav_text" href="#">Call Now: (262) 470-3829</a></div>
-	</div>
-
-	<!-- 2nd level mobile navigation: services -->
-	<div id="mobile_service_wrap">
-		<div class="back_btn_wrap">
-			<a href="javascript:void(0)" id="back_btn" onclick="toggleMobileService()"><span><img id="back_arrow" src="images/arrow.png" height="20" width="20"></span>Back</a>
-		</div>
-
-		<div class="mobile_service_tile_wrap">
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Landscape</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Lawn and Turf</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Tree Service</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Hardscape</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Concrete</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Landscape Design</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Maintenance</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Plant Health Care</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Grading and Drainage</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Mosquito and Tick Control</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Firewood, Logs, and Mulch</a>
-			</div>
-			<div class="col-xs-6 mobile_service_tile">
-				<a href="">Snow and Ice Management</a>
-			</div>
-		</div>
-	</div>
-
-	<!-- desktop nav: links -->
-	<div class="ypg_nav_links">
-		<a href="index.html">Home</a> 
-		<a href="about.html">About</a>
-		<a href="javascript:void(0)" id="serviceTrigger" onclick="toggleService()" class="service_drop_trigger">Services<span><img id="drop_arrow" src="images/arrow.png" height="20" width="20"></span></a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="careers.html">Careers</a>
-		<a href="contact.html">Contact</a>
-	</div>
-
-	<!-- desktop nav: phone number -->
-	<div class="ypg_nav_phone">
-		<p>(262) 470-3829</p>
-	</div>
-</div>
-
-<!-- desktop nav: services mega menu -->
-<div class="service_drop_outer" id="service_dropdown">
-	<!-- landscape -->
-	<div class="col-md-2 service_drop_tile desk_landscape_tile">
-		<a class="service_links" href="">Landscape</a>
-	</div>
-	<!-- lawn and turf -->
-	<div class="col-md-2 service_drop_tile desk_lawn_tile">
-		<a class="service_links" href="">Lawn and Turf</a>
-	</div>
-	<!-- tree service -->
-	<div class="col-md-2 service_drop_tile desk_tree_tile">
-		<a class="service_links" href="">Tree Service</a>
-	</div>
-	<!-- hardscape -->
-	<div class="col-md-2 service_drop_tile desk_hardscape_tile">
-		<a class="service_links" href="">Hardscape</a>
-	</div>
-	<!-- concrete -->
-	<div class="col-md-2 service_drop_tile desk_concrete_tile">
-		<a class="service_links" href="">Concrete</a>
-	</div>
-	<!-- landscape design -->
-	<div class="col-md-2 service_drop_tile desk_design_tile">
-		<a class="service_links" href="">Landscape Design</a>
-	</div>
-	<!-- maintenance -->
-	<div class="col-md-2 service_drop_tile desk_maintenance_tile">
-		<a class="service_links" href="">Maintenance</a>
-	</div>
-	<!-- plant health care -->
-	<div class="col-md-2 service_drop_tile desk_plant_tile">
-		<a class="service_links" href="">Plant Health Care</a>
-	</div>
-	<!-- grading and drainage -->
-	<div class="col-md-2 service_drop_tile desk_grading_tile">
-		<a class="service_links" href="">Grading and Drainage</a>
-	</div>
-	<!-- mosquito and tick control -->
-	<div class="col-md-2 service_drop_tile desk_mosquito_tile">
-		<a class="service_links" href="">Mosquito and Tick Control</a>
-	</div>
-	<!-- firewood, logs, and mulch -->
-	<div class="col-md-2 service_drop_tile desk_firewood_tile">
-		<a class="service_links" href="">Firewood, Logs, and Mulch</a>
-	</div>
-	<!-- snow and ice -->
-	<div class="col-md-2 service_drop_tile desk_snow_tile">
-		<a class="service_links" href="">Snow and Ice Management</a>
-	</div>
-</div> <!-- end of mega menu -->
+<!-- desktop mega menu -->
+<?php include 'modules/nav_desktop_megamenu.php'; ?>
 
 <!-- subpage hero -->
 <div class="subpage_hero_wrap">
@@ -205,7 +67,89 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 
 <!-- form -->
 <div class="col-md-6">
-<form class="ypg_form">
+
+<?php
+    $error = '';
+    $name = '';
+    $phone = '';
+    $email = '';
+    $description = '';
+    $prevEmployers1 = '';
+    $prevEmployers2 = '';
+    $prevEmployers3 = '';
+    $prevEmployers4 = '';
+    $prevEmployers5 = '';
+
+    // if submit button pressed
+    if(isset($_POST['careerSubmit'])) {
+
+	    $name   = $_POST['name'];
+	    $email    = $_POST['email'];
+	    $phone  = $_POST['phone'];
+	    $workXP = join(", ", $_REQUEST["workXP"]);
+	    $certs = join(", ", $_REQUEST["certs"]);
+	    $prevEmployers1 = $_POST['prevEmployer_1'];
+	    $prevEmployers2 = $_POST['prevEmployer_2'];
+	    $prevEmployers3 = $_POST['prevEmployer_3'];
+	    $prevEmployers4 = $_POST['prevEmployer_4'];
+	    $prevEmployers5 = $_POST['prevEmployer_5'];
+	    // $prevEmployers = join(", ", $prevEmployers1 . $prevEmployers2 . $prevEmployers3 . $prevEmployers4 . $prevEmployers5);
+	    $description = $_POST['description'];
+
+
+    if(trim($name) == '') {
+      $error = '<div class="error_message">* You must enter your name.</div>';
+    } else if(trim($email) == '') {
+      $error = '<div class="error_message">* Please enter a valid email address.</div>';
+
+    } else if(!formatPhoneNumber($phone)) {
+      $error = '<div class="error_message">* Phone number can only contain digits.</div>';
+
+    } else if(!isEmail($email)) {
+      $error = '<div class="error_message">* You have enter an invalid e-mail address.</div>';
+    }
+
+    if(trim($description) == '') {
+      $error = '<div class="error_message">* Please enter a description about yourself.</div>';
+    }
+
+    if($error == '') {
+      if(get_magic_quotes_gpc()) {
+        $description = stripslashes($description);
+      }
+
+    // where the form is sending the submission
+    $address = "info@tom-egan.com";
+
+    // email subject line
+    $e_subject = $name . ': YPG Career Form Submission';
+
+
+    // Configuration option.
+    $e_content ="Name: $name \nEmail: $email\nPhone: $phone \n\n-----------------\nWork Experience\n-----------------\n$workXP\n\n\n----------------\nCertifications\n----------------\n$certs \n\n\n--------------------\nPrevious Employers\n--------------------\n1. $prevEmployers1\n2. $prevEmployers2\n3. $prevEmployers3\n4. $prevEmployers4\n5. $prevEmployers5\n\n\n---------------------------------------------------------\nEmployment description and why they want to work at YPG\n---------------------------------------------------------\n$description"; 
+
+
+    $msg = $e_content . $e_reply;
+
+    if(mail($address, $e_subject, $msg, "From: $email\r\nReply-To: $email\r\nReturn-Path: $email\r\n"))
+    {
+      // Email has sent successfully, echo a success page.
+       echo "<h4>Thanks $name! Your submission was successful, we will reach out to you shortly.</h4>";
+     } else echo "Error. Submission was unsuccessful, please reload the page.";
+
+    }
+  }
+
+    if(!isset($_POST['careerSubmit']) || $error != '') // Do not edit.
+    {
+?>
+
+
+<?php echo $error; ?>
+
+
+<form class="ypg_form" action="" method="POST">
+
 <div class="stepper_wrap">
 	<div class="step_line"></div>
 </div>
@@ -215,48 +159,48 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 	<!-- name -->
 	<div class="col-md-12">
 		
-		<input type="text" name="" /> <br>
+		<input type="text" name="name" /> <br>
 		<div class="step_circle step1">1</div>
-		<label class="inputLabel">*Name</label>
+		<label class="inputLabel" value="<?php echo $name; ?>">*Name</label>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- phone -->
 	<div class="col-md-12">
-		<input type="text" name="" /> <br>
+		<input type="text" name="phone" /> <br>
 		<div class="step_circle step2">2</div>
-		<label class="inputLabel">*Phone Number</label><br>
+		<label class="inputLabel" value="<?php echo $phone; ?>">*Phone Number</label><br>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- email -->
 	<div class="col-md-12">
-		<input type="text" name="" /> <br>
+		<input type="text" name="email" /> <br>
 		<div class="step_circle step3">3</div>
-		<label class="inputLabel">*Email Address</label><br>
+		<label class="inputLabel" value="<?php echo $email; ?>">*Email Address</label><br>
 		<div class="field_highlight"></div>
 	</div>
 	<!-- work experience -->
 	<div class="col-md-12">
 		
 		<label class="checkLabel">Work Experience</label><br>
-		<input type="checkbox" name="" />Lawn<br>
-		<input type="checkbox" name="" />Landscape<br>
-		<input type="checkbox" name="" />Tree Service<br>
-		<input type="checkbox" name="" />Concrete<br>
-		<input type="checkbox" name="" />Snow Removal<br>
-		<input type="checkbox" name="" />Small Engine Mechanic<br>
-		<input type="checkbox" name="" />Automotive Mechanic<br>
-		<input type="checkbox" name="" />Diesel Mechanic<br>
+		<input type="checkbox" name="workXP[]" value="Lawn"/>Lawn<br>
+		<input type="checkbox" name="workXP[]" value="Landscape"/>Landscape<br>
+		<input type="checkbox" name="workXP[]" value="Tree Service"/>Tree Service<br>
+		<input type="checkbox" name="workXP[]" value="Concrete"/>Concrete<br>
+		<input type="checkbox" name="workXP[]" value="Snow Removal"/>Snow Removal<br>
+		<input type="checkbox" name="workXP[]" value="Small Engine Mechanic"/>Small Engine Mechanic<br>
+		<input type="checkbox" name="workXP[]" value="Automotive Mechanic"/>Automotive Mechanic<br>
+		<input type="checkbox" name="workXP[]" value="Diesel Mechanic"/>Diesel Mechanic<br>
 		<div class="step_circle step4">4</div>
 	</div>
 	<!-- certifications -->
 	<div class="col-md-12">
 		
 		<label class="checkLabel">Certifications</label><br>
-		<input type="checkbox" name="" />WI Pesticide Applicator License<br>
-		<input type="checkbox" name="" />Certified Arborist<br>
-		<input type="checkbox" name="" />Master Gardener<br>
-		<input type="checkbox" name="" />CDL<br>
-		<input type="checkbox" name="" />Other<br>
+		<input type="checkbox" name="certs[]" value="WI Pesticide Applicator License" />WI Pesticide Applicator License<br>
+		<input type="checkbox" name="certs[]" value="Certified Arborist"/>Certified Arborist<br>
+		<input type="checkbox" name="certs[]" value="Master Gardener" />Master Gardener<br>
+		<input type="checkbox" name="certs[]" value="CDL"/>CDL<br>
+		<input type="checkbox" name="certs[]" value="Other"/>Other<br>
 		<div class="step_circle step5">5</div>
 	</div>
 	<!-- previous employers -->
@@ -264,7 +208,7 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 		
 		<label>*Previous Employer(s)</label><br>
 		<p id="career_span">Limit: Last five (5) employers.</p>
-		<input type="text" name="employer_1" />
+		<input type="text" name="prevEmployer_1" value="<?php echo $prevEmployer_1; ?>" />
 		
 		<div class="field_highlight employer_highlight"></div>
 		<!-- placeholder space for new input boxes -->
@@ -280,7 +224,7 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 		
 		<label>*Tell Us About Yourself</label><br>
 		<p id="career_span">Talk about your past work experience, why you are interested in working at YPG, and a little about yourself.</p>
-		<textarea rows="6" class="long_text_field" name=""></textarea>
+		<textarea rows="6" class="long_text_field" name="description"></textarea>
 		<div class="textarea_highlight"></div>
 		<div class="step_circle step7">7</div>
 	</div>
@@ -294,17 +238,45 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 	<!-- submit -->
 	<div class="col-md-12">
 		
-		<input type="submit" value="Send" name="">
+		<input type="submit" value="Send" name="careerSubmit">
 		<div class="step_circle step9">9</div>
 	</div>
 
-	<div class="rel_fix"></div>
-</form>
-</div>
+<?php }
 
-<div class="rel_fix"></div>
+function isEmail($email) { // Email address verification, do not edit.
+return(preg_match("/^[-_.[:alnum:]]+@((([[:alnum:]]|[[:alnum:]][[:alnum:]-]*[[:alnum:]])\.)+(ad|ae|aero|af|ag|ai|al|am|an|ao|aq|ar|arpa|as|at|au|aw|az|ba|bb|bd|be|bf|bg|bh|bi|biz|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|com|coop|cr|cs|cu|cv|cx|cy|cz|de|dj|dk|dm|do|dz|ec|edu|ee|eg|eh|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gh|gi|gl|gm|gn|gov|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|in|info|int|io|iq|ir|is|it|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|mg|mh|mil|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|museum|mv|mw|mx|my|mz|na|name|nc|ne|net|nf|ng|ni|nl|no|np|nr|nt|nu|nz|om|org|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|pro|ps|pt|pw|py|qa|re|ro|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|um|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw)$|(([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5])\.){3}([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5]))$/i",$email));
+}
 
-</div>
+function formatPhoneNumber($phone) {
+    $phoneNumber = preg_replace('/[^0-9]/','',$phone);
+
+    if(strlen($phone) > 10) {
+        $countryCode = substr($phoneNumber, 0, strlen($phone)-10);
+        $areaCode = substr($phone, -10, 3);
+        $nextThree = substr($phone, -7, 3);
+        $lastFour = substr($phone, -4, 4);
+
+        $phone = '+'.$countryCode.' ('.$areaCode.') '.$nextThree.'-'.$lastFour;
+    }
+    else if(strlen($phone) == 10) {
+        $areaCode = substr($phone, 0, 3);
+        $nextThree = substr($phone, 3, 3);
+        $lastFour = substr($phone, 6, 4);
+
+        $phone = '('.$areaCode.') '.$nextThree.'-'.$lastFour;
+    }
+    else if(strlen($phone) == 7) {
+        $nextThree = substr($phone, 0, 3);
+        $lastFour = substr($phone, 3, 4);
+
+        $phone = $nextThree.'-'.$lastFour;
+    }
+
+    return $phone;
+}
+
+?>
 
 
 
