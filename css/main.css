@@ -482,6 +482,27 @@ button:focus {
 		background-position: right center !important;
 	}
 
+	.subpage_side_images {
+		display: none !important;
+	}
+
+	.isa_certified {
+		margin-top: 10px !important;
+	}
+
+	.certified2 {
+		margin-top: 55px;
+	}
+
+	.full_image {
+		margin: 25px auto 0 auto!important;
+		width: 100% !important;
+	}
+
+	.subpage_center_img {
+		margin-top: 0 !important;
+	}
+
 }
 
 
@@ -692,6 +713,150 @@ input[type="text"]:focus ~ .field_highlight,
 	background-size: cover;
 }
 
+/* landscape hero */
+.landscape_hero {
+	background: url("../images/subpage_landscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* lawn hero */
+.lawn_hero {
+	background: url("../images/subpage_lawn.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* tree hero */
+.tree_hero {
+	background: url("../images/subpage_tree.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* hardscape hero */
+.hardscape_hero {
+	background: url("../images/subpage_hardscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* concrete hero */
+.concrete_hero {
+	background: url("../images/subpage_concrete.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* landscape design hero */
+.landscape_design_hero {
+	background: url("../images/subpage_landscape_design.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* maintenance hero */
+.maintenance_hero {
+	background: url("../images/subpage_maintenance.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* plant health care hero */
+.plant_health_care_hero {
+	background: url("../images/subpage_phc.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* grading and drainage hero */
+.grading_hero {
+	background: url("../images/subpage_grading.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* mosquito and tick control hero */
+.mosquito_hero {
+	background: url("../images/subpage_mosquito.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* firewood, logs, and mulch hero */
+.firewood_hero {
+	background: url("../images/subpage_firewood.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* snow and ice management hero */
+.snow_hero {
+	background: url("../images/subpage_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 /* portfolio home hero */
 .port_hero {
 	background: url("../images/subpage_port.jpg");
@@ -702,6 +867,21 @@ input[type="text"]:focus ~ .field_highlight,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+.subpage_center_img {
+	margin-top: 100px;
+}
+
+.subpage_center_img > img,
+.full_image {
+	position: relative;
+	margin: 0 auto 12px auto;
+	width: 75%;
+}
+
+.subpage_side_images > img {
+	margin-bottom: 12px;
 }
 
 
@@ -2034,3 +2214,115 @@ input[type="text"]:focus ~ .field_highlight {
 .step5 {margin-top: 165px;}
 .step6 {margin-top: 235px;}
 .step7 {margin-top: 58px;}
+
+.isa_certified{
+	margin-top: -48px;
+}
+
+.isa_certified > .col-md-12 {
+	padding-left: 0;
+	padding-top: 48px;
+}
+
+.isa_certified > .col-md-12 > img {
+	float: left;
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: -48px;
+	margin-right: 20px;
+}
+
+.isa_certified > .col-md-12 > p {
+
+	line-height: 2.1em;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+
+.subpage > .col-md-5 > ul,
+.phc_info ul {
+	padding-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+.subpage > .col-md-5 > ul > li,
+.phc_info ul li{
+	font-family: "Lato";
+	font-size: 1.1em;
+	margin-bottom: 12px;
+}
+
+
+
+.maintenance_packages {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.maintenance_packages > .col-md-6 {
+	padding: 24px;
+}
+
+.maintenance_packages > .col-md-6 > .row {
+	margin-bottom: -30px;
+	padding: 0;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 {
+	padding: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12,
+.maintenance_packages > .col-md-6 > .row > .col-md-12{
+	padding: 8px 30px 20px 30px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-12 {
+	margin: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > h5,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > h5 {
+	font-size: 1.3em;
+	color: #E64A19;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > p,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > p {
+	margin-bottom: 24px;
+}
+
+.package_bg {
+	background: rgba(0,0,0,0.1);
+	min-height: 320px !important;
+}
+
+.package_bg_dark {
+	min-height: 320px !important;
+	background: #6D4C41;
+	color: #fff;
+}
+
+.package_bg_dark h5 {
+	color: #E8AA0C !important;
+}
+
+.package_outline {
+	min-height: 320px !important;
+	border: 1px solid #ccc;
+}
+
+.phc_info > .col-md-4 {
+	padding: 12px;
+}
+
+.phc_intro {
+	margin-top: 20px;
+	margin-bottom:0px;
+}
+
+.phc_box {
+	padding: 2px 24px 8px 24px;
+	background: rgba(0,0,0,0.1);
+}
