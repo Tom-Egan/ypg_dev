@@ -1908,21 +1908,115 @@ textarea {
 	max-height: 500px;
 }
 
-/*.step_outline {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: #222;
-	border-radius: 50%;
-	top: 0;
-	border: 6px solid #000;
+.isa_certified,
+.mosquito_fix {
+	margin-top: -48px;
 }
 
-*/
-/*.step1 {margin-top: 45px;}
-.step2 {margin-top: 312px;}
-.step3 {margin-top: 245px;}
-.step4 {margin-top: 167px;}
-.step5 {margin-top: 165px;}
-.step6 {margin-top: 235px;}
-.step7 {margin-top: 58px;}*/
+.isa_certified > .col-md-12 {
+	padding-left: 0;
+	padding-top: 48px;
+}
+
+.isa_certified > .col-md-12 > img {
+	float: left;
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: -48px;
+	margin-right: 20px;
+}
+
+.isa_certified > .col-md-12 > p {
+
+	line-height: 2.1em;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+
+.subpage > .col-md-5 > ul,
+.phc_info ul {
+	padding-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+.subpage > .col-md-5 > ul > li,
+.phc_info ul li{
+	font-family: "Lato";
+	font-size: 1.1em;
+	margin-bottom: 12px;
+}
+
+
+
+.maintenance_packages {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.maintenance_packages > .col-md-6 {
+	padding: 24px;
+}
+
+.maintenance_packages > .col-md-6 > .row {
+	margin-bottom: -30px;
+	padding: 0;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 {
+	padding: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12,
+.maintenance_packages > .col-md-6 > .row > .col-md-12{
+	padding: 8px 30px 20px 30px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-12 {
+	margin: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > h5,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > h5 {
+	font-size: 1.3em;
+	color: #E64A19;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > p,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > p {
+	margin-bottom: 24px;
+}
+
+.package_bg {
+	background: rgba(0,0,0,0.1);
+	min-height: 320px !important;
+}
+
+.package_bg_dark {
+	min-height: 320px !important;
+	background: #6D4C41;
+	color: #fff;
+}
+
+.package_bg_dark h5 {
+	color: #E8AA0C !important;
+}
+
+.package_outline {
+	min-height: 320px !important;
+	border: 1px solid #ccc;
+}
+
+.phc_info > .col-md-4 {
+	padding: 12px;
+}
+
+.phc_intro {
+	margin-top: 20px;
+	margin-bottom:0px;
+}
+
+.phc_box {
+	padding: 2px 24px 8px 24px;
+	background: rgba(0,0,0,0.1);
+}
