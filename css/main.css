@@ -696,7 +696,7 @@ textarea {
 	height: 75px;
 	border-radius: 75px;
 	background: #fbc02d;
-	border: 1px solid #E8AA0C;
+	border: 1px solid #FDD835;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -1803,6 +1803,16 @@ input[type="text"]:valid ~ .inputLabel{
 	-webkit-transition: 0.16s ease-out;
 }
 
+.textarea_highlight {
+	bottom: 4px;
+	position: absolute;
+	height: 4px;
+	width: 0;
+	background: #2e7d32;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
+}
+
 .employer_highlight {
 	top: 89px !important;
 }
@@ -1812,7 +1822,8 @@ input[type="text"]:valid ~ .inputLabel{
 	top: -3px !important;
 }
 
-input[type="text"]:focus ~ .field_highlight {
+input[type="text"]:focus ~ .field_highlight,
+textarea:focus ~ .textarea_highlight {
 	background: #2e7d32;
 	height: 4px;
 	width: 60%;
@@ -1876,10 +1887,9 @@ input[type="text"]:focus ~ .step_circle,
 input[type="checkbox"]:focus ~ .step_circle,
 textarea:focus ~ .step_circle,
 input[type="submit"]:focus ~ .step_circle {
-	background: #222 !important;
+	background: #E64A19 !important;
 	transition: 0.16s ease-out;
 	-webkit-transition: 0.16s ease-out;
-
 }
 
 .step1, .step2, .step3{margin-top: -3px;}

@@ -17,12 +17,11 @@
 
 	<script type="text/javascript">
 		var i = 1;
-
 		function addEmployer() {
 			if (i <= 4) {
 				i++;
 				var div = document.createElement('div');
-				div.innerHTML = '<input type="text" name="employer_' +i+'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
+				div.innerHTML = '<input type="text" class="newEmployerInput" name="employer_' +i+'"><div class="field_highlight employer_highlight2"></div><input type="button" value="remove" onclick="removeEmployer(this)">';
 
 				document.getElementById('newEmployer').appendChild(div);
 			}
@@ -32,6 +31,7 @@
 			document.getElementById('newEmployer').removeChild(div.parentNode);
 			i--;
 		}
+
 	</script>
 
 	
@@ -265,11 +265,13 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 		<label>*Previous Employer(s)</label><br>
 		<p id="career_span">Limit: Last five (5) employers.</p>
 		<input type="text" name="employer_1" />
-		<div class="step_circle step6">6</div>
+		
 		<div class="field_highlight employer_highlight"></div>
 		<!-- placeholder space for new input boxes -->
 		<div id="newEmployer"></div>
+		
 		<br>
+		<div class="step_circle step6">6</div>
 		<!-- add additional employers -->
 		<input type="button" onclick="addEmployer()" id="addEmployerBtn" value="Add Employer" />
 	</div>
@@ -279,6 +281,7 @@ Thanks for your interest in working at Your Personal Gardener. Please fill out t
 		<label>*Tell Us About Yourself</label><br>
 		<p id="career_span">Talk about your past work experience, why you are interested in working at YPG, and a little about yourself.</p>
 		<textarea rows="6" class="long_text_field" name=""></textarea>
+		<div class="textarea_highlight"></div>
 		<div class="step_circle step7">7</div>
 	</div>
 
