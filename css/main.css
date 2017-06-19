@@ -2215,7 +2215,8 @@ input[type="text"]:focus ~ .field_highlight {
 .step6 {margin-top: 235px;}
 .step7 {margin-top: 58px;}
 
-.isa_certified{
+.isa_certified,
+.mosquito_fix {
 	margin-top: -48px;
 }
 
@@ -2326,3 +2327,4 @@ input[type="text"]:focus ~ .field_highlight {
 	padding: 2px 24px 8px 24px;
 	background: rgba(0,0,0,0.1);
 }
+
