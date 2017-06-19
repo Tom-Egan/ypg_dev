@@ -475,7 +475,7 @@ button:focus {
 	}
 
 	.ypg_form {
-		margin-left: 40px !important;
+		margin-left: 32px !important;
 	}
 
 	.careers_hero {
@@ -571,12 +571,17 @@ button:focus {
 .ypg_form > .col-md-12 > input[type="text"],
 #newEmployer > div > input[type="text"],
 input[type="text"]:focus ~ .field_highlight,
-#career_span {
+#career_span{
 	width: 80% !important;
 }
 
 #newEmployer > div > input[type="button"] {
 	left: 81% !important;
+}
+
+textarea {
+	width: 80% !important;
+	max-width: 80% !important;
 }
 
 
@@ -937,7 +942,7 @@ input[type="text"]:focus ~ .field_highlight,
 	height: 75px;
 	border-radius: 75px;
 	background: #fbc02d;
-	border: 1px solid #E8AA0C;
+	border: 1px solid #FDD835;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
 	-webkit-transition: all 0.16s ease-out;
 	-moz-transition: all 0.16s ease-out;
@@ -2131,6 +2136,17 @@ input[type="text"]:valid ~ .inputLabel{
 	background: #2e7d32;
 	top: 22px;
 	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
+}
+
+.textarea_highlight {
+	bottom: 4px;
+	position: absolute;
+	height: 4px;
+	width: 0;
+	background: #2e7d32;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 }
 
 .employer_highlight {
@@ -2142,11 +2158,13 @@ input[type="text"]:valid ~ .inputLabel{
 	top: -3px !important;
 }
 
-input[type="text"]:focus ~ .field_highlight {
+input[type="text"]:focus ~ .field_highlight,
+textarea:focus ~ .textarea_highlight {
 	background: #2e7d32;
 	height: 4px;
 	width: 60%;
 	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 	z-index: 3;
 }
 
@@ -2160,8 +2178,8 @@ input[type="text"]:focus ~ .field_highlight {
 .stepper_wrap {
 	position: absolute;
 	height: 100%;
-	width: 50px;
-	left: -60px;
+	width: 30px;
+	left: -40px;
 	top: -16px;
 }
 
@@ -2183,37 +2201,80 @@ input[type="text"]:focus ~ .field_highlight {
 }
 
 .step_circle {
-	position: relative;
-	height: 50px;
-	width: 50px;
-	background: #fff;
-	border: 2px solid #ccc;
+	position: absolute;
+	left: -40px;
+	height: 30px;
+	width: 30px;
+	top: -24px;
+	background: #ccc;
+	border: 3px solid #fff;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 46px;
+	line-height: 25px;
 	color: #999; 
-	font-weight: bold;
-	font-weight: 700;
-	font-size: 1.4em;
+	color: #fff;
+	font-size: 0.9em;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 }
 
-/*.step_outline {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background: #222;
-	border-radius: 50%;
-	top: 0;
-	border: 6px solid #000;
+
+input[type="text"]:focus ~ .step_circle,
+input[type="checkbox"]:focus ~ .step_circle,
+textarea:focus ~ .step_circle,
+input[type="submit"]:focus ~ .step_circle {
+	background: #E64A19 !important;
+	transition: 0.16s ease-out;
+	-webkit-transition: 0.16s ease-out;
 }
-*/
-.step1 {margin-top: 45px;}
-.step2 {margin-top: 312px;}
-.step3 {margin-top: 245px;}
-.step4 {margin-top: 167px;}
-.step5 {margin-top: 165px;}
-.step6 {margin-top: 235px;}
-.step7 {margin-top: 58px;}
+
+.step1, .step2, .step3{margin-top: -3px;}
+.step4, .step5 {margin-top: 9px;}
+.step6 {margin-top: 21px;}
+.step7 {margin-top: 20px;}
+.step8, .step9 {margin-top: 36px;}
+
+.g-recaptcha {
+    transform:scale(0.77);
+    transform-origin:0 0;
+}
+
+textarea {
+	max-width: 60%;
+	max-height: 500px;
+}
+
+.isa_certified,
+.mosquito_fix {
+	margin-top: -48px;
+}
+
+.isa_certified > .col-md-12 {
+	padding-left: 0;
+	padding-top: 48px;
+}
+
+.isa_certified > .col-md-12 > img {
+	float: left;
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: -48px;
+	margin-right: 20px;
+}
+
+.isa_certified > .col-md-12 > p {
+
+	line-height: 2.1em;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+
+.subpage > .col-md-5 > ul,
+.phc_info ul {
+	padding-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
 
 .isa_certified,
 .mosquito_fix {
@@ -2326,5 +2387,9 @@ input[type="text"]:focus ~ .field_highlight {
 .phc_box {
 	padding: 2px 24px 8px 24px;
 	background: rgba(0,0,0,0.1);
+<<<<<<< HEAD
+}
+=======
 }
 
+>>>>>>> 9bd044d0a64eed045a43a052c77685d2dad4c858
