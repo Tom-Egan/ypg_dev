@@ -116,15 +116,35 @@ a:focus {
 .ypg_nav_logo a {
 	float: left;
 	padding: 1px;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+
 }
 
 /* navbar - logo hover */
 .ypg_nav_logo a:hover {
+	opacity: 0.7;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
 	/*background: #222;*/
 }
 
+.ypg_nav_logo a:active {
+	opacity: 0.4;
+	-webkit-transition: all 0.16s ease-out;
+	-moz-transition: all 0.16s ease-out;
+	-o-transition: all 0.16s ease-out;
+	transition: all 0.16s ease-out;
+}
+
 .ypg_nav_logo img {
+	position: relative;
 	left: 0;
+	top: 8px;
 }
 
 /* navbar - wrapper for all links */
@@ -458,6 +478,31 @@ button:focus {
 		margin-left: 40px !important;
 	}
 
+	.careers_hero {
+		background-position: right center !important;
+	}
+
+	.subpage_side_images {
+		display: none !important;
+	}
+
+	.isa_certified {
+		margin-top: 10px !important;
+	}
+
+	.certified2 {
+		margin-top: 55px;
+	}
+
+	.full_image {
+		margin: 25px auto 0 auto!important;
+		width: 100% !important;
+	}
+
+	.subpage_center_img {
+		margin-top: 0 !important;
+	}
+
 }
 
 
@@ -515,6 +560,10 @@ button:focus {
 
 	.cta_button {
 		margin: 0 auto;
+	}
+
+	.careers_hero {
+		background-position: center center !important;
 	}
 
 
@@ -593,15 +642,15 @@ input[type="text"]:focus ~ .field_highlight,
 	width: 100%;
 	height: 80vh;
 	max-height: 900px;
-	margin-top: -80px;
+	margin-top: -81px;
 }
 /* smaller subpage hero image wrapper */
 .subpage_hero_wrap {
 	position: relative;
 	width: 100%;
-	height: 42vh;
+	height: 45vh;
 	max-height: 480px;
-	margin-top: -80px;
+	margin-top: -81px;
 }
 
 
@@ -630,7 +679,7 @@ input[type="text"]:focus ~ .field_highlight,
 
 /* about subpage hero */
 .about_hero {
-	background: url("../images/ypg_main2.3.jpg");
+	background: url("../images/subpage_about.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -638,6 +687,201 @@ input[type="text"]:focus ~ .field_highlight,
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+/* careers hero */
+.careers_hero {
+	background: url("../images/subpage_career.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* contact hero */
+.contact_hero {
+	background: url("../images/subpage_contact.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* landscape hero */
+.landscape_hero {
+	background: url("../images/subpage_landscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* lawn hero */
+.lawn_hero {
+	background: url("../images/subpage_lawn.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* tree hero */
+.tree_hero {
+	background: url("../images/subpage_tree.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* hardscape hero */
+.hardscape_hero {
+	background: url("../images/subpage_hardscape.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* concrete hero */
+.concrete_hero {
+	background: url("../images/subpage_concrete.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* landscape design hero */
+.landscape_design_hero {
+	background: url("../images/subpage_landscape_design.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* maintenance hero */
+.maintenance_hero {
+	background: url("../images/subpage_maintenance.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* plant health care hero */
+.plant_health_care_hero {
+	background: url("../images/subpage_phc.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* grading and drainage hero */
+.grading_hero {
+	background: url("../images/subpage_grading.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* mosquito and tick control hero */
+.mosquito_hero {
+	background: url("../images/subpage_mosquito.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* firewood, logs, and mulch hero */
+.firewood_hero {
+	background: url("../images/subpage_firewood.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* snow and ice management hero */
+.snow_hero {
+	background: url("../images/subpage_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* portfolio home hero */
+.port_hero {
+	background: url("../images/subpage_port.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.subpage_center_img {
+	margin-top: 100px;
+}
+
+.subpage_center_img > img,
+.full_image {
+	position: relative;
+	margin: 0 auto 12px auto;
+	width: 75%;
+}
+
+.subpage_side_images > img {
+	margin-bottom: 12px;
 }
 
 
@@ -659,7 +903,7 @@ input[type="text"]:focus ~ .field_highlight,
 	font-weight: light;
 	font-weight: 300;
 	font-size: 2em;
-	text-shadow: 0 2px 5px rgba(0,0,0,0.5), 0 2px 5px rgba(0,0,0,0.4);
+	text-shadow: 0 2px 5px rgba(0,0,0,0.3), 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .subpage_hero_image > .ypg_wrap > .subpage_hero_text {
@@ -677,6 +921,7 @@ input[type="text"]:focus ~ .field_highlight,
 	font-size: 3.5em;
 	bottom: 50px;
 	color: #fff;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5), 0 2px 5px rgba(0,0,0,0.4);
 }
 
 /* 'Spring', 'Summer', 'Fall', 'Winter' Emphasis text*/
@@ -945,22 +1190,23 @@ input[type="text"]:focus ~ .field_highlight,
 	width: 100%;
 /*	background: rgba(0,0,0,0.3);*/
 	line-height: 1em;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: bold;
 	font-weight: 700;
 	padding: 12px;
 	color: rgba(255,255,255,0);
 	text-align: center;
-	background: rgba(56,142,60,0.2);
+	/*background: rgba(56,142,60,0.65);*/
+	background: rgba(12,12,12,0.45);
 }
 
 /* service mega menu, pushes text inside tiles down */
 .service_links {
-	padding-top: 100px !important;
+	padding-top: 70px !important;
 }
 
 .service_drop_tile a:hover {
-	background: rgba(255,255,255,0.4);
+	background: rgba(56,142,60,0.8);
 }
 
 /* mobile nav - 2nd level services - back button wrapper */
@@ -1245,6 +1491,26 @@ input[type="text"]:focus ~ .field_highlight,
 
 .snow_tile {
 	background: url("../images/service_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.featured_tile {
+	background: url("../images/service_snow.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.material_tile {
+	background: url("../images/material_delivery.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -1948,3 +2214,117 @@ input[type="text"]:focus ~ .field_highlight {
 .step5 {margin-top: 165px;}
 .step6 {margin-top: 235px;}
 .step7 {margin-top: 58px;}
+
+.isa_certified,
+.mosquito_fix {
+	margin-top: -48px;
+}
+
+.isa_certified > .col-md-12 {
+	padding-left: 0;
+	padding-top: 48px;
+}
+
+.isa_certified > .col-md-12 > img {
+	float: left;
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: -48px;
+	margin-right: 20px;
+}
+
+.isa_certified > .col-md-12 > p {
+
+	line-height: 2.1em;
+	font-size: 1.4em;
+	margin-bottom: 0;
+}
+
+.subpage > .col-md-5 > ul,
+.phc_info ul {
+	padding-left: 20px;
+	margin-top: -20px;
+	margin-bottom: 40px;
+}
+
+.subpage > .col-md-5 > ul > li,
+.phc_info ul li{
+	font-family: "Lato";
+	font-size: 1.1em;
+	margin-bottom: 12px;
+}
+
+
+
+.maintenance_packages {
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.maintenance_packages > .col-md-6 {
+	padding: 24px;
+}
+
+.maintenance_packages > .col-md-6 > .row {
+	margin-bottom: -30px;
+	padding: 0;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 {
+	padding: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12,
+.maintenance_packages > .col-md-6 > .row > .col-md-12{
+	padding: 8px 30px 20px 30px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-12 {
+	margin: 12px;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > h5,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > h5 {
+	font-size: 1.3em;
+	color: #E64A19;
+}
+
+.maintenance_packages > .col-md-6 > .row > .col-md-6 > .col-md-12 > p,
+.maintenance_packages > .col-md-6 > .row > .col-md-12 > p {
+	margin-bottom: 24px;
+}
+
+.package_bg {
+	background: rgba(0,0,0,0.1);
+	min-height: 320px !important;
+}
+
+.package_bg_dark {
+	min-height: 320px !important;
+	background: #6D4C41;
+	color: #fff;
+}
+
+.package_bg_dark h5 {
+	color: #E8AA0C !important;
+}
+
+.package_outline {
+	min-height: 320px !important;
+	border: 1px solid #ccc;
+}
+
+.phc_info > .col-md-4 {
+	padding: 12px;
+}
+
+.phc_intro {
+	margin-top: 20px;
+	margin-bottom:0px;
+}
+
+.phc_box {
+	padding: 2px 24px 8px 24px;
+	background: rgba(0,0,0,0.1);
+}
+
